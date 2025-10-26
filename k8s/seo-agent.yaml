@@ -1,0 +1,33 @@
+# k8s/seo-agent.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: seo-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: seo-agent
+  template:
+    metadata:
+      labels:
+        app: seo-agent
+    spec:
+      containers:
+      - name: seo-agent
+        image: your-repo/seo-agent:latest  # Placeholder
+        ports:
+        - containerPort: 5001
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: seo-agent
+spec:
+  selector:
+    app: seo-agent
+  ports:
+  - protocol: TCP
+    port: 5001
+    targetPort: 5001

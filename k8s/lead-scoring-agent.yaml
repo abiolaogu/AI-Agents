@@ -1,0 +1,33 @@
+# k8s/lead-scoring-agent.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lead-scoring-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lead-scoring-agent
+  template:
+    metadata:
+      labels:
+        app: lead-scoring-agent
+    spec:
+      containers:
+      - name: lead-scoring-agent
+        image: your-repo/lead-scoring-agent:latest  # Placeholder
+        ports:
+        - containerPort: 5002
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: lead-scoring-agent
+spec:
+  selector:
+    app: lead-scoring-agent
+  ports:
+  - protocol: TCP
+    port: 5002
+    targetPort: 5002

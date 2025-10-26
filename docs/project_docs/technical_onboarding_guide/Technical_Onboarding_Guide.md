@@ -6,12 +6,12 @@ Welcome to the development team for the multi-agent AI platform! This guide will
 
 ## 2. Development Environment Setup
 
-Our development environment is fully containerized using Docker to ensure consistency and eliminate "works on my machine" issues.
+Our development environment is fully containerized using Docker and Docker Compose.
 
 ### Prerequisites
 - Docker and Docker Compose
 - Git
-- An IDE of your choice (VS Code with the Dev Containers extension is recommended)
+- An IDE of your choice (VS Code is recommended)
 
 ### Initial Setup
 1.  **Clone the repository:**
@@ -19,53 +19,45 @@ Our development environment is fully containerized using Docker to ensure consis
     git clone <repository_url>
     cd <repository_name>
     ```
-2.  **Start the development environment:**
-    The project is configured to be used with VS Code Dev Containers. Simply open the cloned repository in VS Code and, when prompted, click "Reopen in Container". This will build the Docker containers and install all necessary dependencies.
-3.  **Install shared packages:**
-    To ensure that the microservices can access the shared code in the `packages/` directory, install them in editable mode. From the root of the repository, run:
+2.  **Build and Run the Environment:**
     ```bash
-    pip install -e packages/agent_framework
+    sudo docker compose up --build -d
+    ```
+    This command will build all the service images and start the containers in the background.
+
+## 3. Running Tests
+
+We have a suite of tests to ensure code quality and system stability.
+
+### Unit Tests
+Our unit tests are written using `pytest`. You can run all unit tests with the provided script:
+```bash
+./scripts/run_tests.sh
+```
+This script will install dependencies and run the test suites for all services.
+
+### End-to-End (E2E) Test
+The E2E test validates the entire workflow, from API call to agent execution.
+1.  Make sure the services are running (`sudo docker compose up -d`).
+2.  Run the E2E test script:
+    ```bash
+    ./scripts/run_e2e_test.py
     ```
 
-## 3. Monorepo Structure Overview
+## 4. Monorepo Structure Overview
 
-The repository is organized as a monorepo to facilitate code sharing and centralized dependency management.
+-   `docs/`: All project documentation.
+-   `packages/`: Shared Python packages.
+-   `services/`: Individual microservices.
+-   `k8s/`: Kubernetes deployment files.
+-   `scripts/`: Automation and testing scripts.
 
--   `docs/`: Contains all project documentation, including the files you are reading now.
--   `packages/`: Shared Python packages that are used by multiple services.
-    -   `agent_framework/`: The core framework, including the `BaseAgent` class.
--   `services/`: Houses the individual microservices.
-    -   `orchestration_engine/`: Manages agent lifecycles and workflows.
-    -   `seo_agent/`: A sample agent implementation.
--   `web/`: Source code for the frontend web application.
--   `scripts/`: Utility and automation scripts.
--   `terraform/`: Infrastructure as Code (IaC) for managing our GCP resources.
+## 5. How to Create a New Agent
 
-## 4. How to Create a New Agent
-
-Creating a new agent involves scaffolding a new microservice and implementing the agent's specific logic.
-
-1.  **Create the Service Directory:**
-    Create a new directory for your agent under `services/`. For example: `services/my_new_agent/my_new_agent`.
-2.  **Implement the Agent Class:**
-    Inside the new directory, create an `agent.py` file. Your new agent class should inherit from `BaseAgent`.
-    ```python
-    # services/my_new_agent/my_new_agent/agent.py
-    import logging
-    from agent_framework.base_agent import BaseAgent
-
-    class MyNewAgent(BaseAgent):
-        def __init__(self, agent_id: str, logger: logging.Logger):
-            super().__init__(agent_id, logger)
-
-        def execute(self, task: dict) -> dict:
-            self.logger.info(f"Executing task: {task}")
-            # Your agent's logic goes here
-            return {"status": "success", "result": "Task completed!"}
-    ```
-3.  **Create a Dockerfile:**
-    Add a `Dockerfile` to the `services/my_new_agent/` directory. You can use the `Dockerfile` from `services/seo_agent/` as a template.
-4.  **Register the Agent (Future Step):**
-    In the future, you will register your agent with the `AgentManager` in the orchestration engine. For now, you can test it standalone by adding an `if __name__ == '__main__':` block, similar to the `seo_agent`.
-5.  **Add Documentation:**
-    Create a `README.md` within your agent's directory explaining its purpose, the tasks it can handle, and any required configuration.
+1.  **Scaffold the Service:** Create a new directory under `services/` (e.g., `services/my_agent`). Add a `Dockerfile`, `requirements.txt`, and `setup.py`.
+2.  **Implement the Agent:** Create an `agent.py` with a class that inherits from `BaseAgent`.
+3.  **Create the Service Entrypoint:** Create a `main.py` with a Flask app to expose an `/execute` endpoint.
+4.  **Add Unit Tests:** Add a `tests/` directory with `pytest` tests for your new agent.
+5.  **Integrate with Docker Compose:** Add your new service to the `docker-compose.yml` file.
+6.  **Register with Orchestrator:** Add the new agent's service URL to the `orchestration_engine/main.py` registration block.
+7.  **Update Test Scripts:** Add your new tests to the `scripts/run_tests.sh` script.
