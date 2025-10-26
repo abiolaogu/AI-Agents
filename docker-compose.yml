@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  orchestration-engine:
+    build:
+      context: .
+      dockerfile: services/orchestration_engine/Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+    depends_on:
+      - seo-agent
+      - lead-scoring-agent
+
+  seo-agent:
+    build:
+      context: .
+      dockerfile: services/seo_agent/Dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+
+  lead-scoring-agent:
+    build:
+      context: .
+      dockerfile: services/lead_scoring_agent/Dockerfile
+    ports:
+      - "5002:5002"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development

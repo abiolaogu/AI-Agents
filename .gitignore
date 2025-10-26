@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Egg info
+*.egg-info
+.eggs
+
+# Virtual environment
+venv/
+env/
+
+# Build artifacts
+build/
+dist/
+*.so
+
+# IDE files
+.idea/
+.vscode/
+
+# Database files
+*.db
