@@ -59,9 +59,9 @@ Our revenue model will be based on a combination of recurring subscription fees 
 ## 6. Financial Projections
 
 ### 6.1. Key Assumptions
-- **Customer Acquisition:** We project a conservative customer acquisition rate, starting with 100 customers in Year 1 and growing to 1000 customers by Year 3.
-- **Pricing:** Average subscription price of $100/month for Starter, $500/month for Professional, and $5,000/month for Enterprise.
-- **Customer Mix:** 20% Enterprise, 50% Professional, 30% Starter.
+- **Customer Acquisition:** We project a customer acquisition rate of 100 customers in Year 1, growing to 350 in Year 2, and 1,000 in Year 3.
+- **Pricing:** Average subscription price of $99/month for Starter, $499/month for Professional, and an average of $5,000/month for Enterprise contracts.
+- **Customer Mix:** 30% Starter, 50% Professional, 20% Enterprise.
 - **Professional Services:** We assume 20% of enterprise customers will purchase professional services, with an average project size of $20,000.
 - **Churn Rate:** We project a 10% annual churn rate.
 
@@ -69,9 +69,9 @@ Our revenue model will be based on a combination of recurring subscription fees 
 
 | Revenue Stream | Year 1 | Year 2 | Year 3 |
 | :--- | :--- | :--- | :--- |
-| Subscription Revenue | $468,000 | $1,638,000 | $4,680,000 |
+| Subscription Revenue | $1,535,040 | $5,372,640 | $15,350,400 |
 | Professional Services | $80,000 | $280,000 | $800,000 |
-| **Total Revenue** | **$548,000** | **$1,918,000**| **$5,480,000**|
+| **Total Revenue** | **$1,615,040** | **$5,652,640**| **$16,150,400**|
 
 ### 6.3. Cost Structure
 - **Cloud Infrastructure:** Costs associated with hosting the platform on Google Cloud Platform, including GKE, Vertex AI, and data storage.
@@ -85,9 +85,9 @@ Our revenue model will be based on a combination of recurring subscription fees 
 | Category | Amount |
 | :--- | :--- |
 | **Cash Inflows** | |
-| Subscription Revenue | $468,000 |
+| Subscription Revenue | $1,535,040 |
 | Professional Services | $80,000 |
-| **Total Cash Inflows**| **$548,000** |
+| **Total Cash Inflows**| **$1,615,040** |
 | **Cash Outflows** | |
 | Cloud Infrastructure | -$100,000 |
 | Salaries and Benefits | -$500,000 |
@@ -95,7 +95,7 @@ Our revenue model will be based on a combination of recurring subscription fees 
 | Research and Development| -$100,000 |
 | General and Admin | -$50,000 |
 | **Total Cash Outflows**| **-$900,000** |
-| **Net Cash Flow** | **-$352,000** |
+| **Net Cash Flow** | **$715,040** |
 
 ### 6.5. Break-Even Analysis
-Based on our current projections, we anticipate reaching profitability in Year 3. This is dependent on achieving our customer acquisition and revenue targets, as well as carefully managing our costs.
+Based on our current projections, we anticipate reaching profitability in Year 1, assuming we meet our customer acquisition and revenue targets while managing our initial costs effectively.
