@@ -22,8 +22,12 @@ agent_manager = AgentManager(logger=logger)
 workflow_manager = WorkflowManager(agent_manager=agent_manager, logger=logger)
 
 # --- Agent Registration ---
+# In a real system, this would be dynamic.
 SEO_AGENT_URL = "http://seo-agent:5001"
+LEAD_SCORING_AGENT_URL = "http://lead-scoring-agent:5002"
+
 agent_manager.register_agent(agent_id="seo_agent_001", agent_url=SEO_AGENT_URL)
+agent_manager.register_agent(agent_id="lead_scoring_agent_001", agent_url=LEAD_SCORING_AGENT_URL)
 
 def run_workflow_in_background(workflow_id):
     """Function to run the workflow execution in a separate thread."""

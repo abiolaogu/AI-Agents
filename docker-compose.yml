@@ -13,6 +13,7 @@ services:
       - FLASK_ENV=development
     depends_on:
       - seo-agent
+      - lead-scoring-agent
 
   seo-agent:
     build:
@@ -20,6 +21,17 @@ services:
       dockerfile: services/seo_agent/Dockerfile
     ports:
       - "5001:5001"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+
+  lead-scoring-agent:
+    build:
+      context: .
+      dockerfile: services/lead_scoring_agent/Dockerfile
+    ports:
+      - "5002:5002"
     volumes:
       - .:/app
     environment:
