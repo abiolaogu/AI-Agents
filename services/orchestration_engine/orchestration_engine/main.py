@@ -2,7 +2,6 @@
 
 import logging
 from flask import Flask, request, jsonify
-from threading import Thread
 
 from .agent_manager import AgentManager
 from .workflow_manager import WorkflowManager
@@ -22,37 +21,28 @@ agent_manager = AgentManager(logger=logger)
 workflow_manager = WorkflowManager(agent_manager=agent_manager, logger=logger)
 
 # --- Agent Registration ---
-# In a real system, this would be dynamic.
 SEO_AGENT_URL = "http://seo-agent:5001"
 LEAD_SCORING_AGENT_URL = "http://lead-scoring-agent:5002"
 
 agent_manager.register_agent(agent_id="seo_agent_001", agent_url=SEO_AGENT_URL)
 agent_manager.register_agent(agent_id="lead_scoring_agent_001", agent_url=LEAD_SCORING_AGENT_URL)
 
-def run_workflow_in_background(workflow_id):
-    """Function to run the workflow execution in a separate thread."""
-    logger.info(f"Starting background execution for workflow {workflow_id}")
-    workflow_manager.execute_workflow(workflow_id)
-    logger.info(f"Background execution for workflow {workflow_id} finished.")
-
 # --- API Endpoints ---
 
 @app.route("/workflows", methods=["POST"])
 def create_workflow():
     """
-    Creates a new workflow and starts its execution in the background.
+    Creates a new workflow and dispatches it to the task queue.
     """
     data = request.get_json()
     if not data or "name" not in data or "tasks" not in data:
         return jsonify({"error": "Missing 'name' or 'tasks' in request body"}), 400
 
-    workflow_id = workflow_manager.create_workflow(data["name"], data["tasks"])
-
-    thread = Thread(target=run_workflow_in_background, args=(workflow_id,))
-    thread.start()
+    # This now creates the workflow in the DB and dispatches the task
+    workflow_id = workflow_manager.create_and_dispatch_workflow(data["name"], data["tasks"])
 
     return jsonify({
-        "message": "Workflow created and execution started in the background.",
+        "message": "Workflow created and dispatched for execution.",
         "workflow_id": workflow_id,
         "status_url": f"/workflows/{workflow_id}"
     }), 202

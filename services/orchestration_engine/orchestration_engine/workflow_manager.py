@@ -5,6 +5,7 @@ import requests
 import json
 from uuid import uuid4
 from .database import get_db_connection
+from .tasks import execute_workflow_task
 
 class WorkflowManager:
     """Manages the creation, execution, and state of agent workflows using a database."""
@@ -20,9 +21,9 @@ class WorkflowManager:
         self.agent_manager = agent_manager
         self.logger = logger
 
-    def create_workflow(self, name: str, tasks: list) -> str:
+    def create_and_dispatch_workflow(self, name: str, tasks: list) -> str:
         """
-        Creates a new workflow and persists it to the database.
+        Creates a new workflow, persists it, and dispatches it to the task queue.
 
         Args:
             name: The name of the workflow.
@@ -40,12 +41,16 @@ class WorkflowManager:
         conn.commit()
         conn.close()
         self.logger.info(f"Workflow '{name}' ({workflow_id}) created and saved to DB.")
+
+        # Dispatch the task to the Celery queue
+        execute_workflow_task.delay(workflow_id)
+        self.logger.info(f"Dispatched workflow {workflow_id} to Celery.")
+
         return workflow_id
 
     def execute_workflow(self, workflow_id: str):
         """
-        Executes a given workflow by making HTTP requests to agent services.
-        Updates the workflow's state in the database as it progresses.
+        Executes a given workflow. This is now called by the Celery worker.
         """
         workflow = self._get_workflow_from_db(workflow_id)
         if not workflow:

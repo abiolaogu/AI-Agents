@@ -12,6 +12,7 @@ services:
     environment:
       - FLASK_ENV=development
     depends_on:
+      - redis
       - seo-agent
       - lead-scoring-agent
 
@@ -36,3 +37,20 @@ services:
       - .:/app
     environment:
       - FLASK_ENV=development
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  worker:
+    build:
+      context: .
+      dockerfile: services/orchestration_engine/Dockerfile
+    command: ["celery", "-A", "services.orchestration_engine.orchestration_engine.celery_worker.celery", "worker", "--loglevel=info"]
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+      - seo-agent
+      - lead-scoring-agent
