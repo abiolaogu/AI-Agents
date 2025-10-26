@@ -20,3 +20,6 @@ dist/
 # IDE files
 .idea/
 .vscode/
+
+# Database files
+*.db

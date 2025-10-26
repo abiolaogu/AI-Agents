@@ -1,10 +1,13 @@
 # services/orchestration_engine/orchestration_engine/workflow_manager.py
 
 import logging
+import requests
+import json
 from uuid import uuid4
+from .database import get_db_connection
 
 class WorkflowManager:
-    """Manages the creation and execution of agent workflows."""
+    """Manages the creation, execution, and state of agent workflows using a database."""
 
     def __init__(self, agent_manager, logger: logging.Logger):
         """
@@ -15,67 +18,99 @@ class WorkflowManager:
             logger: A logger instance.
         """
         self.agent_manager = agent_manager
-        self.workflows = {}
         self.logger = logger
 
-    def create_workflow(self, name: str, tasks: list):
+    def create_workflow(self, name: str, tasks: list) -> str:
         """
-        Creates a new workflow.
+        Creates a new workflow and persists it to the database.
 
         Args:
             name: The name of the workflow.
-            tasks: A list of task dictionaries. Each task should have 'agent_id' and 'task_details'.
+            tasks: A list of task dictionaries.
 
         Returns:
             The ID of the newly created workflow.
         """
         workflow_id = str(uuid4())
-        self.workflows[workflow_id] = {
-            "name": name,
-            "tasks": tasks,
-            "status": "pending",
-        }
-        self.logger.info(f"Workflow '{name}' ({workflow_id}) created.")
+        conn = get_db_connection()
+        conn.execute(
+            "INSERT INTO workflows (id, name, tasks, status, results) VALUES (?, ?, ?, ?, ?)",
+            (workflow_id, name, json.dumps(tasks), "pending", json.dumps([])),
+        )
+        conn.commit()
+        conn.close()
+        self.logger.info(f"Workflow '{name}' ({workflow_id}) created and saved to DB.")
         return workflow_id
 
     def execute_workflow(self, workflow_id: str):
         """
-        Executes a given workflow.
-
-        Args:
-            workflow_id: The ID of the workflow to execute.
+        Executes a given workflow by making HTTP requests to agent services.
+        Updates the workflow's state in the database as it progresses.
         """
-        workflow = self.workflows.get(workflow_id)
+        workflow = self._get_workflow_from_db(workflow_id)
         if not workflow:
-            self.logger.error(f"Workflow {workflow_id} not found.")
+            self.logger.error(f"Workflow {workflow_id} not found in DB.")
             return
 
         self.logger.info(f"Executing workflow '{workflow['name']}' ({workflow_id})...")
-        workflow["status"] = "running"
+        self._update_workflow_status(workflow_id, "running")
 
+        tasks = json.loads(workflow['tasks'])
         results = []
-        for i, task in enumerate(workflow["tasks"]):
+        for i, task in enumerate(tasks):
             agent_id = task.get("agent_id")
             task_details = task.get("task_details")
 
-            agent = self.agent_manager.get_agent(agent_id)
-            if not agent:
+            agent_url = self.agent_manager.get_agent_url(agent_id)
+            if not agent_url:
                 self.logger.error(f"Task {i+1}: Agent {agent_id} not found. Aborting workflow.")
-                workflow["status"] = "failed"
+                self._update_workflow_status(workflow_id, "failed")
                 return
 
             try:
-                self.agent_manager.set_agent_status(agent_id, "running")
-                result = agent.execute(task_details)
+                response = requests.post(f"{agent_url}/execute", json=task_details, timeout=60)
+                response.raise_for_status()
+
+                result = response.json()
                 results.append(result)
-                self.agent_manager.set_agent_status(agent_id, "idle")
+                self._update_workflow_results(workflow_id, results)
                 self.logger.info(f"Task {i+1} completed by agent {agent_id}.")
-            except Exception as e:
-                self.logger.error(f"Task {i+1} failed: {e}. Aborting workflow.")
-                self.agent_manager.set_agent_status(agent_id, "error")
-                workflow["status"] = "failed"
+            except requests.RequestException as e:
+                self.logger.error(f"Task {i+1} failed: HTTP request to agent {agent_id} failed: {e}. Aborting workflow.")
+                self._update_workflow_status(workflow_id, "failed")
                 return
 
-        workflow["status"] = "completed"
+        self._update_workflow_status(workflow_id, "completed")
         self.logger.info(f"Workflow '{workflow['name']}' ({workflow_id}) completed successfully.")
-        return results
+
+    def get_workflow_status(self, workflow_id: str) -> dict:
+        """
+        Gets the status and results of a workflow from the database.
+        """
+        workflow = self._get_workflow_from_db(workflow_id)
+        if not workflow:
+            return None
+        return {
+            "id": workflow["id"],
+            "name": workflow["name"],
+            "status": workflow["status"],
+            "results": json.loads(workflow["results"]) if workflow["results"] else []
+        }
+
+    def _get_workflow_from_db(self, workflow_id: str):
+        conn = get_db_connection()
+        workflow = conn.execute("SELECT * FROM workflows WHERE id = ?", (workflow_id,)).fetchone()
+        conn.close()
+        return workflow
+
+    def _update_workflow_status(self, workflow_id: str, status: str):
+        conn = get_db_connection()
+        conn.execute("UPDATE workflows SET status = ? WHERE id = ?", (status, workflow_id))
+        conn.commit()
+        conn.close()
+
+    def _update_workflow_results(self, workflow_id: str, results: list):
+        conn = get_db_connection()
+        conn.execute("UPDATE workflows SET results = ? WHERE id = ?", (json.dumps(results), workflow_id))
+        conn.commit()
+        conn.close()

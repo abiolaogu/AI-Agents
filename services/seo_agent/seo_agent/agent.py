@@ -38,23 +38,3 @@ class SeoAgent(BaseAgent):
                 "Increase content length.",
             ]
         }
-
-# Example usage (for testing purposes)
-if __name__ == '__main__':
-    # Configure a simple logger for testing
-    logging.basicConfig(level=logging.INFO)
-    logger = logging.getLogger(__name__)
-
-    # Create an instance of the agent
-    seo_agent = SeoAgent(agent_id="seo_agent_001", logger=logger)
-
-    # Define a sample task
-    sample_task = {"url": "http://example.com"}
-
-    # Execute the task
-    seo_agent.set_status("running")
-    result = seo_agent.execute(sample_task)
-    seo_agent.set_status("idle")
-
-    # Print the result
-    logger.info(f"Task result: {result}")

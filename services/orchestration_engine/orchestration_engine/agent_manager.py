@@ -3,52 +3,38 @@
 import logging
 
 class AgentManager:
-    """Manages the lifecycle and state of agents."""
+    """Manages the registration and location of agent services."""
 
     def __init__(self, logger: logging.Logger):
         """Initializes the AgentManager."""
-        self.agents = {}
+        self.agents = {}  # Stores agent_id -> agent_url mapping
         self.logger = logger
 
-    def register_agent(self, agent_instance):
+    def register_agent(self, agent_id: str, agent_url: str):
         """
-        Registers a new agent instance with the manager.
+        Registers a new agent service.
 
         Args:
-            agent_instance: An instance of a class that inherits from BaseAgent.
+            agent_id: A unique identifier for the agent.
+            agent_url: The base URL of the agent's microservice.
         """
-        agent_id = agent_instance.agent_id
         if agent_id in self.agents:
-            self.logger.warning(f"Agent {agent_id} is already registered. Overwriting.")
-        self.agents[agent_id] = agent_instance
-        self.logger.info(f"Agent {agent_id} registered successfully.")
+            self.logger.warning(f"Agent {agent_id} is already registered. Updating URL.")
+        self.agents[agent_id] = agent_url
+        self.logger.info(f"Agent {agent_id} registered at {agent_url}.")
 
-    def get_agent(self, agent_id: str):
+    def get_agent_url(self, agent_id: str) -> str:
         """
-        Retrieves a registered agent instance.
+        Retrieves the URL for a registered agent.
 
         Args:
             agent_id: The ID of the agent to retrieve.
 
         Returns:
-            The agent instance, or None if not found.
+            The agent's URL, or None if not found.
         """
         return self.agents.get(agent_id)
 
-    def set_agent_status(self, agent_id: str, status: str):
-        """
-        Sets the status of a specific agent.
-
-        Args:
-            agent_id: The ID of the agent.
-            status: The new status (e.g., "running", "idle").
-        """
-        agent = self.get_agent(agent_id)
-        if agent:
-            agent.set_status(status)
-        else:
-            self.logger.error(f"Attempted to set status for unregistered agent: {agent_id}")
-
-    def list_agents(self):
+    def list_agents(self) -> list:
         """Returns a list of all registered agent IDs."""
         return list(self.agents.keys())

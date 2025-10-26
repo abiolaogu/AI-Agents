@@ -4,12 +4,23 @@ FROM python:3.9-slim
 
 WORKDIR /app
 
+# Set the PYTHONPATH to include the root directory
+ENV PYTHONPATH="/app"
+
+# Install dependencies
+COPY services/seo_agent/requirements.txt /app/services/seo_agent/requirements.txt
+RUN pip install --no-cache-dir -r /app/services/seo_agent/requirements.txt
+
 # Install the shared agent_framework package
-COPY packages/agent_framework /app/packages/agent_framework
-RUN pip install /app/packages/agent_framework
+COPY packages/agent_framework /tmp/packages/agent_framework
+RUN pip install --no-cache-dir /tmp/packages/agent_framework
 
-# Copy the service code
-COPY services/seo_agent /app/services/seo_agent
+# Copy all service and package code
+COPY services /app/services
+COPY packages /app/packages
 
-# This is a placeholder for the actual service entrypoint
-CMD ["python", "services/seo_agent/seo_agent/agent.py"]
+# Expose the port the app runs on
+EXPOSE 5001
+
+# Run the application
+CMD ["python", "-m", "services.seo_agent.seo_agent.main"]
