@@ -1,0 +1,60 @@
+# k8s/orchestration-engine.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orchestration-engine
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orchestration-engine
+  template:
+    metadata:
+      labels:
+        app: orchestration-engine
+    spec:
+      containers:
+      - name: orchestration-engine
+        image: your-repo/orchestration-engine:latest # Placeholder
+        ports:
+        - containerPort: 5000
+        env:
+        - name: FLASK_ENV
+          value: "production"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orchestration-engine
+spec:
+  selector:
+    app: orchestration-engine
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
+  type: LoadBalancer # Expose externally for an MVP
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: celery-worker
+spec:
+  replicas: 2 # Scale workers independently
+  selector:
+    matchLabels:
+      app: celery-worker
+  template:
+    metadata:
+      labels:
+        app: celery-worker
+    spec:
+      containers:
+      - name: celery-worker
+        image: your-repo/orchestration-engine:latest # Uses the same image
+        command: ["celery", "-A", "services.orchestration_engine.orchestration_engine.celery_worker.celery", "worker", "--loglevel=info"]
+        env:
+        - name: FLASK_ENV
+          value: "production"
