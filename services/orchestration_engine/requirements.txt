@@ -3,3 +3,4 @@ requests
 celery
 redis
 pytest
+Flask-Cors
