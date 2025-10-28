@@ -1,12 +1,13 @@
 # services/orchestration_engine/orchestration_engine/main.py
 
 import logging
-from flask import Flask, request, jsonify
-from flask_cors import CORS # Import CORS
+from flask import Flask, request, jsonify, g
+from flask_cors import CORS
 
 from .agent_manager import AgentManager
 from .workflow_manager import WorkflowManager
 from . import database
+from .auth import register_user, authenticate_user, token_required
 
 # --- Setup ---
 logging.basicConfig(level=logging.INFO)
@@ -23,7 +24,6 @@ agent_manager = AgentManager(logger=logger)
 workflow_manager = WorkflowManager(agent_manager=agent_manager, logger=logger)
 
 # --- Agent Registration ---
-# In a real system, this would be dynamic (e.g., from a config file or service discovery).
 agent_manager.register_agent("seo_agent_001", {
     "url": "http://seo-agent:5001",
     "name": "SEO Content Optimizer",
@@ -48,27 +48,68 @@ agent_manager.register_agent("email_campaign_agent_001", {
     "description": "Manages and sends out targeted email marketing campaigns.",
     "category": "Marketing"
 })
+agent_manager.register_agent("crm_data_entry_agent_001", {
+    "url": "http://crm-data-entry-agent:5004",
+    "name": "CRM Data Entry Agent",
+    "description": "Enters new contacts into the CRM.",
+    "category": "Sales"
+})
+agent_manager.register_agent("meeting_scheduling_agent_001", {
+    "url": "http://meeting-scheduling-agent:5005",
+    "name": "Meeting Scheduling Agent",
+    "description": "Schedules meetings with clients and team members.",
+    "category": "Sales"
+})
+agent_manager.register_agent("proposal_generation_agent_001", {
+    "url": "http://proposal-generation-agent:5006",
+    "name": "Proposal Generation Agent",
+    "description": "Generates proposals for clients.",
+    "category": "Sales"
+})
 
 # --- API Endpoints ---
 
+@app.route("/auth/register", methods=["POST"])
+def handle_register():
+    """Registers a new user."""
+    data = request.get_json()
+    if not data or "username" not in data or "password" not in data:
+        return jsonify({"error": "Missing 'username' or 'password'"}), 400
+
+    if register_user(data["username"], data["password"]):
+        return jsonify({"message": "User registered successfully"}), 201
+    else:
+        return jsonify({"error": "Username already exists"}), 409
+
+@app.route("/auth/login", methods=["POST"])
+def handle_login():
+    """Logs in a user and returns a JWT."""
+    data = request.get_json()
+    if not data or "username" not in data or "password" not in data:
+        return jsonify({"error": "Missing 'username' or 'password'"}), 400
+
+    token = authenticate_user(data["username"], data["password"])
+    if token:
+        return jsonify({"token": token})
+    else:
+        return jsonify({"error": "Invalid credentials"}), 401
+
 @app.route("/agents/library", methods=["GET"])
 def get_agent_library():
-    """
-    Returns a list of all available agents for the Agent Marketplace.
-    """
+    """Returns a list of all available agents for the Agent Marketplace."""
     agents = agent_manager.list_agents_details()
     return jsonify(agents)
 
 @app.route("/workflows", methods=["POST"])
+@token_required
 def create_workflow():
-    """
-    Creates a new workflow and dispatches it to the task queue.
-    """
+    """Creates a new workflow for the logged-in user."""
     data = request.get_json()
     if not data or "name" not in data or "tasks" not in data:
         return jsonify({"error": "Missing 'name' or 'tasks' in request body"}), 400
 
-    workflow_id = workflow_manager.create_and_dispatch_workflow(data["name"], data["tasks"])
+    user_id = g.current_user['id']
+    workflow_id = workflow_manager.create_and_dispatch_workflow(data["name"], data["tasks"], user_id)
 
     return jsonify({
         "message": "Workflow created and dispatched for execution.",
@@ -76,14 +117,22 @@ def create_workflow():
         "status_url": f"/workflows/{workflow_id}"
     }), 202
 
+@app.route("/workflows", methods=["GET"])
+@token_required
+def get_user_workflows():
+    """Gets all workflows for the logged-in user."""
+    user_id = g.current_user['id']
+    workflows = workflow_manager.get_workflows_for_user(user_id)
+    return jsonify(workflows)
+
 @app.route("/workflows/<workflow_id>", methods=["GET"])
+@token_required
 def get_workflow_status(workflow_id):
-    """
-    Gets the status of a specific workflow.
-    """
-    status_info = workflow_manager.get_workflow_status(workflow_id)
+    """Gets the status of a specific workflow."""
+    user_id = g.current_user['id']
+    status_info = workflow_manager.get_workflow_status(workflow_id, user_id)
     if status_info is None:
-        return jsonify({"error": "Workflow not found"}), 404
+        return jsonify({"error": "Workflow not found or access denied"}), 404
 
     return jsonify(status_info)
 

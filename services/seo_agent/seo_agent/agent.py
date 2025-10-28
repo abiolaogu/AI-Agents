@@ -1,7 +1,7 @@
 # services/seo_agent/seo_agent/agent.py
 
 import logging
-from agent_framework.base_agent import BaseAgent
+from agent_framework.agent import BaseAgent
 
 class SeoAgent(BaseAgent):
     """A sample agent for SEO content optimization."""

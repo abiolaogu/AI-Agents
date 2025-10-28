@@ -18,29 +18,34 @@ def execute_workflow_task(workflow_id: str):
     agent_manager = AgentManager(logger=logger)
 
     # Re-register agents for the worker context
-    # This is necessary because the worker is a separate process.
-    SEO_AGENT_URL = "http://seo-agent:5001"
-    LEAD_SCORING_AGENT_URL = "http://lead-scoring-agent:5002"
-
-    seo_agent_metadata = {
-        "name": "SEO Content Optimization Agent",
-        "url": SEO_AGENT_URL,
-        "description": "Optimizes content for search engines.",
-        "category": "Marketing",
-        "input_schema": {"type": "object", "properties": {"text": {"type": "string"}}},
-        "output_schema": {"type": "object", "properties": {"optimized_text": {"type": "string"}}}
-    }
-    lead_scoring_agent_metadata = {
-        "name": "Lead Scoring Agent",
-        "url": LEAD_SCORING_AGENT_URL,
-        "description": "Scores leads based on provided data.",
-        "category": "Lead Generation",
-        "input_schema": {"type": "object", "properties": {"lead_data": {"type": "object"}}},
-        "output_schema": {"type": "object", "properties": {"score": {"type": "integer"}}}
-    }
-
-    agent_manager.register_agent(agent_id="seo_agent_001", agent_metadata=seo_agent_metadata)
-    agent_manager.register_agent(agent_id="lead_scoring_agent_001", agent_metadata=lead_scoring_agent_metadata)
+    agent_manager.register_agent("seo_agent_001", {
+        "url": "http://seo-agent:5001", "name": "SEO Content Optimizer",
+        "description": "Analyzes and optimizes website content for better search engine rankings.", "category": "Marketing"
+    })
+    agent_manager.register_agent("lead_scoring_agent_001", {
+        "url": "http://lead-scoring-agent:5002", "name": "Lead Scoring Agent",
+        "description": "Scores and prioritizes leads based on various data points.", "category": "Sales"
+    })
+    agent_manager.register_agent("social_media_agent_001", {
+        "url": "http://social-media-agent:5003", "name": "Social Media Poster",
+        "description": "Automates posting content to various social media platforms.", "category": "Marketing"
+    })
+    agent_manager.register_agent("email_campaign_agent_001", {
+        "url": "http://email-campaign-agent:5004", "name": "Email Campaign Manager",
+        "description": "Manages and sends out targeted email marketing campaigns.", "category": "Marketing"
+    })
+    agent_manager.register_agent("crm_data_entry_agent_001", {
+        "url": "http://crm-data-entry-agent:5004", "name": "CRM Data Entry Agent",
+        "description": "Enters new contacts into the CRM.", "category": "Sales"
+    })
+    agent_manager.register_agent("meeting_scheduling_agent_001", {
+        "url": "http://meeting-scheduling-agent:5005", "name": "Meeting Scheduling Agent",
+        "description": "Schedules meetings with clients and team members.", "category": "Sales"
+    })
+    agent_manager.register_agent("proposal_generation_agent_001", {
+        "url": "http://proposal-generation-agent:5006", "name": "Proposal Generation Agent",
+        "description": "Generates proposals for clients.", "category": "Sales"
+    })
 
     workflow_manager = WorkflowManager(agent_manager=agent_manager, logger=logger)
 

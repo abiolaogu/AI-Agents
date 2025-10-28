@@ -4,3 +4,5 @@ celery
 redis
 pytest
 Flask-Cors
+PyJWT
+Werkzeug

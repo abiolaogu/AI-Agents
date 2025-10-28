@@ -1,0 +1,2 @@
+Flask>=2.3.0
+hubspot-api-client
