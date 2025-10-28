@@ -6,6 +6,7 @@ from flask_cors import CORS
 
 from .agent_manager import AgentManager
 from .workflow_manager import WorkflowManager
+from .analytics_manager import AnalyticsManager
 from . import database
 from .auth import register_user, authenticate_user, token_required
 
@@ -21,7 +22,8 @@ CORS(app) # Enable CORS for all routes
 
 # --- Initialize Managers ---
 agent_manager = AgentManager(logger=logger)
-workflow_manager = WorkflowManager(agent_manager=agent_manager, logger=logger)
+analytics_manager = AnalyticsManager(logger=logger)
+workflow_manager = WorkflowManager(agent_manager=agent_manager, analytics_manager=analytics_manager, logger=logger)
 
 # --- Agent Registration ---
 agent_manager.register_agent("seo_agent_001", {
@@ -135,6 +137,14 @@ def get_workflow_status(workflow_id):
         return jsonify({"error": "Workflow not found or access denied"}), 404
 
     return jsonify(status_info)
+
+@app.route("/analytics/events", methods=["GET"])
+@token_required
+def get_analytics_events():
+    """Gets all analytics events for the logged-in user."""
+    user_id = g.current_user['id']
+    events = analytics_manager.get_events_for_user(user_id)
+    return jsonify(events)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

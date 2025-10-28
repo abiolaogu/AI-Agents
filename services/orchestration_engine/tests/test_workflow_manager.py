@@ -20,6 +20,11 @@ def mock_agent_manager():
     return manager
 
 @pytest.fixture
+def mock_analytics_manager():
+    """Fixture for a mock AnalyticsManager."""
+    return MagicMock()
+
+@pytest.fixture
 def test_db(tmpdir):
     """Fixture to set up an in-memory SQLite database for testing."""
     db_file = tmpdir.join("test_workflows.db")
@@ -43,7 +48,7 @@ def test_db(tmpdir):
     conn.close()
     return db_file
 
-def test_create_workflow_persists_to_db(mock_agent_manager, mock_logger, test_db):
+def test_create_workflow_persists_to_db(mock_agent_manager, mock_analytics_manager, mock_logger, test_db):
     """
     Tests that creating a workflow correctly persists it to the database.
     """
@@ -51,7 +56,11 @@ def test_create_workflow_persists_to_db(mock_agent_manager, mock_logger, test_db
     with patch('services.orchestration_engine.orchestration_engine.database.DB_FILE', str(test_db)):
         # We also need to patch the tasks import to avoid Celery setup issues in a unit test
         with patch('services.orchestration_engine.orchestration_engine.workflow_manager.execute_workflow_task'):
-            manager = WorkflowManager(agent_manager=mock_agent_manager, logger=mock_logger)
+            manager = WorkflowManager(
+                agent_manager=mock_agent_manager,
+                analytics_manager=mock_analytics_manager,
+                logger=mock_logger
+            )
 
             workflow_name = "My Test Workflow"
             tasks = [{"agent_id": "test_agent", "task_details": {"action": "do_something"}}]
@@ -72,3 +81,8 @@ def test_create_workflow_persists_to_db(mock_agent_manager, mock_logger, test_db
             assert json.loads(workflow_from_db[2]) == tasks
             assert workflow_from_db[3] == "pending"
             assert workflow_from_db[5] == user_id
+
+            # Verify that an analytics event was logged
+            mock_analytics_manager.log_event.assert_called_once_with(
+                "workflow_created", workflow_id=workflow_id, user_id=user_id
+            )

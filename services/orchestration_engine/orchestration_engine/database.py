@@ -41,6 +41,21 @@ def init_db():
             );
         """)
 
+        # Create analytics events table
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS analytics_events (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                event_type TEXT NOT NULL,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                workflow_id TEXT,
+                agent_id TEXT,
+                duration REAL,
+                status TEXT,
+                user_id INTEGER,
+                FOREIGN KEY (user_id) REFERENCES users (id)
+            );
+        """)
+
         conn.commit()
         conn.close()
         logger.info("Database initialized successfully.")

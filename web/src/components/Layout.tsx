@@ -1,20 +1,29 @@
 // web/src/components/Layout.tsx
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Layout = ({ children }) => {
+  const { currentUser, logout } = useAuth();
+
   return (
-    <div style={{ display: 'flex', fontFamily: 'sans-serif' }}>
-      <nav style={{ width: '220px', borderRight: '1px solid #ccc', padding: '20px', height: '100vh' }}>
-        <h2>Platform</h2>
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-          <li style={{ marginBottom: '10px' }}>Dashboard</li>
-          <li style={{ marginBottom: '10px', fontWeight: 'bold' }}>Agent Marketplace</li>
-          <li style={{ marginBottom: '10px' }}>Workflows</li>
-        </ul>
+    <div>
+      <nav>
+        <Link to="/">Agent Marketplace</Link>
+        {currentUser ? (
+          <>
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/analytics">Analytics</Link>
+            <button onClick={logout}>Logout</button>
+          </>
+        ) : (
+          <>
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
+          </>
+        )}
       </nav>
-      <main style={{ flex: 1, padding: '20px' }}>
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   );
 };
