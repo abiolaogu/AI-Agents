@@ -24,12 +24,22 @@ def test_db(tmpdir):
     """Fixture to set up an in-memory SQLite database for testing."""
     db_file = tmpdir.join("test_workflows.db")
     conn = sqlite3.connect(db_file)
-    conn.execute("""
-        CREATE TABLE workflows (
-            id TEXT PRIMARY KEY, name TEXT NOT NULL, tasks TEXT NOT NULL,
-            status TEXT NOT NULL, results TEXT
+    cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT UNIQUE NOT NULL, password_hash TEXT NOT NULL
         );
     """)
+    cursor.execute("""
+        CREATE TABLE workflows (
+            id TEXT PRIMARY KEY, name TEXT NOT NULL, tasks TEXT NOT NULL,
+            status TEXT NOT NULL, results TEXT, user_id INTEGER,
+            FOREIGN KEY (user_id) REFERENCES users (id)
+        );
+    """)
+    # Add a test user
+    cursor.execute("INSERT INTO users (id, username, password_hash) VALUES (?, ?, ?)", (1, "testuser", "test_hash"))
+    conn.commit()
     conn.close()
     return db_file
 
@@ -45,9 +55,9 @@ def test_create_workflow_persists_to_db(mock_agent_manager, mock_logger, test_db
 
             workflow_name = "My Test Workflow"
             tasks = [{"agent_id": "test_agent", "task_details": {"action": "do_something"}}]
+            user_id = 1
 
-            # The method to test has been renamed, let's call the right one
-            workflow_id = manager.create_and_dispatch_workflow(workflow_name, tasks)
+            workflow_id = manager.create_and_dispatch_workflow(workflow_name, tasks, user_id)
 
             # Verify that the workflow was saved correctly
             conn = sqlite3.connect(test_db)
@@ -60,4 +70,5 @@ def test_create_workflow_persists_to_db(mock_agent_manager, mock_logger, test_db
             assert workflow_from_db[0] == workflow_id
             assert workflow_from_db[1] == workflow_name
             assert json.loads(workflow_from_db[2]) == tasks
-            assert workflow_from_db[3] == "pending" # It should be pending before the worker picks it up
+            assert workflow_from_db[3] == "pending"
+            assert workflow_from_db[5] == user_id

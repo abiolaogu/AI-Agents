@@ -15,6 +15,45 @@ services:
       - redis
       - seo-agent
       - lead-scoring-agent
+      - crm-data-entry-agent
+      - meeting-scheduling-agent
+      - proposal-generation-agent
+
+  crm-data-entry-agent:
+    build:
+      context: .
+      dockerfile: services/crm_data_entry_agent/Dockerfile
+    ports:
+      - "5004:5004"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - AGENT_PORT=5004
+
+  meeting-scheduling-agent:
+    build:
+      context: .
+      dockerfile: services/meeting_scheduling_agent/Dockerfile
+    ports:
+      - "5005:5005"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - AGENT_PORT=5005
+
+  proposal-generation-agent:
+    build:
+      context: .
+      dockerfile: services/proposal_generation_agent/Dockerfile
+    ports:
+      - "5006:5006"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+      - AGENT_PORT=5006
 
   seo-agent:
     build:

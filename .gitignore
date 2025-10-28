@@ -23,3 +23,6 @@ dist/
 
 # Database files
 *.db
+
+# Credentials
+.credentials

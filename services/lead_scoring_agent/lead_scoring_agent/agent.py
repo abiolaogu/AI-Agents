@@ -1,7 +1,7 @@
 # services/lead_scoring_agent/lead_scoring_agent/agent.py
 
 import logging
-from agent_framework.base_agent import BaseAgent
+from agent_framework.agent import BaseAgent
 
 class LeadScoringAgent(BaseAgent):
     """An agent that scores leads based on provided data."""
@@ -39,14 +39,14 @@ class LeadScoringAgent(BaseAgent):
         score += (engagement_score / 10) # Add up to 10 points for engagement
 
         priority = "low"
-        if score > 50:
+        if int(score) > 50:
             priority = "high"
-        elif score > 30:
+        elif int(score) > 30:
             priority = "medium"
 
         return {
             "status": "success",
             "message": "Lead scoring complete.",
-            "lead_score": score,
+            "lead_score": int(score),
             "priority": priority
         }
