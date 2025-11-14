@@ -1,24 +1,43 @@
 version: '3.8'
 
 services:
+  # ==========================================================================
+  # Core Orchestration
+  # ==========================================================================
   orchestration-engine:
     build:
       context: .
-      dockerfile: services/orchestration_engine/Dockerfile
+      dockerfile: Dockerfile.runpod
     ports:
-      - "5000:5000"
+      - "8000:8000"
     volumes:
-      - .:/app
+      - ./agents:/app/agents
+      - ./policies:/app/policies
+      - ./packages:/app/packages
+      - ./services:/app/services
     environment:
       - FLASK_ENV=development
+      - PYTHONPATH=/app
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/ai_agents
+      - REDIS_URL=redis://redis:6379
+      - OPA_URL=http://opa:8181
+      - LOG_LEVEL=INFO
     depends_on:
       - redis
-      - seo-agent
-      - lead-scoring-agent
-      - crm-data-entry-agent
-      - meeting-scheduling-agent
-      - proposal-generation-agent
+      - postgres
+      - opa
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
 
+  # ==========================================================================
+  # Legacy Agent Services (for backward compatibility)
+  # ==========================================================================
   crm-data-entry-agent:
     build:
       context: .
@@ -77,19 +96,172 @@ services:
     environment:
       - FLASK_ENV=development
 
+  # ==========================================================================
+  # Shared Services
+  # ==========================================================================
   redis:
-    image: "redis:alpine"
+    image: "redis:7-alpine"
     ports:
       - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
 
+  postgres:
+    image: "postgres:15-alpine"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=ai_agents
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==========================================================================
+  # Governance & Policy
+  # ==========================================================================
+  opa:
+    image: "openpolicyagent/opa:latest"
+    ports:
+      - "8181:8181"
+    command:
+      - "run"
+      - "--server"
+      - "--addr=:8181"
+      - "--log-level=info"
+      - "/policies"
+    volumes:
+      - ./policies:/policies
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8181/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  # ==========================================================================
+  # Monitoring & Observability
+  # ==========================================================================
+  prometheus:
+    image: "prom/prometheus:latest"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:9090/-/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  grafana:
+    image: "grafana/grafana:latest"
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./monitoring/grafana-dashboards:/etc/grafana/provisioning/dashboards
+    depends_on:
+      - prometheus
+
+  # ==========================================================================
+  # Background Workers
+  # ==========================================================================
   worker:
     build:
       context: .
-      dockerfile: services/orchestration_engine/Dockerfile
-    command: ["celery", "-A", "services.orchestration_engine.orchestration_engine.celery_worker.celery", "worker", "--loglevel=info"]
+      dockerfile: Dockerfile.runpod
+    command: ["celery", "-A", "orchestration_engine.celery_worker.celery", "worker", "--loglevel=info", "--concurrency=4"]
     volumes:
-      - .:/app
+      - ./agents:/app/agents
+      - ./policies:/app/policies
+      - ./packages:/app/packages
+      - ./services:/app/services
+    environment:
+      - PYTHONPATH=/app
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/ai_agents
+      - REDIS_URL=redis://redis:6379
+      - OPA_URL=http://opa:8181
     depends_on:
       - redis
-      - seo-agent
-      - lead-scoring-agent
+      - postgres
+      - opa
+
+  # ==========================================================================
+  # Frontend
+  # ==========================================================================
+  frontend:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - orchestration-engine
+
+  # ==========================================================================
+  # Development Tools
+  # ==========================================================================
+  # Adminer for database management
+  adminer:
+    image: adminer:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - ADMINER_DEFAULT_SERVER=postgres
+    depends_on:
+      - postgres
+
+  # Redis Commander for Redis management
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    ports:
+      - "8081:8081"
+    environment:
+      - REDIS_HOSTS=local:redis:6379
+    depends_on:
+      - redis
+
+# ==========================================================================
+# Volumes
+# ==========================================================================
+volumes:
+  redis-data:
+    driver: local
+  postgres-data:
+    driver: local
+  prometheus-data:
+    driver: local
+  grafana-data:
+    driver: local
+
+# ==========================================================================
+# Networks
+# ==========================================================================
+networks:
+  default:
+    name: ai-agents-network
+    driver: bridge

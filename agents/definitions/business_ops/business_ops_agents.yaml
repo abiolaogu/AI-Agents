@@ -1,0 +1,2831 @@
+agents:
+- agent_id: executive_summary_agent_001
+  name: Executive Summary Agent
+  description: Condenses long reports into 1-page briefs
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_summarization
+  - report_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Executive Summary Agent.
+
+
+    Your primary function is to: Condenses long reports into 1-page briefs
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Executive Summary Agent - Condenses long reports into 1-page briefs
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: meeting_notes_agent_002
+  name: Meeting Notes Agent
+  description: Records, cleans up, and summarizes meetings
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_summarization
+  - calendar_management
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Meeting Notes Agent.
+
+
+    Your primary function is to: Records, cleans up, and summarizes meetings
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Meeting Notes Agent - Records, cleans up, and summarizes meetings
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: action_tracker_agent_003
+  name: Action Tracker Agent
+  description: Extracts tasks from chats/emails and makes a to-do list
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - email_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Action Tracker Agent.
+
+
+    Your primary function is to: Extracts tasks from chats/emails and makes a to-do
+    list
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Action Tracker Agent - Extracts tasks from chats/emails and makes
+    a to-do list
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: sop_builder_agent_004
+  name: SOP Builder Agent
+  description: Turns repeated workflows into standard operating procedures
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the SOP Builder Agent.
+
+
+    Your primary function is to: Turns repeated workflows into standard operating
+    procedures
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: SOP Builder Agent - Turns repeated workflows into standard operating
+    procedures
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: company_wiki_curator_agent_005
+  name: Company Wiki Curator Agent
+  description: Organizes documents into a searchable knowledge base
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Company Wiki Curator Agent.
+
+
+    Your primary function is to: Organizes documents into a searchable knowledge base
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Company Wiki Curator Agent - Organizes documents into a searchable
+    knowledge base
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: policy_drafting_agent_006
+  name: Policy Drafting Agent
+  description: Drafts internal policies from templates and regulations
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Policy Drafting Agent.
+
+
+    Your primary function is to: Drafts internal policies from templates and regulations
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Policy Drafting Agent - Drafts internal policies from templates
+    and regulations
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: vendor_comparison_agent_007
+  name: Vendor Comparison Agent
+  description: Compares suppliers across price, quality, and terms
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Vendor Comparison Agent.
+
+
+    Your primary function is to: Compares suppliers across price, quality, and terms
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Vendor Comparison Agent - Compares suppliers across price, quality,
+    and terms
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: rfp_response_agent_008
+  name: RFP Response Agent
+  description: Helps respond to tenders and RFPs using past proposals
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the RFP Response Agent.
+
+
+    Your primary function is to: Helps respond to tenders and RFPs using past proposals
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: RFP Response Agent - Helps respond to tenders and RFPs using past
+    proposals
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: business_plan_agent_009
+  name: Business Plan Agent
+  description: Generates and updates a living business plan
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Business Plan Agent.
+
+
+    Your primary function is to: Generates and updates a living business plan
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Business Plan Agent - Generates and updates a living business plan
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: okr_planning_agent_010
+  name: OKR Planning Agent
+  description: Helps define objectives and key results per quarter
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the OKR Planning Agent.
+
+
+    Your primary function is to: Helps define objectives and key results per quarter
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: OKR Planning Agent - Helps define objectives and key results per
+    quarter
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: kpi_dashboard_narrator_agent_011
+  name: KPI Dashboard Narrator Agent
+  description: Explains metrics and anomalies in plain English
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - data_analysis
+  - report_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the KPI Dashboard Narrator Agent.
+
+
+    Your primary function is to: Explains metrics and anomalies in plain English
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: KPI Dashboard Narrator Agent - Explains metrics and anomalies in
+    plain English
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: risk_register_agent_012
+  name: Risk Register Agent
+  description: Tracks business risks and mitigation actions
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Risk Register Agent.
+
+
+    Your primary function is to: Tracks business risks and mitigation actions
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Risk Register Agent - Tracks business risks and mitigation actions
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: process_optimization_agent_013
+  name: Process Optimization Agent
+  description: Suggests ways to shorten or automate workflows
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - recommendation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Process Optimization Agent.
+
+
+    Your primary function is to: Suggests ways to shorten or automate workflows
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Process Optimization Agent - Suggests ways to shorten or automate
+    workflows
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: email_triage_agent_014
+  name: Email Triage Agent
+  description: Classifies and prioritizes incoming emails
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - email_processing
+  - classification
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Email Triage Agent.
+
+
+    Your primary function is to: Classifies and prioritizes incoming emails
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Email Triage Agent - Classifies and prioritizes incoming emails
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: doc_formatting_agent_015
+  name: Doc Formatting Agent
+  description: Makes documents consistent with brand style
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Doc Formatting Agent.
+
+
+    Your primary function is to: Makes documents consistent with brand style
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Doc Formatting Agent - Makes documents consistent with brand style
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: internal_faq_agent_016
+  name: Internal FAQ Agent
+  description: Answers employee questions from internal docs
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Internal FAQ Agent.
+
+
+    Your primary function is to: Answers employee questions from internal docs
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Internal FAQ Agent - Answers employee questions from internal docs
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: strategic_ideas_agent_017
+  name: Strategic Ideas Agent
+  description: Generates new product/service ideas monthly
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Strategic Ideas Agent.
+
+
+    Your primary function is to: Generates new product/service ideas monthly
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Strategic Ideas Agent - Generates new product/service ideas monthly
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: competitor_monitoring_agent_018
+  name: Competitor Monitoring Agent
+  description: Tracks competitor websites and updates
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Competitor Monitoring Agent.
+
+
+    Your primary function is to: Tracks competitor websites and updates
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Competitor Monitoring Agent - Tracks competitor websites and updates
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: business_naming_agent_019
+  name: Business Naming Agent
+  description: Suggests company and brand names with domain checks
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - recommendation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Business Naming Agent.
+
+
+    Your primary function is to: Suggests company and brand names with domain checks
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Business Naming Agent - Suggests company and brand names with domain
+    checks
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: internal_announcement_agent_020
+  name: Internal Announcement Agent
+  description: Drafts staff memos and announcements
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Internal Announcement Agent.
+
+
+    Your primary function is to: Drafts staff memos and announcements
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Internal Announcement Agent - Drafts staff memos and announcements
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: document_versioning_agent_021
+  name: Document Versioning Agent
+  description: Tracks key differences between file versions
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Document Versioning Agent.
+
+
+    Your primary function is to: Tracks key differences between file versions
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Document Versioning Agent - Tracks key differences between file
+    versions
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: stakeholder_briefing_agent_022
+  name: Stakeholder Briefing Agent
+  description: Makes tailored briefs for investors, partners, etc
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_summarization
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Stakeholder Briefing Agent.
+
+
+    Your primary function is to: Makes tailored briefs for investors, partners, etc
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Stakeholder Briefing Agent - Makes tailored briefs for investors,
+    partners, etc
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: board_pack_agent_023
+  name: Board Pack Agent
+  description: Assembles slides and summaries for board meetings
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - calendar_management
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Board Pack Agent.
+
+
+    Your primary function is to: Assembles slides and summaries for board meetings
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Board Pack Agent - Assembles slides and summaries for board meetings
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: expansion_feasibility_agent_024
+  name: Expansion Feasibility Agent
+  description: Evaluates new city/country expansion
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Expansion Feasibility Agent.
+
+
+    Your primary function is to: Evaluates new city/country expansion
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Expansion Feasibility Agent - Evaluates new city/country expansion
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: translation_localization_agent_025
+  name: Translation & Localization Agent
+  description: Adapts content to multiple markets
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - translation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Translation & Localization Agent.
+
+
+    Your primary function is to: Adapts content to multiple markets
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Translation & Localization Agent - Adapts content to multiple markets
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: cross_team_alignment_agent_026
+  name: Cross-Team Alignment Agent
+  description: Detects overlapping projects across departments
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Cross-Team Alignment Agent.
+
+
+    Your primary function is to: Detects overlapping projects across departments
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Cross-Team Alignment Agent - Detects overlapping projects across
+    departments
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: internal_survey_results_agent_027
+  name: Internal Survey Results Agent
+  description: Analyzes staff survey responses
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - data_analysis
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Internal Survey Results Agent.
+
+
+    Your primary function is to: Analyzes staff survey responses
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Internal Survey Results Agent - Analyzes staff survey responses
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: office_operations_agent_028
+  name: Office Operations Agent
+  description: Coordinates office supplies and maintenance reminders
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Office Operations Agent.
+
+
+    Your primary function is to: Coordinates office supplies and maintenance reminders
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Office Operations Agent - Coordinates office supplies and maintenance
+    reminders
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: document_redline_agent_029
+  name: Document Redline Agent
+  description: Highlights risks or issues in contracts and memos
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Document Redline Agent.
+
+
+    Your primary function is to: Highlights risks or issues in contracts and memos
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Document Redline Agent - Highlights risks or issues in contracts
+    and memos
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: procurement_agent_030
+  name: Procurement Agent
+  description: Drafts purchase orders and compares quotes
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Procurement Agent.
+
+
+    Your primary function is to: Drafts purchase orders and compares quotes
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Procurement Agent - Drafts purchase orders and compares quotes
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: vendor_performance_agent_031
+  name: Vendor Performance Agent
+  description: Rates vendors based on delivery, cost, and issues
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Vendor Performance Agent.
+
+
+    Your primary function is to: Rates vendors based on delivery, cost, and issues
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Vendor Performance Agent - Rates vendors based on delivery, cost,
+    and issues
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: compliance_checklist_agent_032
+  name: Compliance Checklist Agent
+  description: Builds checklists per industry standards
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Compliance Checklist Agent.
+
+
+    Your primary function is to: Builds checklists per industry standards
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Compliance Checklist Agent - Builds checklists per industry standards
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: business_health_agent_033
+  name: Business Health Agent
+  description: Monthly health check report on core metrics
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - data_analysis
+  - report_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Business Health Agent.
+
+
+    Your primary function is to: Monthly health check report on core metrics
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Business Health Agent - Monthly health check report on core metrics
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: exit_strategy_agent_034
+  name: Exit Strategy Agent
+  description: Models acquisition, IPO, or succession options
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Exit Strategy Agent.
+
+
+    Your primary function is to: Models acquisition, IPO, or succession options
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Exit Strategy Agent - Models acquisition, IPO, or succession options
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: digital_filing_agent_035
+  name: Digital Filing Agent
+  description: Classifies and tags new documents automatically
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  - classification
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Digital Filing Agent.
+
+
+    Your primary function is to: Classifies and tags new documents automatically
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Digital Filing Agent - Classifies and tags new documents automatically
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: executive_inbox_summarizer_agent_036
+  name: Executive Inbox Summarizer Agent
+  description: Summarizes CEO inbox daily
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_summarization
+  - email_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Executive Inbox Summarizer Agent.
+
+
+    Your primary function is to: Summarizes CEO inbox daily
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Executive Inbox Summarizer Agent - Summarizes CEO inbox daily
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: knowledge_gap_agent_037
+  name: Knowledge Gap Agent
+  description: Finds unanswered questions in documentation
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Knowledge Gap Agent.
+
+
+    Your primary function is to: Finds unanswered questions in documentation
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Knowledge Gap Agent - Finds unanswered questions in documentation
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: macro_trends_agent_038
+  name: Macro Trends Agent
+  description: Explains market trends affecting the business
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Macro Trends Agent.
+
+
+    Your primary function is to: Explains market trends affecting the business
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Macro Trends Agent - Explains market trends affecting the business
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: change_management_agent_039
+  name: Change Management Agent
+  description: Plans communication for internal changes
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Change Management Agent.
+
+
+    Your primary function is to: Plans communication for internal changes
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Change Management Agent - Plans communication for internal changes
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: stakeholder_map_agent_040
+  name: Stakeholder Map Agent
+  description: Maps influencers and decision-makers in key accounts
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Stakeholder Map Agent.
+
+
+    Your primary function is to: Maps influencers and decision-makers in key accounts
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Stakeholder Map Agent - Maps influencers and decision-makers in
+    key accounts
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: template_generator_agent_041
+  name: Template Generator Agent
+  description: Creates templates for docs, emails, and slides
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - email_processing
+  - document_processing
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Template Generator Agent.
+
+
+    Your primary function is to: Creates templates for docs, emails, and slides
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Template Generator Agent - Creates templates for docs, emails, and
+    slides
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: initiative_tracker_agent_042
+  name: Initiative Tracker Agent
+  description: Tracks strategic initiatives and milestones
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Initiative Tracker Agent.
+
+
+    Your primary function is to: Tracks strategic initiatives and milestones
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Initiative Tracker Agent - Tracks strategic initiatives and milestones
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: governance_agent_043
+  name: Governance Agent
+  description: Suggests governance structures and roles
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - recommendation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Governance Agent.
+
+
+    Your primary function is to: Suggests governance structures and roles
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Governance Agent - Suggests governance structures and roles
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: renewal_reminder_agent_044
+  name: Renewal Reminder Agent
+  description: Tracks licenses, leases, and contracts renewals
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Renewal Reminder Agent.
+
+
+    Your primary function is to: Tracks licenses, leases, and contracts renewals
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Renewal Reminder Agent - Tracks licenses, leases, and contracts
+    renewals
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: internal_training_roadmap_agent_045
+  name: Internal Training Roadmap Agent
+  description: Suggests training paths for teams
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - recommendation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Internal Training Roadmap Agent.
+
+
+    Your primary function is to: Suggests training paths for teams
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Internal Training Roadmap Agent - Suggests training paths for teams
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: delegation_agent_046
+  name: Delegation Agent
+  description: Suggests which tasks to automate or delegate
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - recommendation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Delegation Agent.
+
+
+    Your primary function is to: Suggests which tasks to automate or delegate
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Delegation Agent - Suggests which tasks to automate or delegate
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: business_idea_validator_agent_047
+  name: Business Idea Validator Agent
+  description: Quickly stress-tests new ideas
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Business Idea Validator Agent.
+
+
+    Your primary function is to: Quickly stress-tests new ideas
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Business Idea Validator Agent - Quickly stress-tests new ideas
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: scenario_planner_agent_048
+  name: Scenario Planner Agent
+  description: Models best/worst/base scenarios
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Scenario Planner Agent.
+
+
+    Your primary function is to: Models best/worst/base scenarios
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Scenario Planner Agent - Models best/worst/base scenarios
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: sustainability_agent_049
+  name: Sustainability Agent
+  description: Tracks ESG actions and reporting
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - report_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sustainability Agent.
+
+
+    Your primary function is to: Tracks ESG actions and reporting
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Sustainability Agent - Tracks ESG actions and reporting
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations
+- agent_id: business_glossary_agent_050
+  name: Business Glossary Agent
+  description: Maintains shared definitions for key terms
+  category: business_ops
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Business Glossary Agent.
+
+
+    Your primary function is to: Maintains shared definitions for key terms
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in General Business Operations.
+
+    Your role is: Business Glossary Agent - Maintains shared definitions for key terms
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for General Business Operations
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - business_ops
+  - general_business_operations

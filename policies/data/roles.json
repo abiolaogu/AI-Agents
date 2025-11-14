@@ -1,0 +1,156 @@
+{
+  "role_definitions": {
+    "admin": {
+      "description": "Full system access",
+      "permissions": {
+        "allowed_categories": ["*"],
+        "allowed_agents": ["*"],
+        "pii_access": true,
+        "financial_data_access": true,
+        "hr_data_access": true,
+        "can_manage_users": true,
+        "can_modify_policies": true
+      },
+      "rate_limit": 10000,
+      "monthly_quota": 1000000
+    },
+    "agent_operator": {
+      "description": "Can operate agents within assigned categories",
+      "permissions": {
+        "allowed_categories": [],
+        "allowed_agents": [],
+        "pii_access": false,
+        "financial_data_access": false,
+        "hr_data_access": false,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 1000,
+      "monthly_quota": 50000
+    },
+    "developer": {
+      "description": "Development and testing access",
+      "permissions": {
+        "allowed_categories": ["*"],
+        "allowed_agents": ["*"],
+        "pii_access": false,
+        "financial_data_access": false,
+        "hr_data_access": false,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 500,
+      "monthly_quota": 10000,
+      "environment_restriction": "development"
+    },
+    "user": {
+      "description": "Standard user access",
+      "permissions": {
+        "allowed_categories": [
+          "business_ops",
+          "personal_productivity",
+          "personal_growth"
+        ],
+        "allowed_agents": [],
+        "pii_access": false,
+        "financial_data_access": false,
+        "hr_data_access": false,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 100,
+      "monthly_quota": 1000
+    },
+    "finance_team": {
+      "description": "Finance department access",
+      "permissions": {
+        "allowed_categories": [
+          "finance_legal",
+          "business_ops"
+        ],
+        "allowed_agents": [],
+        "pii_access": false,
+        "financial_data_access": true,
+        "hr_data_access": false,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 500,
+      "monthly_quota": 25000
+    },
+    "hr_team": {
+      "description": "HR department access",
+      "permissions": {
+        "allowed_categories": [
+          "hr_people",
+          "business_ops"
+        ],
+        "allowed_agents": [],
+        "pii_access": true,
+        "financial_data_access": false,
+        "hr_data_access": true,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 500,
+      "monthly_quota": 25000
+    },
+    "sales_team": {
+      "description": "Sales and marketing access",
+      "permissions": {
+        "allowed_categories": [
+          "sales_marketing",
+          "customer_support",
+          "business_ops"
+        ],
+        "allowed_agents": [],
+        "pii_access": true,
+        "financial_data_access": false,
+        "hr_data_access": false,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 1000,
+      "monthly_quota": 50000
+    },
+    "support_team": {
+      "description": "Customer support access",
+      "permissions": {
+        "allowed_categories": [
+          "customer_support",
+          "business_ops"
+        ],
+        "allowed_agents": [],
+        "pii_access": true,
+        "financial_data_access": false,
+        "hr_data_access": false,
+        "can_manage_users": false,
+        "can_modify_policies": false
+      },
+      "rate_limit": 2000,
+      "monthly_quota": 100000
+    }
+  },
+  "high_risk_agents": [
+    "exit_strategy_agent",
+    "governance_agent",
+    "compensation_benchmark_agent",
+    "vendor_performance_agent"
+  ],
+  "agent_categories": [
+    "business_ops",
+    "sales_marketing",
+    "customer_support",
+    "finance_legal",
+    "hr_people",
+    "product_tech",
+    "retail_ecommerce",
+    "healthcare_wellness",
+    "education_training",
+    "real_estate",
+    "logistics_manufacturing",
+    "creators_media",
+    "personal_productivity",
+    "personal_growth"
+  ]
+}
