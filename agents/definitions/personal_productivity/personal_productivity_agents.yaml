@@ -1,0 +1,3001 @@
+agents:
+- agent_id: personal_productivity_agent_1_601
+  name: 'Personal Productivity & Life Admin Agent #1'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    1)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #1.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 1)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #1 - Specialized agent
+    for personal productivity & life admin tasks (agent 1)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_2_602
+  name: 'Personal Productivity & Life Admin Agent #2'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    2)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #2.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 2)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #2 - Specialized agent
+    for personal productivity & life admin tasks (agent 2)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_3_603
+  name: 'Personal Productivity & Life Admin Agent #3'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    3)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #3.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 3)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #3 - Specialized agent
+    for personal productivity & life admin tasks (agent 3)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_4_604
+  name: 'Personal Productivity & Life Admin Agent #4'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    4)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #4.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 4)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #4 - Specialized agent
+    for personal productivity & life admin tasks (agent 4)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_5_605
+  name: 'Personal Productivity & Life Admin Agent #5'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    5)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #5.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 5)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #5 - Specialized agent
+    for personal productivity & life admin tasks (agent 5)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_6_606
+  name: 'Personal Productivity & Life Admin Agent #6'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    6)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #6.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 6)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #6 - Specialized agent
+    for personal productivity & life admin tasks (agent 6)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_7_607
+  name: 'Personal Productivity & Life Admin Agent #7'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    7)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #7.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 7)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #7 - Specialized agent
+    for personal productivity & life admin tasks (agent 7)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_8_608
+  name: 'Personal Productivity & Life Admin Agent #8'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    8)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #8.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 8)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #8 - Specialized agent
+    for personal productivity & life admin tasks (agent 8)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_9_609
+  name: 'Personal Productivity & Life Admin Agent #9'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    9)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #9.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 9)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #9 - Specialized agent
+    for personal productivity & life admin tasks (agent 9)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_10_610
+  name: 'Personal Productivity & Life Admin Agent #10'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    10)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #10.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 10)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #10 - Specialized agent
+    for personal productivity & life admin tasks (agent 10)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_11_611
+  name: 'Personal Productivity & Life Admin Agent #11'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    11)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #11.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 11)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #11 - Specialized agent
+    for personal productivity & life admin tasks (agent 11)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_12_612
+  name: 'Personal Productivity & Life Admin Agent #12'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    12)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #12.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 12)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #12 - Specialized agent
+    for personal productivity & life admin tasks (agent 12)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_13_613
+  name: 'Personal Productivity & Life Admin Agent #13'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    13)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #13.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 13)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #13 - Specialized agent
+    for personal productivity & life admin tasks (agent 13)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_14_614
+  name: 'Personal Productivity & Life Admin Agent #14'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    14)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #14.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 14)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #14 - Specialized agent
+    for personal productivity & life admin tasks (agent 14)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_15_615
+  name: 'Personal Productivity & Life Admin Agent #15'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    15)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #15.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 15)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #15 - Specialized agent
+    for personal productivity & life admin tasks (agent 15)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_16_616
+  name: 'Personal Productivity & Life Admin Agent #16'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    16)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #16.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 16)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #16 - Specialized agent
+    for personal productivity & life admin tasks (agent 16)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_17_617
+  name: 'Personal Productivity & Life Admin Agent #17'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    17)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #17.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 17)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #17 - Specialized agent
+    for personal productivity & life admin tasks (agent 17)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_18_618
+  name: 'Personal Productivity & Life Admin Agent #18'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    18)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #18.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 18)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #18 - Specialized agent
+    for personal productivity & life admin tasks (agent 18)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_19_619
+  name: 'Personal Productivity & Life Admin Agent #19'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    19)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #19.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 19)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #19 - Specialized agent
+    for personal productivity & life admin tasks (agent 19)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_20_620
+  name: 'Personal Productivity & Life Admin Agent #20'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    20)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #20.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 20)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #20 - Specialized agent
+    for personal productivity & life admin tasks (agent 20)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_21_621
+  name: 'Personal Productivity & Life Admin Agent #21'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    21)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #21.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 21)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #21 - Specialized agent
+    for personal productivity & life admin tasks (agent 21)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_22_622
+  name: 'Personal Productivity & Life Admin Agent #22'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    22)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #22.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 22)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #22 - Specialized agent
+    for personal productivity & life admin tasks (agent 22)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_23_623
+  name: 'Personal Productivity & Life Admin Agent #23'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    23)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #23.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 23)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #23 - Specialized agent
+    for personal productivity & life admin tasks (agent 23)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_24_624
+  name: 'Personal Productivity & Life Admin Agent #24'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    24)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #24.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 24)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #24 - Specialized agent
+    for personal productivity & life admin tasks (agent 24)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_25_625
+  name: 'Personal Productivity & Life Admin Agent #25'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    25)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #25.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 25)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #25 - Specialized agent
+    for personal productivity & life admin tasks (agent 25)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_26_626
+  name: 'Personal Productivity & Life Admin Agent #26'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    26)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #26.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 26)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #26 - Specialized agent
+    for personal productivity & life admin tasks (agent 26)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_27_627
+  name: 'Personal Productivity & Life Admin Agent #27'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    27)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #27.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 27)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #27 - Specialized agent
+    for personal productivity & life admin tasks (agent 27)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_28_628
+  name: 'Personal Productivity & Life Admin Agent #28'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    28)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #28.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 28)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #28 - Specialized agent
+    for personal productivity & life admin tasks (agent 28)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_29_629
+  name: 'Personal Productivity & Life Admin Agent #29'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    29)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #29.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 29)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #29 - Specialized agent
+    for personal productivity & life admin tasks (agent 29)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_30_630
+  name: 'Personal Productivity & Life Admin Agent #30'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    30)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #30.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 30)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #30 - Specialized agent
+    for personal productivity & life admin tasks (agent 30)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_31_631
+  name: 'Personal Productivity & Life Admin Agent #31'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    31)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #31.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 31)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #31 - Specialized agent
+    for personal productivity & life admin tasks (agent 31)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_32_632
+  name: 'Personal Productivity & Life Admin Agent #32'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    32)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #32.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 32)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #32 - Specialized agent
+    for personal productivity & life admin tasks (agent 32)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_33_633
+  name: 'Personal Productivity & Life Admin Agent #33'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    33)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #33.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 33)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #33 - Specialized agent
+    for personal productivity & life admin tasks (agent 33)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_34_634
+  name: 'Personal Productivity & Life Admin Agent #34'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    34)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #34.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 34)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #34 - Specialized agent
+    for personal productivity & life admin tasks (agent 34)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_35_635
+  name: 'Personal Productivity & Life Admin Agent #35'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    35)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #35.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 35)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #35 - Specialized agent
+    for personal productivity & life admin tasks (agent 35)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_36_636
+  name: 'Personal Productivity & Life Admin Agent #36'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    36)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #36.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 36)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #36 - Specialized agent
+    for personal productivity & life admin tasks (agent 36)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_37_637
+  name: 'Personal Productivity & Life Admin Agent #37'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    37)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #37.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 37)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #37 - Specialized agent
+    for personal productivity & life admin tasks (agent 37)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_38_638
+  name: 'Personal Productivity & Life Admin Agent #38'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    38)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #38.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 38)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #38 - Specialized agent
+    for personal productivity & life admin tasks (agent 38)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_39_639
+  name: 'Personal Productivity & Life Admin Agent #39'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    39)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #39.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 39)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #39 - Specialized agent
+    for personal productivity & life admin tasks (agent 39)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_40_640
+  name: 'Personal Productivity & Life Admin Agent #40'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    40)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #40.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 40)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #40 - Specialized agent
+    for personal productivity & life admin tasks (agent 40)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_41_641
+  name: 'Personal Productivity & Life Admin Agent #41'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    41)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #41.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 41)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #41 - Specialized agent
+    for personal productivity & life admin tasks (agent 41)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_42_642
+  name: 'Personal Productivity & Life Admin Agent #42'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    42)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #42.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 42)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #42 - Specialized agent
+    for personal productivity & life admin tasks (agent 42)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_43_643
+  name: 'Personal Productivity & Life Admin Agent #43'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    43)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #43.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 43)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #43 - Specialized agent
+    for personal productivity & life admin tasks (agent 43)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_44_644
+  name: 'Personal Productivity & Life Admin Agent #44'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    44)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #44.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 44)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #44 - Specialized agent
+    for personal productivity & life admin tasks (agent 44)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_45_645
+  name: 'Personal Productivity & Life Admin Agent #45'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    45)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #45.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 45)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #45 - Specialized agent
+    for personal productivity & life admin tasks (agent 45)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_46_646
+  name: 'Personal Productivity & Life Admin Agent #46'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    46)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #46.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 46)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #46 - Specialized agent
+    for personal productivity & life admin tasks (agent 46)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_47_647
+  name: 'Personal Productivity & Life Admin Agent #47'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    47)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #47.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 47)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #47 - Specialized agent
+    for personal productivity & life admin tasks (agent 47)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_48_648
+  name: 'Personal Productivity & Life Admin Agent #48'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    48)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #48.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 48)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #48 - Specialized agent
+    for personal productivity & life admin tasks (agent 48)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_49_649
+  name: 'Personal Productivity & Life Admin Agent #49'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    49)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #49.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 49)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #49 - Specialized agent
+    for personal productivity & life admin tasks (agent 49)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin
+- agent_id: personal_productivity_agent_50_650
+  name: 'Personal Productivity & Life Admin Agent #50'
+  description: Specialized agent for personal productivity & life admin tasks (agent
+    50)
+  category: personal_productivity
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Personal Productivity & Life Admin Agent #50.
+
+
+    Your primary function is to: Specialized agent for personal productivity & life
+    admin tasks (agent 50)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Personal Productivity & Life
+    Admin.
+
+    Your role is: Personal Productivity & Life Admin Agent #50 - Specialized agent
+    for personal productivity & life admin tasks (agent 50)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Personal Productivity & Life Admin
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - personal_productivity
+  - personal_productivity_&_life_admin

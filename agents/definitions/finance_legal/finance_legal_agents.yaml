@@ -1,0 +1,2901 @@
+agents:
+- agent_id: finance_legal_agent_1_151
+  name: 'Finance, Accounting & Legal Agent #1'
+  description: Specialized agent for finance, accounting & legal tasks (agent 1)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #1.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 1)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #1 - Specialized agent for finance,
+    accounting & legal tasks (agent 1)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_2_152
+  name: 'Finance, Accounting & Legal Agent #2'
+  description: Specialized agent for finance, accounting & legal tasks (agent 2)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #2.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 2)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #2 - Specialized agent for finance,
+    accounting & legal tasks (agent 2)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_3_153
+  name: 'Finance, Accounting & Legal Agent #3'
+  description: Specialized agent for finance, accounting & legal tasks (agent 3)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #3.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 3)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #3 - Specialized agent for finance,
+    accounting & legal tasks (agent 3)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_4_154
+  name: 'Finance, Accounting & Legal Agent #4'
+  description: Specialized agent for finance, accounting & legal tasks (agent 4)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #4.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 4)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #4 - Specialized agent for finance,
+    accounting & legal tasks (agent 4)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_5_155
+  name: 'Finance, Accounting & Legal Agent #5'
+  description: Specialized agent for finance, accounting & legal tasks (agent 5)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #5.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 5)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #5 - Specialized agent for finance,
+    accounting & legal tasks (agent 5)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_6_156
+  name: 'Finance, Accounting & Legal Agent #6'
+  description: Specialized agent for finance, accounting & legal tasks (agent 6)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #6.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 6)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #6 - Specialized agent for finance,
+    accounting & legal tasks (agent 6)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_7_157
+  name: 'Finance, Accounting & Legal Agent #7'
+  description: Specialized agent for finance, accounting & legal tasks (agent 7)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #7.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 7)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #7 - Specialized agent for finance,
+    accounting & legal tasks (agent 7)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_8_158
+  name: 'Finance, Accounting & Legal Agent #8'
+  description: Specialized agent for finance, accounting & legal tasks (agent 8)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #8.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 8)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #8 - Specialized agent for finance,
+    accounting & legal tasks (agent 8)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_9_159
+  name: 'Finance, Accounting & Legal Agent #9'
+  description: Specialized agent for finance, accounting & legal tasks (agent 9)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #9.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 9)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #9 - Specialized agent for finance,
+    accounting & legal tasks (agent 9)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_10_160
+  name: 'Finance, Accounting & Legal Agent #10'
+  description: Specialized agent for finance, accounting & legal tasks (agent 10)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #10.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 10)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #10 - Specialized agent for finance,
+    accounting & legal tasks (agent 10)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_11_161
+  name: 'Finance, Accounting & Legal Agent #11'
+  description: Specialized agent for finance, accounting & legal tasks (agent 11)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #11.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 11)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #11 - Specialized agent for finance,
+    accounting & legal tasks (agent 11)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_12_162
+  name: 'Finance, Accounting & Legal Agent #12'
+  description: Specialized agent for finance, accounting & legal tasks (agent 12)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #12.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 12)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #12 - Specialized agent for finance,
+    accounting & legal tasks (agent 12)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_13_163
+  name: 'Finance, Accounting & Legal Agent #13'
+  description: Specialized agent for finance, accounting & legal tasks (agent 13)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #13.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 13)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #13 - Specialized agent for finance,
+    accounting & legal tasks (agent 13)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_14_164
+  name: 'Finance, Accounting & Legal Agent #14'
+  description: Specialized agent for finance, accounting & legal tasks (agent 14)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #14.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 14)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #14 - Specialized agent for finance,
+    accounting & legal tasks (agent 14)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_15_165
+  name: 'Finance, Accounting & Legal Agent #15'
+  description: Specialized agent for finance, accounting & legal tasks (agent 15)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #15.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 15)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #15 - Specialized agent for finance,
+    accounting & legal tasks (agent 15)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_16_166
+  name: 'Finance, Accounting & Legal Agent #16'
+  description: Specialized agent for finance, accounting & legal tasks (agent 16)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #16.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 16)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #16 - Specialized agent for finance,
+    accounting & legal tasks (agent 16)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_17_167
+  name: 'Finance, Accounting & Legal Agent #17'
+  description: Specialized agent for finance, accounting & legal tasks (agent 17)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #17.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 17)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #17 - Specialized agent for finance,
+    accounting & legal tasks (agent 17)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_18_168
+  name: 'Finance, Accounting & Legal Agent #18'
+  description: Specialized agent for finance, accounting & legal tasks (agent 18)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #18.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 18)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #18 - Specialized agent for finance,
+    accounting & legal tasks (agent 18)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_19_169
+  name: 'Finance, Accounting & Legal Agent #19'
+  description: Specialized agent for finance, accounting & legal tasks (agent 19)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #19.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 19)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #19 - Specialized agent for finance,
+    accounting & legal tasks (agent 19)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_20_170
+  name: 'Finance, Accounting & Legal Agent #20'
+  description: Specialized agent for finance, accounting & legal tasks (agent 20)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #20.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 20)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #20 - Specialized agent for finance,
+    accounting & legal tasks (agent 20)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_21_171
+  name: 'Finance, Accounting & Legal Agent #21'
+  description: Specialized agent for finance, accounting & legal tasks (agent 21)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #21.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 21)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #21 - Specialized agent for finance,
+    accounting & legal tasks (agent 21)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_22_172
+  name: 'Finance, Accounting & Legal Agent #22'
+  description: Specialized agent for finance, accounting & legal tasks (agent 22)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #22.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 22)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #22 - Specialized agent for finance,
+    accounting & legal tasks (agent 22)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_23_173
+  name: 'Finance, Accounting & Legal Agent #23'
+  description: Specialized agent for finance, accounting & legal tasks (agent 23)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #23.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 23)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #23 - Specialized agent for finance,
+    accounting & legal tasks (agent 23)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_24_174
+  name: 'Finance, Accounting & Legal Agent #24'
+  description: Specialized agent for finance, accounting & legal tasks (agent 24)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #24.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 24)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #24 - Specialized agent for finance,
+    accounting & legal tasks (agent 24)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_25_175
+  name: 'Finance, Accounting & Legal Agent #25'
+  description: Specialized agent for finance, accounting & legal tasks (agent 25)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #25.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 25)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #25 - Specialized agent for finance,
+    accounting & legal tasks (agent 25)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_26_176
+  name: 'Finance, Accounting & Legal Agent #26'
+  description: Specialized agent for finance, accounting & legal tasks (agent 26)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #26.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 26)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #26 - Specialized agent for finance,
+    accounting & legal tasks (agent 26)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_27_177
+  name: 'Finance, Accounting & Legal Agent #27'
+  description: Specialized agent for finance, accounting & legal tasks (agent 27)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #27.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 27)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #27 - Specialized agent for finance,
+    accounting & legal tasks (agent 27)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_28_178
+  name: 'Finance, Accounting & Legal Agent #28'
+  description: Specialized agent for finance, accounting & legal tasks (agent 28)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #28.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 28)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #28 - Specialized agent for finance,
+    accounting & legal tasks (agent 28)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_29_179
+  name: 'Finance, Accounting & Legal Agent #29'
+  description: Specialized agent for finance, accounting & legal tasks (agent 29)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #29.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 29)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #29 - Specialized agent for finance,
+    accounting & legal tasks (agent 29)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_30_180
+  name: 'Finance, Accounting & Legal Agent #30'
+  description: Specialized agent for finance, accounting & legal tasks (agent 30)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #30.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 30)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #30 - Specialized agent for finance,
+    accounting & legal tasks (agent 30)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_31_181
+  name: 'Finance, Accounting & Legal Agent #31'
+  description: Specialized agent for finance, accounting & legal tasks (agent 31)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #31.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 31)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #31 - Specialized agent for finance,
+    accounting & legal tasks (agent 31)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_32_182
+  name: 'Finance, Accounting & Legal Agent #32'
+  description: Specialized agent for finance, accounting & legal tasks (agent 32)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #32.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 32)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #32 - Specialized agent for finance,
+    accounting & legal tasks (agent 32)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_33_183
+  name: 'Finance, Accounting & Legal Agent #33'
+  description: Specialized agent for finance, accounting & legal tasks (agent 33)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #33.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 33)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #33 - Specialized agent for finance,
+    accounting & legal tasks (agent 33)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_34_184
+  name: 'Finance, Accounting & Legal Agent #34'
+  description: Specialized agent for finance, accounting & legal tasks (agent 34)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #34.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 34)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #34 - Specialized agent for finance,
+    accounting & legal tasks (agent 34)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_35_185
+  name: 'Finance, Accounting & Legal Agent #35'
+  description: Specialized agent for finance, accounting & legal tasks (agent 35)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #35.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 35)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #35 - Specialized agent for finance,
+    accounting & legal tasks (agent 35)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_36_186
+  name: 'Finance, Accounting & Legal Agent #36'
+  description: Specialized agent for finance, accounting & legal tasks (agent 36)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #36.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 36)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #36 - Specialized agent for finance,
+    accounting & legal tasks (agent 36)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_37_187
+  name: 'Finance, Accounting & Legal Agent #37'
+  description: Specialized agent for finance, accounting & legal tasks (agent 37)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #37.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 37)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #37 - Specialized agent for finance,
+    accounting & legal tasks (agent 37)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_38_188
+  name: 'Finance, Accounting & Legal Agent #38'
+  description: Specialized agent for finance, accounting & legal tasks (agent 38)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #38.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 38)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #38 - Specialized agent for finance,
+    accounting & legal tasks (agent 38)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_39_189
+  name: 'Finance, Accounting & Legal Agent #39'
+  description: Specialized agent for finance, accounting & legal tasks (agent 39)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #39.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 39)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #39 - Specialized agent for finance,
+    accounting & legal tasks (agent 39)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_40_190
+  name: 'Finance, Accounting & Legal Agent #40'
+  description: Specialized agent for finance, accounting & legal tasks (agent 40)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #40.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 40)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #40 - Specialized agent for finance,
+    accounting & legal tasks (agent 40)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_41_191
+  name: 'Finance, Accounting & Legal Agent #41'
+  description: Specialized agent for finance, accounting & legal tasks (agent 41)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #41.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 41)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #41 - Specialized agent for finance,
+    accounting & legal tasks (agent 41)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_42_192
+  name: 'Finance, Accounting & Legal Agent #42'
+  description: Specialized agent for finance, accounting & legal tasks (agent 42)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #42.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 42)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #42 - Specialized agent for finance,
+    accounting & legal tasks (agent 42)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_43_193
+  name: 'Finance, Accounting & Legal Agent #43'
+  description: Specialized agent for finance, accounting & legal tasks (agent 43)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #43.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 43)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #43 - Specialized agent for finance,
+    accounting & legal tasks (agent 43)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_44_194
+  name: 'Finance, Accounting & Legal Agent #44'
+  description: Specialized agent for finance, accounting & legal tasks (agent 44)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #44.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 44)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #44 - Specialized agent for finance,
+    accounting & legal tasks (agent 44)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_45_195
+  name: 'Finance, Accounting & Legal Agent #45'
+  description: Specialized agent for finance, accounting & legal tasks (agent 45)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #45.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 45)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #45 - Specialized agent for finance,
+    accounting & legal tasks (agent 45)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_46_196
+  name: 'Finance, Accounting & Legal Agent #46'
+  description: Specialized agent for finance, accounting & legal tasks (agent 46)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #46.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 46)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #46 - Specialized agent for finance,
+    accounting & legal tasks (agent 46)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_47_197
+  name: 'Finance, Accounting & Legal Agent #47'
+  description: Specialized agent for finance, accounting & legal tasks (agent 47)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #47.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 47)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #47 - Specialized agent for finance,
+    accounting & legal tasks (agent 47)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_48_198
+  name: 'Finance, Accounting & Legal Agent #48'
+  description: Specialized agent for finance, accounting & legal tasks (agent 48)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #48.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 48)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #48 - Specialized agent for finance,
+    accounting & legal tasks (agent 48)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_49_199
+  name: 'Finance, Accounting & Legal Agent #49'
+  description: Specialized agent for finance, accounting & legal tasks (agent 49)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #49.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 49)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #49 - Specialized agent for finance,
+    accounting & legal tasks (agent 49)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal
+- agent_id: finance_legal_agent_50_200
+  name: 'Finance, Accounting & Legal Agent #50'
+  description: Specialized agent for finance, accounting & legal tasks (agent 50)
+  category: finance_legal
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Finance, Accounting & Legal Agent #50.
+
+
+    Your primary function is to: Specialized agent for finance, accounting & legal
+    tasks (agent 50)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Finance, Accounting & Legal.
+
+    Your role is: Finance, Accounting & Legal Agent #50 - Specialized agent for finance,
+    accounting & legal tasks (agent 50)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Finance, Accounting & Legal
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - finance_legal
+  - finance,_accounting_&_legal

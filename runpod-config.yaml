@@ -1,0 +1,199 @@
+# RunPod Serverless Configuration
+# For deploying the 700+ AI agents platform
+
+name: ai-agents-platform
+description: Comprehensive multi-agent platform with 700+ specialized AI agents
+
+# Container configuration
+container:
+  image: ai-agents-platform:latest
+  dockerfile: Dockerfile.runpod
+
+# Compute configuration
+compute:
+  gpu: false  # CPU-only for LLM API calls
+  cpu: 4
+  ram: 8192  # 8GB RAM
+  disk: 20480  # 20GB disk for agent definitions
+
+# Scaling configuration
+scaling:
+  min_instances: 1  # Keep at least 1 warm
+  max_instances: 100  # Scale up to 100 concurrent instances
+  scale_strategy: queue_depth
+  scale_up_threshold: 5  # Scale up if queue > 5
+  scale_down_threshold: 1  # Scale down if queue < 1
+  idle_timeout: 300  # 5 minutes idle timeout
+
+# Environment variables
+environment:
+  # LLM API Keys
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+  OPENAI_API_KEY: ${OPENAI_API_KEY}
+
+  # Database
+  DATABASE_URL: ${DATABASE_URL}
+  REDIS_URL: ${REDIS_URL}
+
+  # OPA
+  OPA_URL: http://opa:8181
+
+  # Performance tuning
+  PREWARM_AGENTS: "executive_summary_agent_001,meeting_notes_agent_002,email_triage_agent_014"
+  MAX_WORKERS: 4
+  WORKER_TIMEOUT: 300
+
+  # Logging
+  LOG_LEVEL: INFO
+  LOG_FORMAT: json
+
+# Health check
+health_check:
+  path: /health
+  interval: 30
+  timeout: 5
+  healthy_threshold: 2
+  unhealthy_threshold: 3
+
+# Network configuration
+network:
+  ports:
+    - container: 8000
+      host: 8000
+  vpc: default
+
+# Storage volumes
+volumes:
+  - name: agent_definitions
+    mount_path: /app/agents/definitions
+    size: 5120  # 5GB for all agent YAML files
+    persistent: true
+
+  - name: policies
+    mount_path: /app/policies
+    size: 1024  # 1GB for policy files
+    persistent: true
+
+  - name: cache
+    mount_path: /app/cache
+    size: 2048  # 2GB for caching
+    persistent: false
+
+# Endpoints
+endpoints:
+  # Single agent execution
+  - path: /v1/agents/{agent_id}/execute
+    method: POST
+    timeout: 30
+    description: Execute a single agent
+
+  # Team execution
+  - path: /v1/teams/execute
+    method: POST
+    timeout: 120
+    description: Execute a team of agents
+
+  # Workflow execution
+  - path: /v1/workflows/{workflow_id}/execute
+    method: POST
+    timeout: 300
+    description: Execute a multi-step workflow
+
+  # List agents
+  - path: /v1/agents
+    method: GET
+    timeout: 5
+    description: List available agents
+
+  # Health check
+  - path: /health
+    method: GET
+    timeout: 2
+    description: Health check endpoint
+
+# Cold start optimization
+optimization:
+  preload_models: false  # Don't preload LLMs (API-based)
+  lazy_load_agents: true  # Load agents on-demand
+  cache_definitions: true  # Cache YAML parsing
+  warm_pool_size: 5  # Keep 5 containers warm
+  max_idle_time: 300  # 5 minutes
+
+# Monitoring and alerts
+monitoring:
+  enabled: true
+  metrics:
+    - name: agent_execution_time
+      type: histogram
+    - name: agent_success_rate
+      type: gauge
+    - name: team_formation_time
+      type: histogram
+    - name: concurrent_teams
+      type: gauge
+    - name: total_tokens_used
+      type: counter
+    - name: error_rate
+      type: gauge
+
+  alerts:
+    - name: high_error_rate
+      condition: error_rate > 0.05
+      severity: warning
+
+    - name: slow_execution
+      condition: agent_execution_time_p95 > 5000
+      severity: warning
+
+    - name: capacity_limit
+      condition: concurrent_instances > 90
+      severity: critical
+
+# Cost optimization
+cost_optimization:
+  spot_instances: true  # Use spot instances when available
+  auto_shutdown: true  # Shutdown idle instances
+  idle_threshold: 300  # 5 minutes idle before shutdown
+
+# Security
+security:
+  network_policy: restricted
+  secrets:
+    - ANTHROPIC_API_KEY
+    - OPENAI_API_KEY
+    - DATABASE_URL
+    - REDIS_URL
+  enable_tls: true
+  allow_cors: true
+  cors_origins:
+    - https://*.yourdomain.com
+
+# Logging
+logging:
+  driver: json-file
+  level: info
+  max_size: 100m
+  max_files: 10
+
+# Deployment
+deployment:
+  region: us-east-1  # Primary region
+  availability_zones:
+    - us-east-1a
+    - us-east-1b
+  rollout_strategy: blue_green
+  max_surge: 2
+  max_unavailable: 0
+
+# Backup and disaster recovery
+backup:
+  enabled: true
+  schedule: "0 2 * * *"  # Daily at 2 AM
+  retention: 7  # Keep 7 days
+
+# Tags
+tags:
+  environment: production
+  project: ai-agents-platform
+  team: engineering
+  cost_center: ai-ops

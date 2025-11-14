@@ -1,0 +1,2901 @@
+agents:
+- agent_id: education_training_agent_1_401
+  name: 'Education, Training & Coaching Agent #1'
+  description: Specialized agent for education, training & coaching tasks (agent 1)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #1.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 1)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #1 - Specialized agent for
+    education, training & coaching tasks (agent 1)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_2_402
+  name: 'Education, Training & Coaching Agent #2'
+  description: Specialized agent for education, training & coaching tasks (agent 2)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #2.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 2)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #2 - Specialized agent for
+    education, training & coaching tasks (agent 2)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_3_403
+  name: 'Education, Training & Coaching Agent #3'
+  description: Specialized agent for education, training & coaching tasks (agent 3)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #3.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 3)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #3 - Specialized agent for
+    education, training & coaching tasks (agent 3)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_4_404
+  name: 'Education, Training & Coaching Agent #4'
+  description: Specialized agent for education, training & coaching tasks (agent 4)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #4.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 4)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #4 - Specialized agent for
+    education, training & coaching tasks (agent 4)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_5_405
+  name: 'Education, Training & Coaching Agent #5'
+  description: Specialized agent for education, training & coaching tasks (agent 5)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #5.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 5)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #5 - Specialized agent for
+    education, training & coaching tasks (agent 5)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_6_406
+  name: 'Education, Training & Coaching Agent #6'
+  description: Specialized agent for education, training & coaching tasks (agent 6)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #6.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 6)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #6 - Specialized agent for
+    education, training & coaching tasks (agent 6)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_7_407
+  name: 'Education, Training & Coaching Agent #7'
+  description: Specialized agent for education, training & coaching tasks (agent 7)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #7.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 7)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #7 - Specialized agent for
+    education, training & coaching tasks (agent 7)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_8_408
+  name: 'Education, Training & Coaching Agent #8'
+  description: Specialized agent for education, training & coaching tasks (agent 8)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #8.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 8)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #8 - Specialized agent for
+    education, training & coaching tasks (agent 8)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_9_409
+  name: 'Education, Training & Coaching Agent #9'
+  description: Specialized agent for education, training & coaching tasks (agent 9)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #9.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 9)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #9 - Specialized agent for
+    education, training & coaching tasks (agent 9)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_10_410
+  name: 'Education, Training & Coaching Agent #10'
+  description: Specialized agent for education, training & coaching tasks (agent 10)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #10.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 10)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #10 - Specialized agent for
+    education, training & coaching tasks (agent 10)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_11_411
+  name: 'Education, Training & Coaching Agent #11'
+  description: Specialized agent for education, training & coaching tasks (agent 11)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #11.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 11)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #11 - Specialized agent for
+    education, training & coaching tasks (agent 11)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_12_412
+  name: 'Education, Training & Coaching Agent #12'
+  description: Specialized agent for education, training & coaching tasks (agent 12)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #12.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 12)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #12 - Specialized agent for
+    education, training & coaching tasks (agent 12)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_13_413
+  name: 'Education, Training & Coaching Agent #13'
+  description: Specialized agent for education, training & coaching tasks (agent 13)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #13.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 13)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #13 - Specialized agent for
+    education, training & coaching tasks (agent 13)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_14_414
+  name: 'Education, Training & Coaching Agent #14'
+  description: Specialized agent for education, training & coaching tasks (agent 14)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #14.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 14)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #14 - Specialized agent for
+    education, training & coaching tasks (agent 14)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_15_415
+  name: 'Education, Training & Coaching Agent #15'
+  description: Specialized agent for education, training & coaching tasks (agent 15)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #15.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 15)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #15 - Specialized agent for
+    education, training & coaching tasks (agent 15)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_16_416
+  name: 'Education, Training & Coaching Agent #16'
+  description: Specialized agent for education, training & coaching tasks (agent 16)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #16.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 16)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #16 - Specialized agent for
+    education, training & coaching tasks (agent 16)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_17_417
+  name: 'Education, Training & Coaching Agent #17'
+  description: Specialized agent for education, training & coaching tasks (agent 17)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #17.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 17)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #17 - Specialized agent for
+    education, training & coaching tasks (agent 17)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_18_418
+  name: 'Education, Training & Coaching Agent #18'
+  description: Specialized agent for education, training & coaching tasks (agent 18)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #18.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 18)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #18 - Specialized agent for
+    education, training & coaching tasks (agent 18)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_19_419
+  name: 'Education, Training & Coaching Agent #19'
+  description: Specialized agent for education, training & coaching tasks (agent 19)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #19.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 19)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #19 - Specialized agent for
+    education, training & coaching tasks (agent 19)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_20_420
+  name: 'Education, Training & Coaching Agent #20'
+  description: Specialized agent for education, training & coaching tasks (agent 20)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #20.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 20)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #20 - Specialized agent for
+    education, training & coaching tasks (agent 20)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_21_421
+  name: 'Education, Training & Coaching Agent #21'
+  description: Specialized agent for education, training & coaching tasks (agent 21)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #21.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 21)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #21 - Specialized agent for
+    education, training & coaching tasks (agent 21)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_22_422
+  name: 'Education, Training & Coaching Agent #22'
+  description: Specialized agent for education, training & coaching tasks (agent 22)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #22.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 22)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #22 - Specialized agent for
+    education, training & coaching tasks (agent 22)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_23_423
+  name: 'Education, Training & Coaching Agent #23'
+  description: Specialized agent for education, training & coaching tasks (agent 23)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #23.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 23)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #23 - Specialized agent for
+    education, training & coaching tasks (agent 23)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_24_424
+  name: 'Education, Training & Coaching Agent #24'
+  description: Specialized agent for education, training & coaching tasks (agent 24)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #24.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 24)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #24 - Specialized agent for
+    education, training & coaching tasks (agent 24)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_25_425
+  name: 'Education, Training & Coaching Agent #25'
+  description: Specialized agent for education, training & coaching tasks (agent 25)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #25.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 25)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #25 - Specialized agent for
+    education, training & coaching tasks (agent 25)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_26_426
+  name: 'Education, Training & Coaching Agent #26'
+  description: Specialized agent for education, training & coaching tasks (agent 26)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #26.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 26)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #26 - Specialized agent for
+    education, training & coaching tasks (agent 26)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_27_427
+  name: 'Education, Training & Coaching Agent #27'
+  description: Specialized agent for education, training & coaching tasks (agent 27)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #27.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 27)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #27 - Specialized agent for
+    education, training & coaching tasks (agent 27)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_28_428
+  name: 'Education, Training & Coaching Agent #28'
+  description: Specialized agent for education, training & coaching tasks (agent 28)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #28.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 28)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #28 - Specialized agent for
+    education, training & coaching tasks (agent 28)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_29_429
+  name: 'Education, Training & Coaching Agent #29'
+  description: Specialized agent for education, training & coaching tasks (agent 29)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #29.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 29)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #29 - Specialized agent for
+    education, training & coaching tasks (agent 29)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_30_430
+  name: 'Education, Training & Coaching Agent #30'
+  description: Specialized agent for education, training & coaching tasks (agent 30)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #30.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 30)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #30 - Specialized agent for
+    education, training & coaching tasks (agent 30)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_31_431
+  name: 'Education, Training & Coaching Agent #31'
+  description: Specialized agent for education, training & coaching tasks (agent 31)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #31.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 31)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #31 - Specialized agent for
+    education, training & coaching tasks (agent 31)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_32_432
+  name: 'Education, Training & Coaching Agent #32'
+  description: Specialized agent for education, training & coaching tasks (agent 32)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #32.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 32)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #32 - Specialized agent for
+    education, training & coaching tasks (agent 32)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_33_433
+  name: 'Education, Training & Coaching Agent #33'
+  description: Specialized agent for education, training & coaching tasks (agent 33)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #33.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 33)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #33 - Specialized agent for
+    education, training & coaching tasks (agent 33)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_34_434
+  name: 'Education, Training & Coaching Agent #34'
+  description: Specialized agent for education, training & coaching tasks (agent 34)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #34.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 34)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #34 - Specialized agent for
+    education, training & coaching tasks (agent 34)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_35_435
+  name: 'Education, Training & Coaching Agent #35'
+  description: Specialized agent for education, training & coaching tasks (agent 35)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #35.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 35)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #35 - Specialized agent for
+    education, training & coaching tasks (agent 35)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_36_436
+  name: 'Education, Training & Coaching Agent #36'
+  description: Specialized agent for education, training & coaching tasks (agent 36)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #36.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 36)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #36 - Specialized agent for
+    education, training & coaching tasks (agent 36)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_37_437
+  name: 'Education, Training & Coaching Agent #37'
+  description: Specialized agent for education, training & coaching tasks (agent 37)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #37.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 37)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #37 - Specialized agent for
+    education, training & coaching tasks (agent 37)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_38_438
+  name: 'Education, Training & Coaching Agent #38'
+  description: Specialized agent for education, training & coaching tasks (agent 38)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #38.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 38)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #38 - Specialized agent for
+    education, training & coaching tasks (agent 38)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_39_439
+  name: 'Education, Training & Coaching Agent #39'
+  description: Specialized agent for education, training & coaching tasks (agent 39)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #39.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 39)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #39 - Specialized agent for
+    education, training & coaching tasks (agent 39)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_40_440
+  name: 'Education, Training & Coaching Agent #40'
+  description: Specialized agent for education, training & coaching tasks (agent 40)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #40.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 40)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #40 - Specialized agent for
+    education, training & coaching tasks (agent 40)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_41_441
+  name: 'Education, Training & Coaching Agent #41'
+  description: Specialized agent for education, training & coaching tasks (agent 41)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #41.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 41)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #41 - Specialized agent for
+    education, training & coaching tasks (agent 41)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_42_442
+  name: 'Education, Training & Coaching Agent #42'
+  description: Specialized agent for education, training & coaching tasks (agent 42)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #42.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 42)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #42 - Specialized agent for
+    education, training & coaching tasks (agent 42)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_43_443
+  name: 'Education, Training & Coaching Agent #43'
+  description: Specialized agent for education, training & coaching tasks (agent 43)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #43.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 43)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #43 - Specialized agent for
+    education, training & coaching tasks (agent 43)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_44_444
+  name: 'Education, Training & Coaching Agent #44'
+  description: Specialized agent for education, training & coaching tasks (agent 44)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #44.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 44)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #44 - Specialized agent for
+    education, training & coaching tasks (agent 44)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_45_445
+  name: 'Education, Training & Coaching Agent #45'
+  description: Specialized agent for education, training & coaching tasks (agent 45)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #45.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 45)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #45 - Specialized agent for
+    education, training & coaching tasks (agent 45)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_46_446
+  name: 'Education, Training & Coaching Agent #46'
+  description: Specialized agent for education, training & coaching tasks (agent 46)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #46.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 46)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #46 - Specialized agent for
+    education, training & coaching tasks (agent 46)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_47_447
+  name: 'Education, Training & Coaching Agent #47'
+  description: Specialized agent for education, training & coaching tasks (agent 47)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #47.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 47)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #47 - Specialized agent for
+    education, training & coaching tasks (agent 47)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_48_448
+  name: 'Education, Training & Coaching Agent #48'
+  description: Specialized agent for education, training & coaching tasks (agent 48)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #48.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 48)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #48 - Specialized agent for
+    education, training & coaching tasks (agent 48)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_49_449
+  name: 'Education, Training & Coaching Agent #49'
+  description: Specialized agent for education, training & coaching tasks (agent 49)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #49.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 49)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #49 - Specialized agent for
+    education, training & coaching tasks (agent 49)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching
+- agent_id: education_training_agent_50_450
+  name: 'Education, Training & Coaching Agent #50'
+  description: Specialized agent for education, training & coaching tasks (agent 50)
+  category: education_training
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Education, Training & Coaching Agent #50.
+
+
+    Your primary function is to: Specialized agent for education, training & coaching
+    tasks (agent 50)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Education, Training & Coaching.
+
+    Your role is: Education, Training & Coaching Agent #50 - Specialized agent for
+    education, training & coaching tasks (agent 50)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Education, Training & Coaching
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - education_training
+  - education,_training_&_coaching

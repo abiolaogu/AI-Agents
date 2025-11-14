@@ -1,0 +1,2901 @@
+agents:
+- agent_id: healthcare_wellness_agent_1_351
+  name: 'Healthcare & Wellness Business Agent #1'
+  description: Specialized agent for healthcare & wellness business tasks (agent 1)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #1.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 1)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #1 - Specialized agent for
+    healthcare & wellness business tasks (agent 1)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_2_352
+  name: 'Healthcare & Wellness Business Agent #2'
+  description: Specialized agent for healthcare & wellness business tasks (agent 2)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #2.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 2)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #2 - Specialized agent for
+    healthcare & wellness business tasks (agent 2)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_3_353
+  name: 'Healthcare & Wellness Business Agent #3'
+  description: Specialized agent for healthcare & wellness business tasks (agent 3)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #3.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 3)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #3 - Specialized agent for
+    healthcare & wellness business tasks (agent 3)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_4_354
+  name: 'Healthcare & Wellness Business Agent #4'
+  description: Specialized agent for healthcare & wellness business tasks (agent 4)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #4.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 4)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #4 - Specialized agent for
+    healthcare & wellness business tasks (agent 4)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_5_355
+  name: 'Healthcare & Wellness Business Agent #5'
+  description: Specialized agent for healthcare & wellness business tasks (agent 5)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #5.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 5)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #5 - Specialized agent for
+    healthcare & wellness business tasks (agent 5)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_6_356
+  name: 'Healthcare & Wellness Business Agent #6'
+  description: Specialized agent for healthcare & wellness business tasks (agent 6)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #6.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 6)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #6 - Specialized agent for
+    healthcare & wellness business tasks (agent 6)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_7_357
+  name: 'Healthcare & Wellness Business Agent #7'
+  description: Specialized agent for healthcare & wellness business tasks (agent 7)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #7.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 7)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #7 - Specialized agent for
+    healthcare & wellness business tasks (agent 7)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_8_358
+  name: 'Healthcare & Wellness Business Agent #8'
+  description: Specialized agent for healthcare & wellness business tasks (agent 8)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #8.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 8)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #8 - Specialized agent for
+    healthcare & wellness business tasks (agent 8)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_9_359
+  name: 'Healthcare & Wellness Business Agent #9'
+  description: Specialized agent for healthcare & wellness business tasks (agent 9)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #9.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 9)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #9 - Specialized agent for
+    healthcare & wellness business tasks (agent 9)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_10_360
+  name: 'Healthcare & Wellness Business Agent #10'
+  description: Specialized agent for healthcare & wellness business tasks (agent 10)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #10.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 10)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #10 - Specialized agent for
+    healthcare & wellness business tasks (agent 10)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_11_361
+  name: 'Healthcare & Wellness Business Agent #11'
+  description: Specialized agent for healthcare & wellness business tasks (agent 11)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #11.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 11)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #11 - Specialized agent for
+    healthcare & wellness business tasks (agent 11)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_12_362
+  name: 'Healthcare & Wellness Business Agent #12'
+  description: Specialized agent for healthcare & wellness business tasks (agent 12)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #12.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 12)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #12 - Specialized agent for
+    healthcare & wellness business tasks (agent 12)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_13_363
+  name: 'Healthcare & Wellness Business Agent #13'
+  description: Specialized agent for healthcare & wellness business tasks (agent 13)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #13.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 13)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #13 - Specialized agent for
+    healthcare & wellness business tasks (agent 13)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_14_364
+  name: 'Healthcare & Wellness Business Agent #14'
+  description: Specialized agent for healthcare & wellness business tasks (agent 14)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #14.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 14)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #14 - Specialized agent for
+    healthcare & wellness business tasks (agent 14)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_15_365
+  name: 'Healthcare & Wellness Business Agent #15'
+  description: Specialized agent for healthcare & wellness business tasks (agent 15)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #15.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 15)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #15 - Specialized agent for
+    healthcare & wellness business tasks (agent 15)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_16_366
+  name: 'Healthcare & Wellness Business Agent #16'
+  description: Specialized agent for healthcare & wellness business tasks (agent 16)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #16.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 16)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #16 - Specialized agent for
+    healthcare & wellness business tasks (agent 16)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_17_367
+  name: 'Healthcare & Wellness Business Agent #17'
+  description: Specialized agent for healthcare & wellness business tasks (agent 17)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #17.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 17)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #17 - Specialized agent for
+    healthcare & wellness business tasks (agent 17)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_18_368
+  name: 'Healthcare & Wellness Business Agent #18'
+  description: Specialized agent for healthcare & wellness business tasks (agent 18)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #18.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 18)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #18 - Specialized agent for
+    healthcare & wellness business tasks (agent 18)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_19_369
+  name: 'Healthcare & Wellness Business Agent #19'
+  description: Specialized agent for healthcare & wellness business tasks (agent 19)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #19.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 19)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #19 - Specialized agent for
+    healthcare & wellness business tasks (agent 19)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_20_370
+  name: 'Healthcare & Wellness Business Agent #20'
+  description: Specialized agent for healthcare & wellness business tasks (agent 20)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #20.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 20)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #20 - Specialized agent for
+    healthcare & wellness business tasks (agent 20)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_21_371
+  name: 'Healthcare & Wellness Business Agent #21'
+  description: Specialized agent for healthcare & wellness business tasks (agent 21)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #21.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 21)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #21 - Specialized agent for
+    healthcare & wellness business tasks (agent 21)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_22_372
+  name: 'Healthcare & Wellness Business Agent #22'
+  description: Specialized agent for healthcare & wellness business tasks (agent 22)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #22.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 22)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #22 - Specialized agent for
+    healthcare & wellness business tasks (agent 22)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_23_373
+  name: 'Healthcare & Wellness Business Agent #23'
+  description: Specialized agent for healthcare & wellness business tasks (agent 23)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #23.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 23)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #23 - Specialized agent for
+    healthcare & wellness business tasks (agent 23)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_24_374
+  name: 'Healthcare & Wellness Business Agent #24'
+  description: Specialized agent for healthcare & wellness business tasks (agent 24)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #24.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 24)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #24 - Specialized agent for
+    healthcare & wellness business tasks (agent 24)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_25_375
+  name: 'Healthcare & Wellness Business Agent #25'
+  description: Specialized agent for healthcare & wellness business tasks (agent 25)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #25.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 25)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #25 - Specialized agent for
+    healthcare & wellness business tasks (agent 25)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_26_376
+  name: 'Healthcare & Wellness Business Agent #26'
+  description: Specialized agent for healthcare & wellness business tasks (agent 26)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #26.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 26)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #26 - Specialized agent for
+    healthcare & wellness business tasks (agent 26)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_27_377
+  name: 'Healthcare & Wellness Business Agent #27'
+  description: Specialized agent for healthcare & wellness business tasks (agent 27)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #27.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 27)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #27 - Specialized agent for
+    healthcare & wellness business tasks (agent 27)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_28_378
+  name: 'Healthcare & Wellness Business Agent #28'
+  description: Specialized agent for healthcare & wellness business tasks (agent 28)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #28.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 28)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #28 - Specialized agent for
+    healthcare & wellness business tasks (agent 28)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_29_379
+  name: 'Healthcare & Wellness Business Agent #29'
+  description: Specialized agent for healthcare & wellness business tasks (agent 29)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #29.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 29)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #29 - Specialized agent for
+    healthcare & wellness business tasks (agent 29)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_30_380
+  name: 'Healthcare & Wellness Business Agent #30'
+  description: Specialized agent for healthcare & wellness business tasks (agent 30)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #30.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 30)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #30 - Specialized agent for
+    healthcare & wellness business tasks (agent 30)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_31_381
+  name: 'Healthcare & Wellness Business Agent #31'
+  description: Specialized agent for healthcare & wellness business tasks (agent 31)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #31.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 31)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #31 - Specialized agent for
+    healthcare & wellness business tasks (agent 31)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_32_382
+  name: 'Healthcare & Wellness Business Agent #32'
+  description: Specialized agent for healthcare & wellness business tasks (agent 32)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #32.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 32)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #32 - Specialized agent for
+    healthcare & wellness business tasks (agent 32)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_33_383
+  name: 'Healthcare & Wellness Business Agent #33'
+  description: Specialized agent for healthcare & wellness business tasks (agent 33)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #33.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 33)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #33 - Specialized agent for
+    healthcare & wellness business tasks (agent 33)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_34_384
+  name: 'Healthcare & Wellness Business Agent #34'
+  description: Specialized agent for healthcare & wellness business tasks (agent 34)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #34.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 34)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #34 - Specialized agent for
+    healthcare & wellness business tasks (agent 34)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_35_385
+  name: 'Healthcare & Wellness Business Agent #35'
+  description: Specialized agent for healthcare & wellness business tasks (agent 35)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #35.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 35)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #35 - Specialized agent for
+    healthcare & wellness business tasks (agent 35)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_36_386
+  name: 'Healthcare & Wellness Business Agent #36'
+  description: Specialized agent for healthcare & wellness business tasks (agent 36)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #36.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 36)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #36 - Specialized agent for
+    healthcare & wellness business tasks (agent 36)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_37_387
+  name: 'Healthcare & Wellness Business Agent #37'
+  description: Specialized agent for healthcare & wellness business tasks (agent 37)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #37.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 37)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #37 - Specialized agent for
+    healthcare & wellness business tasks (agent 37)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_38_388
+  name: 'Healthcare & Wellness Business Agent #38'
+  description: Specialized agent for healthcare & wellness business tasks (agent 38)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #38.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 38)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #38 - Specialized agent for
+    healthcare & wellness business tasks (agent 38)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_39_389
+  name: 'Healthcare & Wellness Business Agent #39'
+  description: Specialized agent for healthcare & wellness business tasks (agent 39)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #39.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 39)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #39 - Specialized agent for
+    healthcare & wellness business tasks (agent 39)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_40_390
+  name: 'Healthcare & Wellness Business Agent #40'
+  description: Specialized agent for healthcare & wellness business tasks (agent 40)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #40.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 40)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #40 - Specialized agent for
+    healthcare & wellness business tasks (agent 40)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_41_391
+  name: 'Healthcare & Wellness Business Agent #41'
+  description: Specialized agent for healthcare & wellness business tasks (agent 41)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #41.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 41)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #41 - Specialized agent for
+    healthcare & wellness business tasks (agent 41)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_42_392
+  name: 'Healthcare & Wellness Business Agent #42'
+  description: Specialized agent for healthcare & wellness business tasks (agent 42)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #42.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 42)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #42 - Specialized agent for
+    healthcare & wellness business tasks (agent 42)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_43_393
+  name: 'Healthcare & Wellness Business Agent #43'
+  description: Specialized agent for healthcare & wellness business tasks (agent 43)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #43.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 43)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #43 - Specialized agent for
+    healthcare & wellness business tasks (agent 43)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_44_394
+  name: 'Healthcare & Wellness Business Agent #44'
+  description: Specialized agent for healthcare & wellness business tasks (agent 44)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #44.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 44)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #44 - Specialized agent for
+    healthcare & wellness business tasks (agent 44)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_45_395
+  name: 'Healthcare & Wellness Business Agent #45'
+  description: Specialized agent for healthcare & wellness business tasks (agent 45)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #45.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 45)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #45 - Specialized agent for
+    healthcare & wellness business tasks (agent 45)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_46_396
+  name: 'Healthcare & Wellness Business Agent #46'
+  description: Specialized agent for healthcare & wellness business tasks (agent 46)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #46.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 46)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #46 - Specialized agent for
+    healthcare & wellness business tasks (agent 46)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_47_397
+  name: 'Healthcare & Wellness Business Agent #47'
+  description: Specialized agent for healthcare & wellness business tasks (agent 47)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #47.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 47)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #47 - Specialized agent for
+    healthcare & wellness business tasks (agent 47)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_48_398
+  name: 'Healthcare & Wellness Business Agent #48'
+  description: Specialized agent for healthcare & wellness business tasks (agent 48)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #48.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 48)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #48 - Specialized agent for
+    healthcare & wellness business tasks (agent 48)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_49_399
+  name: 'Healthcare & Wellness Business Agent #49'
+  description: Specialized agent for healthcare & wellness business tasks (agent 49)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #49.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 49)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #49 - Specialized agent for
+    healthcare & wellness business tasks (agent 49)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
+- agent_id: healthcare_wellness_agent_50_400
+  name: 'Healthcare & Wellness Business Agent #50'
+  description: Specialized agent for healthcare & wellness business tasks (agent 50)
+  category: healthcare_wellness
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Healthcare & Wellness Business Agent #50.
+
+
+    Your primary function is to: Specialized agent for healthcare & wellness business
+    tasks (agent 50)
+
+
+    Task Input:
+
+    {task_description}
+
+
+    Please complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Healthcare & Wellness Business.
+
+    Your role is: Healthcare & Wellness Business Agent #50 - Specialized agent for
+    healthcare & wellness business tasks (agent 50)
+
+
+    Always:
+
+    - Be professional and helpful
+
+    - Follow best practices for Healthcare & Wellness Business
+
+    - Provide actionable outputs
+
+    - Consider context from team members if working in a team'
+  policies:
+  - require_authentication
+  - audit_all_actions
+  tags:
+  - healthcare_wellness
+  - healthcare_&_wellness_business
