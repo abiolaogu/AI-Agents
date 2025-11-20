@@ -1,0 +1,372 @@
+---
+# Advanced Ingress with NGINX
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ai-agents-ingress
+  namespace: ai-agents
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: "50m"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/limit-rps: "100"
+    nginx.ingress.kubernetes.io/limit-connections: "20"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, PUT, DELETE, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "*"
+    nginx.ingress.kubernetes.io/enable-modsecurity: "true"
+    nginx.ingress.kubernetes.io/enable-owasp-core-rules: "true"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      more_set_headers "X-Frame-Options: DENY";
+      more_set_headers "X-Content-Type-Options: nosniff";
+      more_set_headers "X-XSS-Protection: 1; mode=block";
+      more_set_headers "Referrer-Policy: strict-origin-when-cross-origin";
+spec:
+  tls:
+  - hosts:
+    - api.aiagents.platform
+    - app.aiagents.platform
+    - "*.aiagents.platform"
+    secretName: aiagents-tls
+  rules:
+  - host: api.aiagents.platform
+    http:
+      paths:
+      - path: /v1/agents(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: orchestration-engine
+            port:
+              number: 8000
+      - path: /v1/workflows(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: workflow-engine
+            port:
+              number: 8001
+      - path: /v1/analytics(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: analytics-engine
+            port:
+              number: 8002
+  - host: app.aiagents.platform
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: frontend
+            port:
+              number: 80
+
+---
+# Service Mesh with Istio Virtual Service
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: orchestration-engine-vs
+  namespace: ai-agents
+spec:
+  hosts:
+  - orchestration-engine.ai-agents.svc.cluster.local
+  http:
+  - match:
+    - headers:
+        tier:
+          exact: enterprise
+    route:
+    - destination:
+        host: orchestration-engine.ai-agents.svc.cluster.local
+        subset: enterprise
+      weight: 100
+    timeout: 30s
+    retries:
+      attempts: 3
+      perTryTimeout: 10s
+      retryOn: 5xx,reset,connect-failure,refused-stream
+  - match:
+    - headers:
+        tier:
+          exact: business
+    route:
+    - destination:
+        host: orchestration-engine.ai-agents.svc.cluster.local
+        subset: business
+      weight: 100
+    timeout: 10s
+    retries:
+      attempts: 2
+      perTryTimeout: 5s
+  - route:
+    - destination:
+        host: orchestration-engine.ai-agents.svc.cluster.local
+        subset: standard
+      weight: 100
+    timeout: 5s
+    retries:
+      attempts: 1
+      perTryTimeout: 3s
+
+---
+# Destination Rule for traffic policies
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: orchestration-engine-dr
+  namespace: ai-agents
+spec:
+  host: orchestration-engine.ai-agents.svc.cluster.local
+  trafficPolicy:
+    loadBalancer:
+      consistentHash:
+        httpHeaderName: x-user-id
+    connectionPool:
+      tcp:
+        maxConnections: 1000
+      http:
+        http1MaxPendingRequests: 1000
+        http2MaxRequests: 1000
+        maxRequestsPerConnection: 2
+        maxRetries: 3
+    outlierDetection:
+      consecutiveErrors: 5
+      interval: 30s
+      baseEjectionTime: 30s
+      maxEjectionPercent: 50
+      minHealthPercent: 50
+  subsets:
+  - name: enterprise
+    labels:
+      tier: enterprise
+    trafficPolicy:
+      connectionPool:
+        tcp:
+          maxConnections: 5000
+        http:
+          http1MaxPendingRequests: 5000
+          http2MaxRequests: 5000
+  - name: business
+    labels:
+      tier: business
+    trafficPolicy:
+      connectionPool:
+        tcp:
+          maxConnections: 2000
+        http:
+          http1MaxPendingRequests: 2000
+          http2MaxRequests: 2000
+  - name: standard
+    labels:
+      tier: standard
+    trafficPolicy:
+      connectionPool:
+        tcp:
+          maxConnections: 1000
+        http:
+          http1MaxPendingRequests: 1000
+          http2MaxRequests: 1000
+
+---
+# Gateway for ingress traffic
+apiVersion: networking.istio.io/v1beta1
+kind: Gateway
+metadata:
+  name: ai-agents-gateway
+  namespace: ai-agents
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - port:
+      number: 443
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: SIMPLE
+      credentialName: aiagents-tls
+    hosts:
+    - "*.aiagents.platform"
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "*.aiagents.platform"
+    tls:
+      httpsRedirect: true
+
+---
+# Circuit Breaker Configuration
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: circuit-breaker
+  namespace: ai-agents
+spec:
+  host: "*.ai-agents.svc.cluster.local"
+  trafficPolicy:
+    outlierDetection:
+      consecutiveGatewayErrors: 5
+      consecutive5xxErrors: 5
+      interval: 30s
+      baseEjectionTime: 1m
+      maxEjectionPercent: 50
+      minHealthPercent: 40
+
+---
+# Rate Limiting with Envoy
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ratelimit-config
+  namespace: ai-agents
+data:
+  config.yaml: |
+    domain: ai-agents
+    descriptors:
+      # Free tier: 100 requests per hour
+      - key: tier
+        value: free
+        rate_limit:
+          unit: hour
+          requests_per_unit: 100
+
+      # Starter tier: 1000 requests per hour
+      - key: tier
+        value: starter
+        rate_limit:
+          unit: hour
+          requests_per_unit: 1000
+
+      # Professional tier: 10000 requests per hour
+      - key: tier
+        value: professional
+        rate_limit:
+          unit: hour
+          requests_per_unit: 10000
+
+      # Business tier: 100000 requests per hour
+      - key: tier
+        value: business
+        rate_limit:
+          unit: hour
+          requests_per_unit: 100000
+
+      # Enterprise tier: unlimited
+      - key: tier
+        value: enterprise
+        rate_limit:
+          unit: hour
+          requests_per_unit: 1000000
+
+---
+# EnvoyFilter for advanced routing
+apiVersion: networking.istio.io/v1alpha3
+kind: EnvoyFilter
+metadata:
+  name: custom-headers
+  namespace: ai-agents
+spec:
+  workloadSelector:
+    labels:
+      app: orchestration-engine
+  configPatches:
+  - applyTo: HTTP_FILTER
+    match:
+      context: SIDECAR_INBOUND
+      listener:
+        filterChain:
+          filter:
+            name: envoy.filters.network.http_connection_manager
+            subFilter:
+              name: envoy.filters.http.router
+    patch:
+      operation: INSERT_BEFORE
+      value:
+        name: envoy.filters.http.lua
+        typed_config:
+          "@type": type.googleapis.com/envoy.extensions.filters.http.lua.v3.Lua
+          inline_code: |
+            function envoy_on_request(request_handle)
+              request_handle:headers():add("x-request-id", request_handle:headers():get("x-request-id") or request_handle:headers():get("x-forwarded-for"))
+              request_handle:headers():add("x-forwarded-proto", "https")
+            end
+
+            function envoy_on_response(response_handle)
+              response_handle:headers():add("x-response-time", os.clock())
+              response_handle:headers():add("x-served-by", "ai-agents-platform")
+            end
+
+---
+# Global Traffic Policy
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: global-traffic-policy
+  namespace: istio-system
+spec:
+  host: "*.local"
+  trafficPolicy:
+    loadBalancer:
+      simple: LEAST_REQUEST
+    connectionPool:
+      tcp:
+        maxConnections: 100
+      http:
+        http1MaxPendingRequests: 1000
+        http2MaxRequests: 1000
+        maxRequestsPerConnection: 1
+        h2UpgradePolicy: UPGRADE
+    outlierDetection:
+      consecutiveErrors: 7
+      interval: 30s
+      baseEjectionTime: 30s
+
+---
+# Peer Authentication for mTLS
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: ai-agents
+spec:
+  mtls:
+    mode: STRICT
+
+---
+# Authorization Policy
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: orchestration-engine-authz
+  namespace: ai-agents
+spec:
+  selector:
+    matchLabels:
+      app: orchestration-engine
+  action: ALLOW
+  rules:
+  - from:
+    - source:
+        principals: ["cluster.local/ns/ai-agents/sa/frontend"]
+        namespaces: ["ai-agents"]
+    to:
+    - operation:
+        methods: ["GET", "POST", "PUT", "DELETE"]
+        paths: ["/v1/*"]
+    when:
+    - key: request.headers[authorization]
+      notValues: [""]

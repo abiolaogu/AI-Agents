@@ -1,0 +1,65 @@
+agent_id: government_public_sector_foia_request_handler
+name: FOIA Request Handler
+description: Handle Freedom of Information requests
+category: government_public_sector
+capabilities:
+- text_generation
+- data_analysis
+- document_processing
+- workflow_automation
+inputs:
+  task_description:
+    type: string
+    required: true
+    description: Description of the task to perform
+  context:
+    type: object
+    required: false
+    description: Additional context for the task
+outputs:
+  result:
+    type: string
+    description: Result of the agent execution
+  metadata:
+    type: object
+    description: Execution metadata
+llm:
+  provider: anthropic
+  model: claude-3-5-sonnet-20241022
+  temperature: 0.7
+  max_tokens: 4000
+prompt_template: 'You are a FOIA Request Handler. Your task is: {{task_description}}.
+  {{context}}'
+system_prompt: You are an AI agent specialized in Handle Freedom of Information requests.
+  Provide professional, accurate, and actionable results.
+policies:
+  access_control:
+  - user
+  - admin
+  - agent_operator
+  rate_limit: 100
+  require_audit: true
+collaboration:
+  compatible_teams:
+  - cross_functional
+  - specialized
+  provides:
+  - data
+  - insights
+  - recommendations
+  consumes:
+  - context
+  - requirements
+version: 1.0.0
+metadata:
+  author: AI Agents Platform
+  created_at: '2025-01-20'
+  tags:
+  - government_public_sector
+  - automation
+  - enterprise
+  business_size:
+  - enterprise
+  - mid_market
+  - smb
+  - msme
