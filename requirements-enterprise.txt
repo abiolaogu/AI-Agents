@@ -1,0 +1,255 @@
+# AI Agents Platform - Enterprise Requirements
+# Python 3.11+
+
+# Core Framework
+anthropic>=0.21.0
+openai>=1.12.0
+langchain>=0.1.10
+langchain-anthropic>=0.1.6
+langchain-openai>=0.0.8
+
+# Multi-Framework Support
+langgraph>=0.0.20
+crewai>=0.1.0
+pyautogen>=0.2.0
+semantic-kernel>=0.5.0
+
+# Vector Database & Embeddings
+qdrant-client>=1.7.0
+sentence-transformers>=2.3.1
+faiss-cpu>=1.7.4
+
+# Web Framework & API
+fastapi>=0.109.2
+uvicorn[standard]>=0.27.1
+flask>=3.0.2
+gunicorn>=21.2.0
+pydantic>=2.6.1
+pydantic-settings>=2.1.0
+
+# Database & Caching
+sqlalchemy>=2.0.27
+alembic>=1.13.1
+psycopg2-binary>=2.9.9
+asyncpg>=0.29.0
+redis>=5.0.1
+hiredis>=2.3.2
+pymongo>=4.6.1
+motor>=3.3.2
+
+# Task Queue & Background Processing
+celery>=5.3.6
+flower>=2.0.1
+kombu>=5.3.5
+
+# Authentication & Security
+pyjwt>=2.8.0
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.9
+cryptography>=42.0.2
+
+# Policy & Compliance
+opa-python>=0.1.0
+python-dotenv>=1.0.1
+
+# Monitoring & Observability
+prometheus-client>=0.19.0
+sentry-sdk>=1.40.0
+opentelemetry-api>=1.22.0
+opentelemetry-sdk>=1.22.0
+opentelemetry-instrumentation-fastapi>=0.43b0
+datadog>=0.49.0
+
+# Testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.4
+pytest-cov>=4.1.0
+pytest-mock>=3.12.0
+httpx>=0.26.0
+faker>=22.6.0
+
+# Data Processing
+pandas>=2.2.0
+numpy>=1.26.3
+pyarrow>=15.0.0
+polars>=0.20.7
+
+# HTTP & Integration
+requests>=2.31.0
+aiohttp>=3.9.3
+httpx>=0.26.0
+websockets>=12.0
+
+# Utilities
+pyyaml>=6.0.1
+python-dateutil>=2.8.2
+tenacity>=8.2.3
+click>=8.1.7
+rich>=13.7.0
+typer>=0.9.0
+
+# Streaming & Real-time
+sse-starlette>=2.0.0
+python-socketio>=5.11.1
+
+# Code Quality & Linting
+black>=24.1.1
+ruff>=0.2.1
+mypy>=1.8.0
+pylint>=3.0.3
+
+# Documentation
+mkdocs>=1.5.3
+mkdocs-material>=9.5.9
+mkdocstrings[python]>=0.24.0
+
+# Distributed Caching
+hazelcast-python-client>=5.3.0
+pymemcache>=4.0.0
+
+# Cloud SDKs
+boto3>=1.34.37
+google-cloud-storage>=2.14.0
+azure-storage-blob>=12.19.0
+
+# Kubernetes
+kubernetes>=29.0.0
+
+# Message Brokers
+pika>=1.3.2
+aiokafka>=0.10.0
+
+# Image Processing (for multimodal agents)
+pillow>=10.2.0
+opencv-python>=4.9.0.80
+
+# PDF Processing
+pypdf2>=3.0.1
+pdfplumber>=0.11.0
+
+# Excel & Spreadsheets
+openpyxl>=3.1.2
+xlsxwriter>=3.1.9
+
+# Email
+python-email-validator>=2.1.0
+aiosmtplib>=3.0.1
+
+# Scheduling
+apscheduler>=3.10.4
+
+# Rate Limiting
+slowapi>=0.1.9
+limits>=3.8.0
+
+# Feature Flags
+flagsmith>=3.4.0
+
+# Analytics
+mixpanel>=4.10.0
+segment-analytics-python>=2.3.2
+
+# Markdown & Text
+markdown>=3.5.2
+beautifulsoup4>=4.12.3
+lxml>=5.1.0
+
+# CLI
+questionary>=2.0.1
+tabulate>=0.9.0
+
+# Compression
+zstandard>=0.22.0
+
+# JSON Schema
+jsonschema>=4.21.1
+
+# UUID
+uuid>=1.30
+
+# Time Zone
+pytz>=2024.1
+
+# Multiprocessing
+multiprocess>=0.70.16
+
+# Retry Logic
+backoff>=2.2.1
+
+# Configuration
+hydra-core>=1.3.2
+omegaconf>=2.3.0
+
+# Telemetry
+posthog>=3.4.2
+
+# GraphQL (optional)
+strawberry-graphql[fastapi]>=0.219.0
+ariadne>=0.22.0
+
+# WebSockets
+starlette>=0.36.3
+
+# CORS
+fastapi-cors>=0.0.6
+
+# Rate Limit by IP
+flask-limiter>=3.5.1
+
+# Secrets Management
+hvac>=2.1.0
+
+# Environment
+environs>=11.0.0
+
+# Logging
+structlog>=24.1.0
+python-json-logger>=2.0.7
+
+# File Upload
+python-magic>=0.4.27
+
+# Database Migrations
+yoyo-migrations>=8.2.0
+
+# API Documentation
+fastapi[all]>=0.109.2
+
+# Load Testing
+locust>=2.23.1
+
+# Code Generation
+jinja2>=3.1.3
+
+# Validation
+cerberus>=1.3.5
+
+# Workflow
+prefect>=2.16.0
+dagster>=1.6.5
+
+# Serialization
+msgpack>=1.0.7
+orjson>=3.9.13
+
+# Network
+netifaces>=0.11.0
+
+# Process Management
+supervisor>=4.2.5
+
+# System Metrics
+psutil>=5.9.8
+
+# Git Integration
+gitpython>=3.1.41
+
+# Container Registry
+docker>=7.0.0
+
+# Service Discovery
+python-consul>=1.1.0
+
+# Configuration Validation
+pydantic[dotenv]>=2.6.1

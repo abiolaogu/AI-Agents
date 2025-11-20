@@ -1,0 +1,105 @@
+agent_id: research_development_lab_safety_compliance_checker
+name: Lab Safety Compliance Checker
+description: AI agent for lab safety compliance checker in research & development
+category: research_development
+capabilities:
+- text_generation
+- data_analysis
+- document_processing
+- workflow_automation
+- decision_support
+inputs:
+  task_description:
+    type: string
+    required: true
+    description: Description of the task to perform
+  context:
+    type: object
+    required: false
+    description: Additional context for the task
+  parameters:
+    type: object
+    required: false
+    description: Task-specific parameters
+outputs:
+  result:
+    type: string
+    description: Result of the agent execution
+  metadata:
+    type: object
+    description: Execution metadata including performance metrics
+  confidence_score:
+    type: number
+    description: Confidence score of the result (0-1)
+llm:
+  provider: anthropic
+  model: claude-3-5-sonnet-20241022
+  temperature: 0.7
+  max_tokens: 4000
+  fallback:
+    provider: openai
+    model: gpt-4-turbo-preview
+prompt_template: 'You are a Lab Safety Compliance Checker. Your task is: {{task_description}}.
+  {{context}}{{parameters}}'
+system_prompt: You are an AI agent specialized in AI agent for lab safety compliance
+  checker in research & development. Provide professional, accurate, and actionable
+  results. Consider the business context and provide recommendations that are practical
+  and implementable.
+policies:
+  access_control:
+  - user
+  - admin
+  - agent_operator
+  rate_limit: 100
+  require_audit: true
+  data_retention_days: 90
+  pii_handling: mask
+collaboration:
+  compatible_teams:
+  - cross_functional
+  - specialized
+  - enterprise
+  provides:
+  - data
+  - insights
+  - recommendations
+  - automation
+  consumes:
+  - context
+  - requirements
+  - data
+  team_roles:
+  - analyst
+  - executor
+  - reviewer
+performance:
+  avg_execution_time_ms: 2000
+  success_rate: 0.95
+  cache_enabled: true
+  cache_ttl_seconds: 3600
+enterprise_features:
+  sso_enabled: true
+  multi_tenant: true
+  custom_branding: true
+  dedicated_resources: false
+  sla_tier: standard
+version: 2.0.0
+metadata:
+  author: AI Agents Platform
+  created_at: '2025-11-20T06:35:22.258277'
+  updated_at: '2025-11-20T06:35:22.258282'
+  tags:
+  - research_development
+  - automation
+  - enterprise
+  - ai
+  business_size:
+  - enterprise
+  - multinational
+  - mid_market
+  - smb
+  - sme
+  - msme
+  industries:
+  - all
+  maturity: production
