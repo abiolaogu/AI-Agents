@@ -1,0 +1,26 @@
+[bandit]
+# Bandit configuration for AI Agents Platform
+# https://bandit.readthedocs.io/en/latest/config.html
+
+# Exclude test directories and third-party code
+exclude_dirs = [
+    '/tests/',
+    '/test/',
+    '/.venv/',
+    '/venv/',
+    '/node_modules/',
+    '/__pycache__/'
+]
+
+# Skip specific tests that are false positives or intentional
+# B301: pickle usage - intentional for caching, data is from trusted sources
+# B403: import pickle - needed for serialization
+skips = []
+
+# Set severity threshold (only report issues >= LOW)
+# Options: LOW, MEDIUM, HIGH
+severity = LOW
+
+# Set confidence threshold
+# Options: LOW, MEDIUM, HIGH
+confidence = MEDIUM
