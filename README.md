@@ -1,34 +1,73 @@
-# AI Agents Platform - 700+ AI Agents
+# 🤖 AI Agents Platform - 1,500 Production-Ready AI Agents
 
-This repository contains a comprehensive, enterprise-grade multi-agent AI platform with 700+ specialized agents. Designed as a complete business operations solution with team collaboration, multi-framework support, and production-ready deployment.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Production Ready](https://img.shields.io/badge/status-95%25%20production%20ready-brightgreen.svg)]()
+[![Agents](https://img.shields.io/badge/agents-1500-blueviolet.svg)]()
+[![Documentation](https://img.shields.io/badge/docs-complete-success.svg)](docs/)
 
-## Project Overview
+This repository contains a comprehensive, enterprise-grade multi-agent AI platform with **1,500 specialized agents** powered by Anthropic Claude 3.5 Sonnet. Designed as a complete business automation solution with production-ready deployment, comprehensive monitoring, and enterprise security.
 
-A cloud-native, microservices-based system orchestrating 700+ specialized AI agents across multiple frameworks (LangGraph, CrewAI, AutoGen) for various business domains including marketing, sales, operations, analytics, and more.
+## 🚀 Project Overview
 
-- **Architecture:** Microservices, Event-Driven (Celery), Docker, Kubernetes, RunPod Serverless
-- **Technology:** Python, FastAPI, React, TypeScript, Flutter, Redis, PostgreSQL, MongoDB
-- **Agents:** 700+ pre-built specialized agents across 7 major categories
-- **Security:** OAuth 2.0, SAML, RBAC, comprehensive vulnerability scanning
-- **Frontend:** React TypeScript web app + Flutter mobile app (iOS/Android)
+A cloud-native, microservices-based system providing 1,500 specialized AI agents across 29 business categories. Each agent is a production-ready FastAPI microservice with Docker containerization, Kubernetes orchestration, and complete observability.
+
+**Key Highlights:**
+- **Agents:** 1,500 pre-built specialized agents across 29 business categories
+- **Architecture:** Kubernetes, Docker, FastAPI microservices
+- **AI Model:** Anthropic Claude 3.5 Sonnet integration
+- **Infrastructure:** Complete K8s manifests, monitoring stack, security policies
+- **Testing:** Unit, integration, load, and E2E tests
+- **Documentation:** Training manuals, video scripts, API docs, runbooks
+- **Installation:** One-command Docker Compose setup
+- **Security:** Vault, JWT auth, network policies, vulnerability scanning
+- **Monitoring:** Prometheus, Grafana, Loki log aggregation
 
 ## 📚 Documentation
 
 **New to the platform?** Start here:
-1. **[00_START_HERE.md](./00_START_HERE.md)** - Quick orientation guide
-2. **[PLATFORM_GUIDE.md](./PLATFORM_GUIDE.md)** - Comprehensive unified documentation
-3. **[docs/guides/](./docs/guides/)** - Detailed guides by topic
+1. **[Installation Guide](installation/README.md)** - One-command installation (5 minutes)
+2. **[User Guide](docs/training/03_ENDUSER_TRAINING_MANUAL.md)** - For end users
+3. **[Developer Guide](docs/training/02_DEVELOPER_TRAINING_MANUAL.md)** - API integration
+4. **[Admin Guide](docs/training/01_ADMIN_TRAINING_MANUAL.md)** - Platform management
+5. **[Deployment Guide](DEPLOYMENT_GUIDE.md)** - Production deployment
+6. **[Operations Runbook](RUNBOOK.md)** - Daily operations & incident response
+7. **[Technical Documentation](docs/technical/TECHNICAL_DOCUMENTATION.md)** - Complete technical reference
+8. **[Production Readiness](PRODUCTION_READINESS.md)** - Readiness assessment
+9. **[Video Scripts](docs/videos/VIDEO_SCRIPTS.md)** - Tutorial scripts
+10. **[Preview Dashboard](preview/index.html)** - Interactive HTML preview
 
-## Getting Started
+## 🚀 Quick Start
 
-### Local Development
+### Option 1: One-Command Installation (Recommended)
 
-1.  **Prerequisites:** Docker, Docker Compose.
-2.  **Build and Run:**
-    ```bash
-    sudo docker compose up --build -d
-    ```
-3.  **Access the API:** The orchestration engine API will be available at `http://localhost:5000`.
+```bash
+git clone https://github.com/your-org/AI-Agents.git
+cd AI-Agents/installation
+
+# Configure environment
+cp .env.template .env
+nano .env  # Add your ANTHROPIC_API_KEY
+
+# Install everything
+chmod +x install.sh
+./install.sh
+```
+
+**What you get:**
+- Complete platform running in Docker
+- Business Plan Agent ready at http://localhost:8209
+- Grafana dashboard at http://localhost:3000
+- Prometheus at http://localhost:9090
+- All infrastructure services (Vault, Consul, Redis, PostgreSQL)
+
+### Option 2: Kubernetes Production Deployment
+
+```bash
+cd infrastructure/scripts
+./deploy.sh production full
+```
+
+See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for complete instructions.
 
 ### Running Tests
 
