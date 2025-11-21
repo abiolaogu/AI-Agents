@@ -1,0 +1,6 @@
+pytest==7.4.3
+pytest-asyncio==0.23.2
+pytest-cov==4.1.0
+requests==2.31.0
+locust==2.20.0
+faker==22.0.0
