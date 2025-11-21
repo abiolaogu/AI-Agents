@@ -1,0 +1,161 @@
+groups:
+  - name: ai_agents_alerts
+    interval: 30s
+    rules:
+      # High Error Rate Alert
+      - alert: HighErrorRate
+        expr: |
+          (
+            sum(rate(agent_errors_total[5m]))
+            /
+            sum(rate(agent_requests_total[5m]))
+          ) * 100 > 5
+        for: 5m
+        labels:
+          severity: critical
+          component: agent
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value | humanizePercentage }} (threshold: 5%)"
+
+      # Agent Down Alert
+      - alert: AgentDown
+        expr: up{namespace="ai-agents"} == 0
+        for: 2m
+        labels:
+          severity: critical
+          component: agent
+        annotations:
+          summary: "Agent {{ $labels.pod }} is down"
+          description: "Agent {{ $labels.agent_id }} in pod {{ $labels.pod }} has been down for more than 2 minutes"
+
+      # High Response Time Alert
+      - alert: HighResponseTime
+        expr: |
+          (
+            sum(rate(agent_processing_seconds_sum[5m]))
+            /
+            sum(rate(agent_processing_seconds_count[5m]))
+          ) > 10
+        for: 5m
+        labels:
+          severity: warning
+          component: agent
+        annotations:
+          summary: "High response time detected"
+          description: "Average response time is {{ $value | humanizeDuration }} (threshold: 10s)"
+
+      # High CPU Usage Alert
+      - alert: HighCPUUsage
+        expr: |
+          sum by (pod) (
+            rate(container_cpu_usage_seconds_total{namespace="ai-agents"}[5m])
+          ) * 100 > 80
+        for: 10m
+        labels:
+          severity: warning
+          component: infrastructure
+        annotations:
+          summary: "High CPU usage on {{ $labels.pod }}"
+          description: "CPU usage is {{ $value | humanize }}% on pod {{ $labels.pod }}"
+
+      # High Memory Usage Alert
+      - alert: HighMemoryUsage
+        expr: |
+          (
+            container_memory_usage_bytes{namespace="ai-agents"}
+            /
+            container_spec_memory_limit_bytes{namespace="ai-agents"}
+          ) * 100 > 85
+        for: 10m
+        labels:
+          severity: warning
+          component: infrastructure
+        annotations:
+          summary: "High memory usage on {{ $labels.pod }}"
+          description: "Memory usage is {{ $value | humanize }}% on pod {{ $labels.pod }}"
+
+      # Pod Restart Alert
+      - alert: PodRestartingFrequently
+        expr: |
+          rate(kube_pod_container_status_restarts_total{namespace="ai-agents"}[15m]) > 0.1
+        for: 5m
+        labels:
+          severity: warning
+          component: infrastructure
+        annotations:
+          summary: "Pod {{ $labels.pod }} restarting frequently"
+          description: "Pod {{ $labels.pod }} has restarted {{ $value }} times in the last 15 minutes"
+
+      # Low Request Volume (Possible Issue)
+      - alert: LowRequestVolume
+        expr: |
+          sum(rate(agent_requests_total[5m])) < 1
+        for: 15m
+        labels:
+          severity: info
+          component: agent
+        annotations:
+          summary: "Unusually low request volume"
+          description: "Request rate is {{ $value }} req/s (expected > 1 req/s)"
+
+      # High Cost Alert
+      - alert: HighDailyCost
+        expr: |
+          sum(increase(agent_requests_total[1d])) * 0.012 > 1000
+        for: 1h
+        labels:
+          severity: warning
+          component: billing
+        annotations:
+          summary: "Daily API cost exceeding threshold"
+          description: "Estimated daily cost is ${{ $value | humanize }} (threshold: $1000)"
+
+      # Database Connection Issues
+      - alert: DatabaseConnectionFailures
+        expr: |
+          sum(rate(agent_db_errors_total[5m])) > 0.5
+        for: 5m
+        labels:
+          severity: critical
+          component: database
+        annotations:
+          summary: "High database connection failure rate"
+          description: "Database errors: {{ $value | humanize }} errors/sec"
+
+      # Rate Limiting Triggered
+      - alert: RateLimitExceeded
+        expr: |
+          sum(rate(agent_rate_limit_exceeded_total[5m])) > 10
+        for: 5m
+        labels:
+          severity: warning
+          component: rate_limiter
+        annotations:
+          summary: "Rate limits being exceeded frequently"
+          description: "Rate limit exceeded {{ $value | humanize }} times/sec"
+
+  - name: ai_agents_recording_rules
+    interval: 30s
+    rules:
+      # Pre-calculate common metrics
+      - record: agent:request_rate:5m
+        expr: sum(rate(agent_requests_total[5m]))
+
+      - record: agent:error_rate:5m
+        expr: |
+          sum(rate(agent_errors_total[5m]))
+          /
+          sum(rate(agent_requests_total[5m]))
+
+      - record: agent:avg_response_time:5m
+        expr: |
+          sum(rate(agent_processing_seconds_sum[5m]))
+          /
+          sum(rate(agent_processing_seconds_count[5m]))
+
+      - record: agent:p95_response_time:5m
+        expr: histogram_quantile(0.95, sum(rate(agent_processing_seconds_bucket[5m])) by (le))
+
+      - record: agent:p99_response_time:5m
+        expr: histogram_quantile(0.99, sum(rate(agent_processing_seconds_bucket[5m])) by (le))

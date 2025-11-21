@@ -1,0 +1,170 @@
+{
+  "dashboard": {
+    "title": "AI Agents Platform - Overview",
+    "tags": ["ai-agents", "overview"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Total Requests",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(rate(agent_requests_total[5m]))",
+            "legendFormat": "Requests/sec"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Active Agents",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "count(up{namespace=\"ai-agents\"} == 1)",
+            "legendFormat": "Active"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 6, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "Error Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(rate(agent_errors_total[5m])) / sum(rate(agent_requests_total[5m])) * 100",
+            "legendFormat": "Error %"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 12, "y": 0},
+        "fieldConfig": {
+          "defaults": {
+            "thresholds": {
+              "steps": [
+                {"value": 0, "color": "green"},
+                {"value": 1, "color": "yellow"},
+                {"value": 5, "color": "red"}
+              ]
+            }
+          }
+        }
+      },
+      {
+        "id": 4,
+        "title": "Avg Response Time",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(rate(agent_processing_seconds_sum[5m])) / sum(rate(agent_processing_seconds_count[5m])) * 1000",
+            "legendFormat": "ms"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 18, "y": 0}
+      },
+      {
+        "id": 5,
+        "title": "Requests per Second by Agent",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum by (agent_id) (rate(agent_requests_total[5m]))",
+            "legendFormat": "{{agent_id}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 4}
+      },
+      {
+        "id": 6,
+        "title": "Response Time Distribution",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "sum(rate(agent_processing_seconds_bucket[5m])) by (le)",
+            "format": "heatmap"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 4}
+      },
+      {
+        "id": 7,
+        "title": "Top 10 Active Agents",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "topk(10, sum by (agent_id) (rate(agent_requests_total[5m])))",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 12}
+      },
+      {
+        "id": 8,
+        "title": "Agent Health Status",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "up{namespace=\"ai-agents\"}",
+            "format": "table",
+            "instant": true
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 12}
+      },
+      {
+        "id": 9,
+        "title": "Resource Usage - CPU",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum by (pod) (rate(container_cpu_usage_seconds_total{namespace=\"ai-agents\"}[5m])) * 100",
+            "legendFormat": "{{pod}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 20}
+      },
+      {
+        "id": 10,
+        "title": "Resource Usage - Memory",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum by (pod) (container_memory_usage_bytes{namespace=\"ai-agents\"}) / 1024 / 1024",
+            "legendFormat": "{{pod}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 20}
+      },
+      {
+        "id": 11,
+        "title": "API Cost Estimation",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(increase(agent_requests_total[1d])) * 0.012",
+            "legendFormat": "$"
+          }
+        ],
+        "gridPos": {"h": 4, "w": 6, "x": 0, "y": 28},
+        "description": "Estimated daily API cost at $0.012/request"
+      },
+      {
+        "id": 12,
+        "title": "Request Rate Trend (24h)",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "sum(rate(agent_requests_total[5m]))",
+            "legendFormat": "Requests/sec"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 18, "x": 6, "y": 28}
+      }
+    ],
+    "refresh": "30s",
+    "schemaVersion": 27,
+    "version": 1
+  }
+}

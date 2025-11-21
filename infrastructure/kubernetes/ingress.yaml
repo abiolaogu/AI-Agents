@@ -1,0 +1,52 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: agents-ingress
+  namespace: ai-agents
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/limit-rps: "10"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
+    nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, OPTIONS"
+    nginx.ingress.kubernetes.io/cors-allow-origin: "https://yourdomain.com"
+spec:
+  tls:
+  - hosts:
+    - api.agents.yourdomain.com
+    secretName: agents-tls-secret
+  rules:
+  - host: api.agents.yourdomain.com
+    http:
+      paths:
+      # API Gateway pattern - route by agent category or ID
+      - path: /api/v1/business-ops/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: business-plan-agent-009-service
+            port:
+              number: 80
+      - path: /api/v1/agents/(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: api-gateway-service
+            port:
+              number: 80
+---
+# API Gateway Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-gateway-service
+  namespace: ai-agents
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: api-gateway
