@@ -1,0 +1,287 @@
+---
+# ConfigMap for application configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: csr-agent-config
+  namespace: ai-agents
+data:
+  LOG_LEVEL: "info"
+  MAX_CONCURRENT_CHATS: "10000"
+  MESSAGE_QUEUE_SIZE: "100000"
+  WORKER_POOL_SIZE: "100"
+  ENABLE_TRACING: "true"
+
+---
+# Secret for sensitive configuration (create manually or via sealed-secrets)
+apiVersion: v1
+kind: Secret
+metadata:
+  name: csr-agent-secrets
+  namespace: ai-agents
+type: Opaque
+stringData:
+  CLAUDE_API_KEY: "your-claude-api-key-here"
+  ZENDESK_API_KEY: "your-zendesk-api-key-here"
+  SLACK_BOT_TOKEN: "your-slack-bot-token-here"
+  API_KEY: "your-admin-api-key-here"
+
+---
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: csr-agent
+  namespace: ai-agents
+  labels:
+    app: csr-agent
+    version: v2.0.0
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: csr-agent
+  template:
+    metadata:
+      labels:
+        app: csr-agent
+        version: v2.0.0
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8080"
+        prometheus.io/path: "/metrics"
+    spec:
+      # Anti-affinity to spread pods across nodes
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - csr-agent
+              topologyKey: kubernetes.io/hostname
+
+      # Security context
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+
+      containers:
+      - name: csr-agent
+        image: aiagents/csr-agent:2.0.0
+        imagePullPolicy: Always
+
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+
+        # Environment variables from ConfigMap
+        envFrom:
+        - configMapRef:
+            name: csr-agent-config
+
+        # Environment variables from Secret
+        env:
+        - name: CLAUDE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: csr-agent-secrets
+              key: CLAUDE_API_KEY
+        - name: ZENDESK_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: csr-agent-secrets
+              key: ZENDESK_API_KEY
+        - name: SLACK_BOT_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: csr-agent-secrets
+              key: SLACK_BOT_TOKEN
+        - name: API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: csr-agent-secrets
+              key: API_KEY
+
+        # Service URLs
+        - name: REDIS_URL
+          value: "redis://redis-cluster:6379/0"
+        - name: ELASTICSEARCH_URL
+          value: "http://elasticsearch:9200"
+        - name: QDRANT_URL
+          value: "http://qdrant:6333"
+
+        # Resource limits
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+          limits:
+            cpu: 2000m
+            memory: 2Gi
+
+        # Liveness probe
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+
+        # Readiness probe
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 2
+
+        # Startup probe
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 10
+
+        # Security context for container
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          runAsNonRoot: true
+          runAsUser: 1000
+          capabilities:
+            drop:
+            - ALL
+
+        # Volume mounts for temp files
+        volumeMounts:
+        - name: tmp
+          mountPath: /tmp
+
+      volumes:
+      - name: tmp
+        emptyDir: {}
+
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: csr-agent
+  namespace: ai-agents
+  labels:
+    app: csr-agent
+spec:
+  type: ClusterIP
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800  # 3 hours
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    name: http
+  selector:
+    app: csr-agent
+
+---
+# Horizontal Pod Autoscaler
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: csr-agent-hpa
+  namespace: ai-agents
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: csr-agent
+  minReplicas: 3
+  maxReplicas: 50
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  - type: Pods
+    pods:
+      metric:
+        name: csr_messages_processed_total
+      target:
+        type: AverageValue
+        averageValue: "100"
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Percent
+        value: 25
+        periodSeconds: 60
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+      - type: Percent
+        value: 50
+        periodSeconds: 30
+      - type: Pods
+        value: 5
+        periodSeconds: 30
+
+---
+# Pod Disruption Budget
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: csr-agent-pdb
+  namespace: ai-agents
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: csr-agent
+
+---
+# ServiceMonitor for Prometheus
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: csr-agent
+  namespace: ai-agents
+  labels:
+    app: csr-agent
+spec:
+  selector:
+    matchLabels:
+      app: csr-agent
+  endpoints:
+  - port: http
+    path: /metrics
+    interval: 30s
+    scrapeTimeout: 10s

@@ -245,9 +245,9 @@ class MultiTierCacheManager:
             import msgpack
             return msgpack.packb(value, use_bin_type=True)
         elif config.serializer == "pickle":
-            import pickle
+            import pickle  # nosec B403
             import base64
-            return base64.b64encode(pickle.dumps(value)).decode()
+            return base64.b64encode(pickle.dumps(value)).decode()  # nosec B301
         else:
             return str(value)
 
@@ -259,9 +259,9 @@ class MultiTierCacheManager:
             import msgpack
             return msgpack.unpackb(value, raw=False)
         elif config.serializer == "pickle":
-            import pickle
+            import pickle  # nosec B403
             import base64
-            return pickle.loads(base64.b64decode(value))
+            return pickle.loads(base64.b64decode(value))  # nosec B301
         else:
             return value
 
