@@ -1,0 +1,1701 @@
+agents:
+- agent_id: data_science_analytics_agent_1_1654
+  name: 'Data Science & Analytics Agent #1'
+  description: Specialized agent for data science & analytics tasks (agent 1)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #1.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 1)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #1 - Specialized agent for data science
+    & analytics tasks (agent 1)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_2_1655
+  name: 'Data Science & Analytics Agent #2'
+  description: Specialized agent for data science & analytics tasks (agent 2)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #2.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 2)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #2 - Specialized agent for data science
+    & analytics tasks (agent 2)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_3_1656
+  name: 'Data Science & Analytics Agent #3'
+  description: Specialized agent for data science & analytics tasks (agent 3)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #3.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 3)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #3 - Specialized agent for data science
+    & analytics tasks (agent 3)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_4_1657
+  name: 'Data Science & Analytics Agent #4'
+  description: Specialized agent for data science & analytics tasks (agent 4)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #4.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 4)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #4 - Specialized agent for data science
+    & analytics tasks (agent 4)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_5_1658
+  name: 'Data Science & Analytics Agent #5'
+  description: Specialized agent for data science & analytics tasks (agent 5)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #5.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 5)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #5 - Specialized agent for data science
+    & analytics tasks (agent 5)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_6_1659
+  name: 'Data Science & Analytics Agent #6'
+  description: Specialized agent for data science & analytics tasks (agent 6)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #6.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 6)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #6 - Specialized agent for data science
+    & analytics tasks (agent 6)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_7_1660
+  name: 'Data Science & Analytics Agent #7'
+  description: Specialized agent for data science & analytics tasks (agent 7)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #7.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 7)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #7 - Specialized agent for data science
+    & analytics tasks (agent 7)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_8_1661
+  name: 'Data Science & Analytics Agent #8'
+  description: Specialized agent for data science & analytics tasks (agent 8)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #8.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 8)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #8 - Specialized agent for data science
+    & analytics tasks (agent 8)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_9_1662
+  name: 'Data Science & Analytics Agent #9'
+  description: Specialized agent for data science & analytics tasks (agent 9)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #9.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 9)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #9 - Specialized agent for data science
+    & analytics tasks (agent 9)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_10_1663
+  name: 'Data Science & Analytics Agent #10'
+  description: Specialized agent for data science & analytics tasks (agent 10)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #10.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 10)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #10 - Specialized agent for data science
+    & analytics tasks (agent 10)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_11_1664
+  name: 'Data Science & Analytics Agent #11'
+  description: Specialized agent for data science & analytics tasks (agent 11)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #11.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 11)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #11 - Specialized agent for data science
+    & analytics tasks (agent 11)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_12_1665
+  name: 'Data Science & Analytics Agent #12'
+  description: Specialized agent for data science & analytics tasks (agent 12)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #12.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 12)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #12 - Specialized agent for data science
+    & analytics tasks (agent 12)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_13_1666
+  name: 'Data Science & Analytics Agent #13'
+  description: Specialized agent for data science & analytics tasks (agent 13)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #13.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 13)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #13 - Specialized agent for data science
+    & analytics tasks (agent 13)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_14_1667
+  name: 'Data Science & Analytics Agent #14'
+  description: Specialized agent for data science & analytics tasks (agent 14)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #14.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 14)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #14 - Specialized agent for data science
+    & analytics tasks (agent 14)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_15_1668
+  name: 'Data Science & Analytics Agent #15'
+  description: Specialized agent for data science & analytics tasks (agent 15)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #15.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 15)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #15 - Specialized agent for data science
+    & analytics tasks (agent 15)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_16_1669
+  name: 'Data Science & Analytics Agent #16'
+  description: Specialized agent for data science & analytics tasks (agent 16)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #16.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 16)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #16 - Specialized agent for data science
+    & analytics tasks (agent 16)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_17_1670
+  name: 'Data Science & Analytics Agent #17'
+  description: Specialized agent for data science & analytics tasks (agent 17)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #17.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 17)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #17 - Specialized agent for data science
+    & analytics tasks (agent 17)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_18_1671
+  name: 'Data Science & Analytics Agent #18'
+  description: Specialized agent for data science & analytics tasks (agent 18)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #18.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 18)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #18 - Specialized agent for data science
+    & analytics tasks (agent 18)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_19_1672
+  name: 'Data Science & Analytics Agent #19'
+  description: Specialized agent for data science & analytics tasks (agent 19)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #19.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 19)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #19 - Specialized agent for data science
+    & analytics tasks (agent 19)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_20_1673
+  name: 'Data Science & Analytics Agent #20'
+  description: Specialized agent for data science & analytics tasks (agent 20)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #20.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 20)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #20 - Specialized agent for data science
+    & analytics tasks (agent 20)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_21_1674
+  name: 'Data Science & Analytics Agent #21'
+  description: Specialized agent for data science & analytics tasks (agent 21)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #21.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 21)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #21 - Specialized agent for data science
+    & analytics tasks (agent 21)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_22_1675
+  name: 'Data Science & Analytics Agent #22'
+  description: Specialized agent for data science & analytics tasks (agent 22)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #22.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 22)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #22 - Specialized agent for data science
+    & analytics tasks (agent 22)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_23_1676
+  name: 'Data Science & Analytics Agent #23'
+  description: Specialized agent for data science & analytics tasks (agent 23)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #23.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 23)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #23 - Specialized agent for data science
+    & analytics tasks (agent 23)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_24_1677
+  name: 'Data Science & Analytics Agent #24'
+  description: Specialized agent for data science & analytics tasks (agent 24)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #24.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 24)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #24 - Specialized agent for data science
+    & analytics tasks (agent 24)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_25_1678
+  name: 'Data Science & Analytics Agent #25'
+  description: Specialized agent for data science & analytics tasks (agent 25)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #25.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 25)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #25 - Specialized agent for data science
+    & analytics tasks (agent 25)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_26_1679
+  name: 'Data Science & Analytics Agent #26'
+  description: Specialized agent for data science & analytics tasks (agent 26)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #26.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 26)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #26 - Specialized agent for data science
+    & analytics tasks (agent 26)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_27_1680
+  name: 'Data Science & Analytics Agent #27'
+  description: Specialized agent for data science & analytics tasks (agent 27)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #27.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 27)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #27 - Specialized agent for data science
+    & analytics tasks (agent 27)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_28_1681
+  name: 'Data Science & Analytics Agent #28'
+  description: Specialized agent for data science & analytics tasks (agent 28)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #28.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 28)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #28 - Specialized agent for data science
+    & analytics tasks (agent 28)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_29_1682
+  name: 'Data Science & Analytics Agent #29'
+  description: Specialized agent for data science & analytics tasks (agent 29)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #29.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 29)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #29 - Specialized agent for data science
+    & analytics tasks (agent 29)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_30_1683
+  name: 'Data Science & Analytics Agent #30'
+  description: Specialized agent for data science & analytics tasks (agent 30)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #30.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 30)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #30 - Specialized agent for data science
+    & analytics tasks (agent 30)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_31_1684
+  name: 'Data Science & Analytics Agent #31'
+  description: Specialized agent for data science & analytics tasks (agent 31)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #31.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 31)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #31 - Specialized agent for data science
+    & analytics tasks (agent 31)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_32_1685
+  name: 'Data Science & Analytics Agent #32'
+  description: Specialized agent for data science & analytics tasks (agent 32)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #32.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 32)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #32 - Specialized agent for data science
+    & analytics tasks (agent 32)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_33_1686
+  name: 'Data Science & Analytics Agent #33'
+  description: Specialized agent for data science & analytics tasks (agent 33)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #33.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 33)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #33 - Specialized agent for data science
+    & analytics tasks (agent 33)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_34_1687
+  name: 'Data Science & Analytics Agent #34'
+  description: Specialized agent for data science & analytics tasks (agent 34)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #34.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 34)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #34 - Specialized agent for data science
+    & analytics tasks (agent 34)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_35_1688
+  name: 'Data Science & Analytics Agent #35'
+  description: Specialized agent for data science & analytics tasks (agent 35)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #35.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 35)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #35 - Specialized agent for data science
+    & analytics tasks (agent 35)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_36_1689
+  name: 'Data Science & Analytics Agent #36'
+  description: Specialized agent for data science & analytics tasks (agent 36)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #36.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 36)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #36 - Specialized agent for data science
+    & analytics tasks (agent 36)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_37_1690
+  name: 'Data Science & Analytics Agent #37'
+  description: Specialized agent for data science & analytics tasks (agent 37)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #37.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 37)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #37 - Specialized agent for data science
+    & analytics tasks (agent 37)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_38_1691
+  name: 'Data Science & Analytics Agent #38'
+  description: Specialized agent for data science & analytics tasks (agent 38)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #38.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 38)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #38 - Specialized agent for data science
+    & analytics tasks (agent 38)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_39_1692
+  name: 'Data Science & Analytics Agent #39'
+  description: Specialized agent for data science & analytics tasks (agent 39)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #39.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 39)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #39 - Specialized agent for data science
+    & analytics tasks (agent 39)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_40_1693
+  name: 'Data Science & Analytics Agent #40'
+  description: Specialized agent for data science & analytics tasks (agent 40)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #40.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 40)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #40 - Specialized agent for data science
+    & analytics tasks (agent 40)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_41_1694
+  name: 'Data Science & Analytics Agent #41'
+  description: Specialized agent for data science & analytics tasks (agent 41)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #41.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 41)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #41 - Specialized agent for data science
+    & analytics tasks (agent 41)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_42_1695
+  name: 'Data Science & Analytics Agent #42'
+  description: Specialized agent for data science & analytics tasks (agent 42)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #42.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 42)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #42 - Specialized agent for data science
+    & analytics tasks (agent 42)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_43_1696
+  name: 'Data Science & Analytics Agent #43'
+  description: Specialized agent for data science & analytics tasks (agent 43)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #43.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 43)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #43 - Specialized agent for data science
+    & analytics tasks (agent 43)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_44_1697
+  name: 'Data Science & Analytics Agent #44'
+  description: Specialized agent for data science & analytics tasks (agent 44)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #44.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 44)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #44 - Specialized agent for data science
+    & analytics tasks (agent 44)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_45_1698
+  name: 'Data Science & Analytics Agent #45'
+  description: Specialized agent for data science & analytics tasks (agent 45)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #45.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 45)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #45 - Specialized agent for data science
+    & analytics tasks (agent 45)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_46_1699
+  name: 'Data Science & Analytics Agent #46'
+  description: Specialized agent for data science & analytics tasks (agent 46)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #46.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 46)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #46 - Specialized agent for data science
+    & analytics tasks (agent 46)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_47_1700
+  name: 'Data Science & Analytics Agent #47'
+  description: Specialized agent for data science & analytics tasks (agent 47)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #47.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 47)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #47 - Specialized agent for data science
+    & analytics tasks (agent 47)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_48_1701
+  name: 'Data Science & Analytics Agent #48'
+  description: Specialized agent for data science & analytics tasks (agent 48)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #48.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 48)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #48 - Specialized agent for data science
+    & analytics tasks (agent 48)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_49_1702
+  name: 'Data Science & Analytics Agent #49'
+  description: Specialized agent for data science & analytics tasks (agent 49)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #49.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 49)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #49 - Specialized agent for data science
+    & analytics tasks (agent 49)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: data_science_analytics_agent_50_1703
+  name: 'Data Science & Analytics Agent #50'
+  description: Specialized agent for data science & analytics tasks (agent 50)
+  category: data_science_analytics
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Data Science & Analytics Agent #50.\n\nYour primary
+    function is to: Specialized agent for data science & analytics tasks (agent 50)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Data Science & Analytics.\n\nYour
+    role is: Data Science & Analytics Agent #50 - Specialized agent for data science
+    & analytics tasks (agent 50)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Data Science & Analytics\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'

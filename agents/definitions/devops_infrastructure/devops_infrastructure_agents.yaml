@@ -1,0 +1,3361 @@
+agents:
+- agent_id: devops_infrastructure_agent_1_1704
+  name: 'DevOps & Infrastructure Agent #1'
+  description: Specialized agent for DevOps & infrastructure automation (agent 1)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #1.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    1)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #1 - Specialized agent for DevOps & infrastructure
+    automation (agent 1)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_2_1705
+  name: 'DevOps & Infrastructure Agent #2'
+  description: Specialized agent for DevOps & infrastructure automation (agent 2)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #2.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    2)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #2 - Specialized agent for DevOps & infrastructure
+    automation (agent 2)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_3_1706
+  name: 'DevOps & Infrastructure Agent #3'
+  description: Specialized agent for DevOps & infrastructure automation (agent 3)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #3.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    3)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #3 - Specialized agent for DevOps & infrastructure
+    automation (agent 3)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_4_1707
+  name: 'DevOps & Infrastructure Agent #4'
+  description: Specialized agent for DevOps & infrastructure automation (agent 4)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #4.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    4)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #4 - Specialized agent for DevOps & infrastructure
+    automation (agent 4)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_5_1708
+  name: 'DevOps & Infrastructure Agent #5'
+  description: Specialized agent for DevOps & infrastructure automation (agent 5)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #5.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    5)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #5 - Specialized agent for DevOps & infrastructure
+    automation (agent 5)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_6_1709
+  name: 'DevOps & Infrastructure Agent #6'
+  description: Specialized agent for DevOps & infrastructure automation (agent 6)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #6.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    6)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #6 - Specialized agent for DevOps & infrastructure
+    automation (agent 6)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_7_1710
+  name: 'DevOps & Infrastructure Agent #7'
+  description: Specialized agent for DevOps & infrastructure automation (agent 7)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #7.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    7)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #7 - Specialized agent for DevOps & infrastructure
+    automation (agent 7)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_8_1711
+  name: 'DevOps & Infrastructure Agent #8'
+  description: Specialized agent for DevOps & infrastructure automation (agent 8)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #8.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    8)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #8 - Specialized agent for DevOps & infrastructure
+    automation (agent 8)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_9_1712
+  name: 'DevOps & Infrastructure Agent #9'
+  description: Specialized agent for DevOps & infrastructure automation (agent 9)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #9.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    9)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #9 - Specialized agent for DevOps & infrastructure
+    automation (agent 9)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_10_1713
+  name: 'DevOps & Infrastructure Agent #10'
+  description: Specialized agent for DevOps & infrastructure automation (agent 10)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #10.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    10)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #10 - Specialized agent for DevOps & infrastructure
+    automation (agent 10)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_11_1714
+  name: 'DevOps & Infrastructure Agent #11'
+  description: Specialized agent for DevOps & infrastructure automation (agent 11)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #11.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    11)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #11 - Specialized agent for DevOps & infrastructure
+    automation (agent 11)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_12_1715
+  name: 'DevOps & Infrastructure Agent #12'
+  description: Specialized agent for DevOps & infrastructure automation (agent 12)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #12.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    12)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #12 - Specialized agent for DevOps & infrastructure
+    automation (agent 12)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_13_1716
+  name: 'DevOps & Infrastructure Agent #13'
+  description: Specialized agent for DevOps & infrastructure automation (agent 13)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #13.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    13)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #13 - Specialized agent for DevOps & infrastructure
+    automation (agent 13)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_14_1717
+  name: 'DevOps & Infrastructure Agent #14'
+  description: Specialized agent for DevOps & infrastructure automation (agent 14)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #14.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    14)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #14 - Specialized agent for DevOps & infrastructure
+    automation (agent 14)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_15_1718
+  name: 'DevOps & Infrastructure Agent #15'
+  description: Specialized agent for DevOps & infrastructure automation (agent 15)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #15.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    15)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #15 - Specialized agent for DevOps & infrastructure
+    automation (agent 15)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_16_1719
+  name: 'DevOps & Infrastructure Agent #16'
+  description: Specialized agent for DevOps & infrastructure automation (agent 16)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #16.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    16)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #16 - Specialized agent for DevOps & infrastructure
+    automation (agent 16)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_17_1720
+  name: 'DevOps & Infrastructure Agent #17'
+  description: Specialized agent for DevOps & infrastructure automation (agent 17)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #17.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    17)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #17 - Specialized agent for DevOps & infrastructure
+    automation (agent 17)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_18_1721
+  name: 'DevOps & Infrastructure Agent #18'
+  description: Specialized agent for DevOps & infrastructure automation (agent 18)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #18.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    18)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #18 - Specialized agent for DevOps & infrastructure
+    automation (agent 18)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_19_1722
+  name: 'DevOps & Infrastructure Agent #19'
+  description: Specialized agent for DevOps & infrastructure automation (agent 19)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #19.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    19)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #19 - Specialized agent for DevOps & infrastructure
+    automation (agent 19)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_20_1723
+  name: 'DevOps & Infrastructure Agent #20'
+  description: Specialized agent for DevOps & infrastructure automation (agent 20)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #20.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    20)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #20 - Specialized agent for DevOps & infrastructure
+    automation (agent 20)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_21_1724
+  name: 'DevOps & Infrastructure Agent #21'
+  description: Specialized agent for DevOps & infrastructure automation (agent 21)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #21.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    21)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #21 - Specialized agent for DevOps & infrastructure
+    automation (agent 21)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_22_1725
+  name: 'DevOps & Infrastructure Agent #22'
+  description: Specialized agent for DevOps & infrastructure automation (agent 22)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #22.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    22)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #22 - Specialized agent for DevOps & infrastructure
+    automation (agent 22)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_23_1726
+  name: 'DevOps & Infrastructure Agent #23'
+  description: Specialized agent for DevOps & infrastructure automation (agent 23)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #23.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    23)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #23 - Specialized agent for DevOps & infrastructure
+    automation (agent 23)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_24_1727
+  name: 'DevOps & Infrastructure Agent #24'
+  description: Specialized agent for DevOps & infrastructure automation (agent 24)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #24.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    24)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #24 - Specialized agent for DevOps & infrastructure
+    automation (agent 24)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_25_1728
+  name: 'DevOps & Infrastructure Agent #25'
+  description: Specialized agent for DevOps & infrastructure automation (agent 25)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #25.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    25)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #25 - Specialized agent for DevOps & infrastructure
+    automation (agent 25)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_26_1729
+  name: 'DevOps & Infrastructure Agent #26'
+  description: Specialized agent for DevOps & infrastructure automation (agent 26)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #26.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    26)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #26 - Specialized agent for DevOps & infrastructure
+    automation (agent 26)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_27_1730
+  name: 'DevOps & Infrastructure Agent #27'
+  description: Specialized agent for DevOps & infrastructure automation (agent 27)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #27.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    27)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #27 - Specialized agent for DevOps & infrastructure
+    automation (agent 27)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_28_1731
+  name: 'DevOps & Infrastructure Agent #28'
+  description: Specialized agent for DevOps & infrastructure automation (agent 28)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #28.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    28)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #28 - Specialized agent for DevOps & infrastructure
+    automation (agent 28)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_29_1732
+  name: 'DevOps & Infrastructure Agent #29'
+  description: Specialized agent for DevOps & infrastructure automation (agent 29)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #29.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    29)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #29 - Specialized agent for DevOps & infrastructure
+    automation (agent 29)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_30_1733
+  name: 'DevOps & Infrastructure Agent #30'
+  description: Specialized agent for DevOps & infrastructure automation (agent 30)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #30.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    30)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #30 - Specialized agent for DevOps & infrastructure
+    automation (agent 30)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_31_1734
+  name: 'DevOps & Infrastructure Agent #31'
+  description: Specialized agent for DevOps & infrastructure automation (agent 31)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #31.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    31)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #31 - Specialized agent for DevOps & infrastructure
+    automation (agent 31)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_32_1735
+  name: 'DevOps & Infrastructure Agent #32'
+  description: Specialized agent for DevOps & infrastructure automation (agent 32)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #32.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    32)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #32 - Specialized agent for DevOps & infrastructure
+    automation (agent 32)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_33_1736
+  name: 'DevOps & Infrastructure Agent #33'
+  description: Specialized agent for DevOps & infrastructure automation (agent 33)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #33.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    33)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #33 - Specialized agent for DevOps & infrastructure
+    automation (agent 33)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_34_1737
+  name: 'DevOps & Infrastructure Agent #34'
+  description: Specialized agent for DevOps & infrastructure automation (agent 34)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #34.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    34)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #34 - Specialized agent for DevOps & infrastructure
+    automation (agent 34)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_35_1738
+  name: 'DevOps & Infrastructure Agent #35'
+  description: Specialized agent for DevOps & infrastructure automation (agent 35)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #35.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    35)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #35 - Specialized agent for DevOps & infrastructure
+    automation (agent 35)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_36_1739
+  name: 'DevOps & Infrastructure Agent #36'
+  description: Specialized agent for DevOps & infrastructure automation (agent 36)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #36.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    36)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #36 - Specialized agent for DevOps & infrastructure
+    automation (agent 36)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_37_1740
+  name: 'DevOps & Infrastructure Agent #37'
+  description: Specialized agent for DevOps & infrastructure automation (agent 37)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #37.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    37)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #37 - Specialized agent for DevOps & infrastructure
+    automation (agent 37)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_38_1741
+  name: 'DevOps & Infrastructure Agent #38'
+  description: Specialized agent for DevOps & infrastructure automation (agent 38)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #38.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    38)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #38 - Specialized agent for DevOps & infrastructure
+    automation (agent 38)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_39_1742
+  name: 'DevOps & Infrastructure Agent #39'
+  description: Specialized agent for DevOps & infrastructure automation (agent 39)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #39.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    39)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #39 - Specialized agent for DevOps & infrastructure
+    automation (agent 39)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_40_1743
+  name: 'DevOps & Infrastructure Agent #40'
+  description: Specialized agent for DevOps & infrastructure automation (agent 40)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #40.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    40)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #40 - Specialized agent for DevOps & infrastructure
+    automation (agent 40)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_41_1744
+  name: 'DevOps & Infrastructure Agent #41'
+  description: Specialized agent for DevOps & infrastructure automation (agent 41)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #41.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    41)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #41 - Specialized agent for DevOps & infrastructure
+    automation (agent 41)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_42_1745
+  name: 'DevOps & Infrastructure Agent #42'
+  description: Specialized agent for DevOps & infrastructure automation (agent 42)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #42.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    42)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #42 - Specialized agent for DevOps & infrastructure
+    automation (agent 42)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_43_1746
+  name: 'DevOps & Infrastructure Agent #43'
+  description: Specialized agent for DevOps & infrastructure automation (agent 43)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #43.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    43)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #43 - Specialized agent for DevOps & infrastructure
+    automation (agent 43)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_44_1747
+  name: 'DevOps & Infrastructure Agent #44'
+  description: Specialized agent for DevOps & infrastructure automation (agent 44)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #44.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    44)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #44 - Specialized agent for DevOps & infrastructure
+    automation (agent 44)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_45_1748
+  name: 'DevOps & Infrastructure Agent #45'
+  description: Specialized agent for DevOps & infrastructure automation (agent 45)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #45.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    45)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #45 - Specialized agent for DevOps & infrastructure
+    automation (agent 45)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_46_1749
+  name: 'DevOps & Infrastructure Agent #46'
+  description: Specialized agent for DevOps & infrastructure automation (agent 46)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #46.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    46)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #46 - Specialized agent for DevOps & infrastructure
+    automation (agent 46)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_47_1750
+  name: 'DevOps & Infrastructure Agent #47'
+  description: Specialized agent for DevOps & infrastructure automation (agent 47)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #47.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    47)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #47 - Specialized agent for DevOps & infrastructure
+    automation (agent 47)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_48_1751
+  name: 'DevOps & Infrastructure Agent #48'
+  description: Specialized agent for DevOps & infrastructure automation (agent 48)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #48.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    48)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #48 - Specialized agent for DevOps & infrastructure
+    automation (agent 48)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_49_1752
+  name: 'DevOps & Infrastructure Agent #49'
+  description: Specialized agent for DevOps & infrastructure automation (agent 49)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #49.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    49)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #49 - Specialized agent for DevOps & infrastructure
+    automation (agent 49)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_50_1753
+  name: 'DevOps & Infrastructure Agent #50'
+  description: Specialized agent for DevOps & infrastructure automation (agent 50)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #50.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    50)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #50 - Specialized agent for DevOps & infrastructure
+    automation (agent 50)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_51_1754
+  name: 'DevOps & Infrastructure Agent #51'
+  description: Specialized agent for DevOps & infrastructure automation (agent 51)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #51.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    51)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #51 - Specialized agent for DevOps & infrastructure
+    automation (agent 51)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_52_1755
+  name: 'DevOps & Infrastructure Agent #52'
+  description: Specialized agent for DevOps & infrastructure automation (agent 52)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #52.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    52)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #52 - Specialized agent for DevOps & infrastructure
+    automation (agent 52)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_53_1756
+  name: 'DevOps & Infrastructure Agent #53'
+  description: Specialized agent for DevOps & infrastructure automation (agent 53)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #53.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    53)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #53 - Specialized agent for DevOps & infrastructure
+    automation (agent 53)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_54_1757
+  name: 'DevOps & Infrastructure Agent #54'
+  description: Specialized agent for DevOps & infrastructure automation (agent 54)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #54.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    54)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #54 - Specialized agent for DevOps & infrastructure
+    automation (agent 54)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_55_1758
+  name: 'DevOps & Infrastructure Agent #55'
+  description: Specialized agent for DevOps & infrastructure automation (agent 55)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #55.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    55)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #55 - Specialized agent for DevOps & infrastructure
+    automation (agent 55)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_56_1759
+  name: 'DevOps & Infrastructure Agent #56'
+  description: Specialized agent for DevOps & infrastructure automation (agent 56)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #56.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    56)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #56 - Specialized agent for DevOps & infrastructure
+    automation (agent 56)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_57_1760
+  name: 'DevOps & Infrastructure Agent #57'
+  description: Specialized agent for DevOps & infrastructure automation (agent 57)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #57.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    57)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #57 - Specialized agent for DevOps & infrastructure
+    automation (agent 57)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_58_1761
+  name: 'DevOps & Infrastructure Agent #58'
+  description: Specialized agent for DevOps & infrastructure automation (agent 58)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #58.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    58)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #58 - Specialized agent for DevOps & infrastructure
+    automation (agent 58)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_59_1762
+  name: 'DevOps & Infrastructure Agent #59'
+  description: Specialized agent for DevOps & infrastructure automation (agent 59)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #59.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    59)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #59 - Specialized agent for DevOps & infrastructure
+    automation (agent 59)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_60_1763
+  name: 'DevOps & Infrastructure Agent #60'
+  description: Specialized agent for DevOps & infrastructure automation (agent 60)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #60.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    60)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #60 - Specialized agent for DevOps & infrastructure
+    automation (agent 60)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_61_1764
+  name: 'DevOps & Infrastructure Agent #61'
+  description: Specialized agent for DevOps & infrastructure automation (agent 61)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #61.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    61)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #61 - Specialized agent for DevOps & infrastructure
+    automation (agent 61)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_62_1765
+  name: 'DevOps & Infrastructure Agent #62'
+  description: Specialized agent for DevOps & infrastructure automation (agent 62)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #62.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    62)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #62 - Specialized agent for DevOps & infrastructure
+    automation (agent 62)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_63_1766
+  name: 'DevOps & Infrastructure Agent #63'
+  description: Specialized agent for DevOps & infrastructure automation (agent 63)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #63.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    63)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #63 - Specialized agent for DevOps & infrastructure
+    automation (agent 63)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_64_1767
+  name: 'DevOps & Infrastructure Agent #64'
+  description: Specialized agent for DevOps & infrastructure automation (agent 64)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #64.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    64)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #64 - Specialized agent for DevOps & infrastructure
+    automation (agent 64)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_65_1768
+  name: 'DevOps & Infrastructure Agent #65'
+  description: Specialized agent for DevOps & infrastructure automation (agent 65)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #65.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    65)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #65 - Specialized agent for DevOps & infrastructure
+    automation (agent 65)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_66_1769
+  name: 'DevOps & Infrastructure Agent #66'
+  description: Specialized agent for DevOps & infrastructure automation (agent 66)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #66.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    66)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #66 - Specialized agent for DevOps & infrastructure
+    automation (agent 66)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_67_1770
+  name: 'DevOps & Infrastructure Agent #67'
+  description: Specialized agent for DevOps & infrastructure automation (agent 67)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #67.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    67)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #67 - Specialized agent for DevOps & infrastructure
+    automation (agent 67)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_68_1771
+  name: 'DevOps & Infrastructure Agent #68'
+  description: Specialized agent for DevOps & infrastructure automation (agent 68)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #68.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    68)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #68 - Specialized agent for DevOps & infrastructure
+    automation (agent 68)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_69_1772
+  name: 'DevOps & Infrastructure Agent #69'
+  description: Specialized agent for DevOps & infrastructure automation (agent 69)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #69.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    69)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #69 - Specialized agent for DevOps & infrastructure
+    automation (agent 69)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_70_1773
+  name: 'DevOps & Infrastructure Agent #70'
+  description: Specialized agent for DevOps & infrastructure automation (agent 70)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #70.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    70)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #70 - Specialized agent for DevOps & infrastructure
+    automation (agent 70)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_71_1774
+  name: 'DevOps & Infrastructure Agent #71'
+  description: Specialized agent for DevOps & infrastructure automation (agent 71)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #71.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    71)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #71 - Specialized agent for DevOps & infrastructure
+    automation (agent 71)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_72_1775
+  name: 'DevOps & Infrastructure Agent #72'
+  description: Specialized agent for DevOps & infrastructure automation (agent 72)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #72.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    72)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #72 - Specialized agent for DevOps & infrastructure
+    automation (agent 72)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_73_1776
+  name: 'DevOps & Infrastructure Agent #73'
+  description: Specialized agent for DevOps & infrastructure automation (agent 73)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #73.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    73)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #73 - Specialized agent for DevOps & infrastructure
+    automation (agent 73)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_74_1777
+  name: 'DevOps & Infrastructure Agent #74'
+  description: Specialized agent for DevOps & infrastructure automation (agent 74)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #74.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    74)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #74 - Specialized agent for DevOps & infrastructure
+    automation (agent 74)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_75_1778
+  name: 'DevOps & Infrastructure Agent #75'
+  description: Specialized agent for DevOps & infrastructure automation (agent 75)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #75.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    75)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #75 - Specialized agent for DevOps & infrastructure
+    automation (agent 75)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_76_1779
+  name: 'DevOps & Infrastructure Agent #76'
+  description: Specialized agent for DevOps & infrastructure automation (agent 76)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #76.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    76)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #76 - Specialized agent for DevOps & infrastructure
+    automation (agent 76)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_77_1780
+  name: 'DevOps & Infrastructure Agent #77'
+  description: Specialized agent for DevOps & infrastructure automation (agent 77)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #77.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    77)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #77 - Specialized agent for DevOps & infrastructure
+    automation (agent 77)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_78_1781
+  name: 'DevOps & Infrastructure Agent #78'
+  description: Specialized agent for DevOps & infrastructure automation (agent 78)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #78.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    78)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #78 - Specialized agent for DevOps & infrastructure
+    automation (agent 78)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_79_1782
+  name: 'DevOps & Infrastructure Agent #79'
+  description: Specialized agent for DevOps & infrastructure automation (agent 79)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #79.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    79)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #79 - Specialized agent for DevOps & infrastructure
+    automation (agent 79)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_80_1783
+  name: 'DevOps & Infrastructure Agent #80'
+  description: Specialized agent for DevOps & infrastructure automation (agent 80)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #80.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    80)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #80 - Specialized agent for DevOps & infrastructure
+    automation (agent 80)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_81_1784
+  name: 'DevOps & Infrastructure Agent #81'
+  description: Specialized agent for DevOps & infrastructure automation (agent 81)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #81.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    81)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #81 - Specialized agent for DevOps & infrastructure
+    automation (agent 81)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_82_1785
+  name: 'DevOps & Infrastructure Agent #82'
+  description: Specialized agent for DevOps & infrastructure automation (agent 82)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #82.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    82)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #82 - Specialized agent for DevOps & infrastructure
+    automation (agent 82)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_83_1786
+  name: 'DevOps & Infrastructure Agent #83'
+  description: Specialized agent for DevOps & infrastructure automation (agent 83)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #83.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    83)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #83 - Specialized agent for DevOps & infrastructure
+    automation (agent 83)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_84_1787
+  name: 'DevOps & Infrastructure Agent #84'
+  description: Specialized agent for DevOps & infrastructure automation (agent 84)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #84.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    84)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #84 - Specialized agent for DevOps & infrastructure
+    automation (agent 84)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_85_1788
+  name: 'DevOps & Infrastructure Agent #85'
+  description: Specialized agent for DevOps & infrastructure automation (agent 85)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #85.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    85)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #85 - Specialized agent for DevOps & infrastructure
+    automation (agent 85)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_86_1789
+  name: 'DevOps & Infrastructure Agent #86'
+  description: Specialized agent for DevOps & infrastructure automation (agent 86)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #86.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    86)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #86 - Specialized agent for DevOps & infrastructure
+    automation (agent 86)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_87_1790
+  name: 'DevOps & Infrastructure Agent #87'
+  description: Specialized agent for DevOps & infrastructure automation (agent 87)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #87.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    87)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #87 - Specialized agent for DevOps & infrastructure
+    automation (agent 87)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_88_1791
+  name: 'DevOps & Infrastructure Agent #88'
+  description: Specialized agent for DevOps & infrastructure automation (agent 88)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #88.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    88)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #88 - Specialized agent for DevOps & infrastructure
+    automation (agent 88)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_89_1792
+  name: 'DevOps & Infrastructure Agent #89'
+  description: Specialized agent for DevOps & infrastructure automation (agent 89)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #89.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    89)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #89 - Specialized agent for DevOps & infrastructure
+    automation (agent 89)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_90_1793
+  name: 'DevOps & Infrastructure Agent #90'
+  description: Specialized agent for DevOps & infrastructure automation (agent 90)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #90.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    90)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #90 - Specialized agent for DevOps & infrastructure
+    automation (agent 90)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_91_1794
+  name: 'DevOps & Infrastructure Agent #91'
+  description: Specialized agent for DevOps & infrastructure automation (agent 91)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #91.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    91)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #91 - Specialized agent for DevOps & infrastructure
+    automation (agent 91)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_92_1795
+  name: 'DevOps & Infrastructure Agent #92'
+  description: Specialized agent for DevOps & infrastructure automation (agent 92)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #92.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    92)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #92 - Specialized agent for DevOps & infrastructure
+    automation (agent 92)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_93_1796
+  name: 'DevOps & Infrastructure Agent #93'
+  description: Specialized agent for DevOps & infrastructure automation (agent 93)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #93.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    93)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #93 - Specialized agent for DevOps & infrastructure
+    automation (agent 93)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_94_1797
+  name: 'DevOps & Infrastructure Agent #94'
+  description: Specialized agent for DevOps & infrastructure automation (agent 94)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #94.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    94)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #94 - Specialized agent for DevOps & infrastructure
+    automation (agent 94)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_95_1798
+  name: 'DevOps & Infrastructure Agent #95'
+  description: Specialized agent for DevOps & infrastructure automation (agent 95)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #95.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    95)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #95 - Specialized agent for DevOps & infrastructure
+    automation (agent 95)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'
+- agent_id: devops_infrastructure_agent_96_1799
+  name: 'DevOps & Infrastructure Agent #96'
+  description: Specialized agent for DevOps & infrastructure automation (agent 96)
+  category: devops_infrastructure
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the DevOps & Infrastructure Agent #96.\n\nYour primary
+    function is to: Specialized agent for DevOps & infrastructure automation (agent
+    96)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in DevOps & Infrastructure.\n\nYour
+    role is: DevOps & Infrastructure Agent #96 - Specialized agent for DevOps & infrastructure
+    automation (agent 96)\n\nAlways:\n- Be professional and helpful\n- Follow best
+    practices for DevOps & Infrastructure\n- Provide accurate and actionable responses\n-
+    Maintain context across interactions'

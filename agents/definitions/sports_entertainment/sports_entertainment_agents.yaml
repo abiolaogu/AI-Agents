@@ -1,0 +1,1701 @@
+agents:
+- agent_id: sports_entertainment_agent_1_1504
+  name: 'Sports & Entertainment Agent #1'
+  description: Specialized agent for sports & entertainment industry (agent 1)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #1.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 1)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #1 - Specialized agent for sports & entertainment
+    industry (agent 1)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_2_1505
+  name: 'Sports & Entertainment Agent #2'
+  description: Specialized agent for sports & entertainment industry (agent 2)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #2.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 2)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #2 - Specialized agent for sports & entertainment
+    industry (agent 2)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_3_1506
+  name: 'Sports & Entertainment Agent #3'
+  description: Specialized agent for sports & entertainment industry (agent 3)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #3.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 3)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #3 - Specialized agent for sports & entertainment
+    industry (agent 3)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_4_1507
+  name: 'Sports & Entertainment Agent #4'
+  description: Specialized agent for sports & entertainment industry (agent 4)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #4.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 4)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #4 - Specialized agent for sports & entertainment
+    industry (agent 4)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_5_1508
+  name: 'Sports & Entertainment Agent #5'
+  description: Specialized agent for sports & entertainment industry (agent 5)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #5.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 5)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #5 - Specialized agent for sports & entertainment
+    industry (agent 5)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_6_1509
+  name: 'Sports & Entertainment Agent #6'
+  description: Specialized agent for sports & entertainment industry (agent 6)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #6.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 6)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #6 - Specialized agent for sports & entertainment
+    industry (agent 6)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_7_1510
+  name: 'Sports & Entertainment Agent #7'
+  description: Specialized agent for sports & entertainment industry (agent 7)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #7.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 7)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #7 - Specialized agent for sports & entertainment
+    industry (agent 7)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_8_1511
+  name: 'Sports & Entertainment Agent #8'
+  description: Specialized agent for sports & entertainment industry (agent 8)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #8.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 8)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #8 - Specialized agent for sports & entertainment
+    industry (agent 8)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_9_1512
+  name: 'Sports & Entertainment Agent #9'
+  description: Specialized agent for sports & entertainment industry (agent 9)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #9.\n\nYour primary function
+    is to: Specialized agent for sports & entertainment industry (agent 9)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #9 - Specialized agent for sports & entertainment
+    industry (agent 9)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_10_1513
+  name: 'Sports & Entertainment Agent #10'
+  description: Specialized agent for sports & entertainment industry (agent 10)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #10.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 10)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #10 - Specialized agent for sports & entertainment
+    industry (agent 10)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_11_1514
+  name: 'Sports & Entertainment Agent #11'
+  description: Specialized agent for sports & entertainment industry (agent 11)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #11.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 11)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #11 - Specialized agent for sports & entertainment
+    industry (agent 11)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_12_1515
+  name: 'Sports & Entertainment Agent #12'
+  description: Specialized agent for sports & entertainment industry (agent 12)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #12.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 12)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #12 - Specialized agent for sports & entertainment
+    industry (agent 12)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_13_1516
+  name: 'Sports & Entertainment Agent #13'
+  description: Specialized agent for sports & entertainment industry (agent 13)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #13.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 13)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #13 - Specialized agent for sports & entertainment
+    industry (agent 13)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_14_1517
+  name: 'Sports & Entertainment Agent #14'
+  description: Specialized agent for sports & entertainment industry (agent 14)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #14.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 14)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #14 - Specialized agent for sports & entertainment
+    industry (agent 14)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_15_1518
+  name: 'Sports & Entertainment Agent #15'
+  description: Specialized agent for sports & entertainment industry (agent 15)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #15.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 15)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #15 - Specialized agent for sports & entertainment
+    industry (agent 15)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_16_1519
+  name: 'Sports & Entertainment Agent #16'
+  description: Specialized agent for sports & entertainment industry (agent 16)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #16.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 16)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #16 - Specialized agent for sports & entertainment
+    industry (agent 16)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_17_1520
+  name: 'Sports & Entertainment Agent #17'
+  description: Specialized agent for sports & entertainment industry (agent 17)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #17.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 17)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #17 - Specialized agent for sports & entertainment
+    industry (agent 17)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_18_1521
+  name: 'Sports & Entertainment Agent #18'
+  description: Specialized agent for sports & entertainment industry (agent 18)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #18.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 18)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #18 - Specialized agent for sports & entertainment
+    industry (agent 18)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_19_1522
+  name: 'Sports & Entertainment Agent #19'
+  description: Specialized agent for sports & entertainment industry (agent 19)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #19.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 19)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #19 - Specialized agent for sports & entertainment
+    industry (agent 19)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_20_1523
+  name: 'Sports & Entertainment Agent #20'
+  description: Specialized agent for sports & entertainment industry (agent 20)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #20.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 20)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #20 - Specialized agent for sports & entertainment
+    industry (agent 20)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_21_1524
+  name: 'Sports & Entertainment Agent #21'
+  description: Specialized agent for sports & entertainment industry (agent 21)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #21.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 21)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #21 - Specialized agent for sports & entertainment
+    industry (agent 21)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_22_1525
+  name: 'Sports & Entertainment Agent #22'
+  description: Specialized agent for sports & entertainment industry (agent 22)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #22.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 22)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #22 - Specialized agent for sports & entertainment
+    industry (agent 22)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_23_1526
+  name: 'Sports & Entertainment Agent #23'
+  description: Specialized agent for sports & entertainment industry (agent 23)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #23.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 23)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #23 - Specialized agent for sports & entertainment
+    industry (agent 23)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_24_1527
+  name: 'Sports & Entertainment Agent #24'
+  description: Specialized agent for sports & entertainment industry (agent 24)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #24.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 24)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #24 - Specialized agent for sports & entertainment
+    industry (agent 24)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_25_1528
+  name: 'Sports & Entertainment Agent #25'
+  description: Specialized agent for sports & entertainment industry (agent 25)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #25.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 25)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #25 - Specialized agent for sports & entertainment
+    industry (agent 25)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_26_1529
+  name: 'Sports & Entertainment Agent #26'
+  description: Specialized agent for sports & entertainment industry (agent 26)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #26.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 26)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #26 - Specialized agent for sports & entertainment
+    industry (agent 26)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_27_1530
+  name: 'Sports & Entertainment Agent #27'
+  description: Specialized agent for sports & entertainment industry (agent 27)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #27.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 27)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #27 - Specialized agent for sports & entertainment
+    industry (agent 27)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_28_1531
+  name: 'Sports & Entertainment Agent #28'
+  description: Specialized agent for sports & entertainment industry (agent 28)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #28.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 28)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #28 - Specialized agent for sports & entertainment
+    industry (agent 28)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_29_1532
+  name: 'Sports & Entertainment Agent #29'
+  description: Specialized agent for sports & entertainment industry (agent 29)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #29.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 29)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #29 - Specialized agent for sports & entertainment
+    industry (agent 29)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_30_1533
+  name: 'Sports & Entertainment Agent #30'
+  description: Specialized agent for sports & entertainment industry (agent 30)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #30.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 30)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #30 - Specialized agent for sports & entertainment
+    industry (agent 30)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_31_1534
+  name: 'Sports & Entertainment Agent #31'
+  description: Specialized agent for sports & entertainment industry (agent 31)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #31.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 31)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #31 - Specialized agent for sports & entertainment
+    industry (agent 31)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_32_1535
+  name: 'Sports & Entertainment Agent #32'
+  description: Specialized agent for sports & entertainment industry (agent 32)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #32.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 32)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #32 - Specialized agent for sports & entertainment
+    industry (agent 32)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_33_1536
+  name: 'Sports & Entertainment Agent #33'
+  description: Specialized agent for sports & entertainment industry (agent 33)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #33.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 33)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #33 - Specialized agent for sports & entertainment
+    industry (agent 33)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_34_1537
+  name: 'Sports & Entertainment Agent #34'
+  description: Specialized agent for sports & entertainment industry (agent 34)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #34.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 34)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #34 - Specialized agent for sports & entertainment
+    industry (agent 34)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_35_1538
+  name: 'Sports & Entertainment Agent #35'
+  description: Specialized agent for sports & entertainment industry (agent 35)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #35.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 35)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #35 - Specialized agent for sports & entertainment
+    industry (agent 35)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_36_1539
+  name: 'Sports & Entertainment Agent #36'
+  description: Specialized agent for sports & entertainment industry (agent 36)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #36.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 36)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #36 - Specialized agent for sports & entertainment
+    industry (agent 36)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_37_1540
+  name: 'Sports & Entertainment Agent #37'
+  description: Specialized agent for sports & entertainment industry (agent 37)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #37.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 37)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #37 - Specialized agent for sports & entertainment
+    industry (agent 37)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_38_1541
+  name: 'Sports & Entertainment Agent #38'
+  description: Specialized agent for sports & entertainment industry (agent 38)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #38.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 38)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #38 - Specialized agent for sports & entertainment
+    industry (agent 38)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_39_1542
+  name: 'Sports & Entertainment Agent #39'
+  description: Specialized agent for sports & entertainment industry (agent 39)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #39.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 39)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #39 - Specialized agent for sports & entertainment
+    industry (agent 39)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_40_1543
+  name: 'Sports & Entertainment Agent #40'
+  description: Specialized agent for sports & entertainment industry (agent 40)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #40.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 40)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #40 - Specialized agent for sports & entertainment
+    industry (agent 40)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_41_1544
+  name: 'Sports & Entertainment Agent #41'
+  description: Specialized agent for sports & entertainment industry (agent 41)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #41.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 41)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #41 - Specialized agent for sports & entertainment
+    industry (agent 41)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_42_1545
+  name: 'Sports & Entertainment Agent #42'
+  description: Specialized agent for sports & entertainment industry (agent 42)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #42.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 42)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #42 - Specialized agent for sports & entertainment
+    industry (agent 42)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_43_1546
+  name: 'Sports & Entertainment Agent #43'
+  description: Specialized agent for sports & entertainment industry (agent 43)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #43.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 43)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #43 - Specialized agent for sports & entertainment
+    industry (agent 43)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_44_1547
+  name: 'Sports & Entertainment Agent #44'
+  description: Specialized agent for sports & entertainment industry (agent 44)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #44.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 44)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #44 - Specialized agent for sports & entertainment
+    industry (agent 44)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_45_1548
+  name: 'Sports & Entertainment Agent #45'
+  description: Specialized agent for sports & entertainment industry (agent 45)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #45.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 45)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #45 - Specialized agent for sports & entertainment
+    industry (agent 45)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_46_1549
+  name: 'Sports & Entertainment Agent #46'
+  description: Specialized agent for sports & entertainment industry (agent 46)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #46.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 46)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #46 - Specialized agent for sports & entertainment
+    industry (agent 46)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_47_1550
+  name: 'Sports & Entertainment Agent #47'
+  description: Specialized agent for sports & entertainment industry (agent 47)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #47.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 47)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #47 - Specialized agent for sports & entertainment
+    industry (agent 47)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_48_1551
+  name: 'Sports & Entertainment Agent #48'
+  description: Specialized agent for sports & entertainment industry (agent 48)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #48.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 48)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #48 - Specialized agent for sports & entertainment
+    industry (agent 48)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_49_1552
+  name: 'Sports & Entertainment Agent #49'
+  description: Specialized agent for sports & entertainment industry (agent 49)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #49.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 49)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #49 - Specialized agent for sports & entertainment
+    industry (agent 49)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: sports_entertainment_agent_50_1553
+  name: 'Sports & Entertainment Agent #50'
+  description: Specialized agent for sports & entertainment industry (agent 50)
+  category: sports_entertainment
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Sports & Entertainment Agent #50.\n\nYour primary
+    function is to: Specialized agent for sports & entertainment industry (agent 50)\n\nTask
+    Input:\n{task_description}\n\nPlease complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Sports & Entertainment.\n\nYour
+    role is: Sports & Entertainment Agent #50 - Specialized agent for sports & entertainment
+    industry (agent 50)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Sports & Entertainment\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'

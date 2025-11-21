@@ -1,0 +1,1801 @@
+agents:
+- agent_id: nonprofit_social_impact_agent_1_1354
+  name: 'Nonprofit & Social Impact Agent #1'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    1)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #1.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    1)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #1 - Specialized agent for nonprofit
+    & social impact initiatives (agent 1)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_2_1355
+  name: 'Nonprofit & Social Impact Agent #2'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    2)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #2.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    2)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #2 - Specialized agent for nonprofit
+    & social impact initiatives (agent 2)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_3_1356
+  name: 'Nonprofit & Social Impact Agent #3'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    3)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #3.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    3)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #3 - Specialized agent for nonprofit
+    & social impact initiatives (agent 3)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_4_1357
+  name: 'Nonprofit & Social Impact Agent #4'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    4)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #4.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    4)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #4 - Specialized agent for nonprofit
+    & social impact initiatives (agent 4)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_5_1358
+  name: 'Nonprofit & Social Impact Agent #5'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    5)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #5.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    5)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #5 - Specialized agent for nonprofit
+    & social impact initiatives (agent 5)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_6_1359
+  name: 'Nonprofit & Social Impact Agent #6'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    6)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #6.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    6)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #6 - Specialized agent for nonprofit
+    & social impact initiatives (agent 6)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_7_1360
+  name: 'Nonprofit & Social Impact Agent #7'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    7)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #7.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    7)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #7 - Specialized agent for nonprofit
+    & social impact initiatives (agent 7)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_8_1361
+  name: 'Nonprofit & Social Impact Agent #8'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    8)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #8.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    8)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #8 - Specialized agent for nonprofit
+    & social impact initiatives (agent 8)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_9_1362
+  name: 'Nonprofit & Social Impact Agent #9'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    9)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #9.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    9)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #9 - Specialized agent for nonprofit
+    & social impact initiatives (agent 9)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_10_1363
+  name: 'Nonprofit & Social Impact Agent #10'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    10)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #10.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    10)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #10 - Specialized agent for nonprofit
+    & social impact initiatives (agent 10)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_11_1364
+  name: 'Nonprofit & Social Impact Agent #11'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    11)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #11.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    11)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #11 - Specialized agent for nonprofit
+    & social impact initiatives (agent 11)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_12_1365
+  name: 'Nonprofit & Social Impact Agent #12'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    12)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #12.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    12)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #12 - Specialized agent for nonprofit
+    & social impact initiatives (agent 12)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_13_1366
+  name: 'Nonprofit & Social Impact Agent #13'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    13)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #13.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    13)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #13 - Specialized agent for nonprofit
+    & social impact initiatives (agent 13)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_14_1367
+  name: 'Nonprofit & Social Impact Agent #14'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    14)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #14.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    14)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #14 - Specialized agent for nonprofit
+    & social impact initiatives (agent 14)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_15_1368
+  name: 'Nonprofit & Social Impact Agent #15'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    15)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #15.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    15)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #15 - Specialized agent for nonprofit
+    & social impact initiatives (agent 15)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_16_1369
+  name: 'Nonprofit & Social Impact Agent #16'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    16)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #16.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    16)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #16 - Specialized agent for nonprofit
+    & social impact initiatives (agent 16)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_17_1370
+  name: 'Nonprofit & Social Impact Agent #17'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    17)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #17.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    17)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #17 - Specialized agent for nonprofit
+    & social impact initiatives (agent 17)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_18_1371
+  name: 'Nonprofit & Social Impact Agent #18'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    18)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #18.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    18)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #18 - Specialized agent for nonprofit
+    & social impact initiatives (agent 18)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_19_1372
+  name: 'Nonprofit & Social Impact Agent #19'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    19)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #19.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    19)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #19 - Specialized agent for nonprofit
+    & social impact initiatives (agent 19)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_20_1373
+  name: 'Nonprofit & Social Impact Agent #20'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    20)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #20.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    20)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #20 - Specialized agent for nonprofit
+    & social impact initiatives (agent 20)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_21_1374
+  name: 'Nonprofit & Social Impact Agent #21'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    21)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #21.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    21)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #21 - Specialized agent for nonprofit
+    & social impact initiatives (agent 21)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_22_1375
+  name: 'Nonprofit & Social Impact Agent #22'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    22)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #22.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    22)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #22 - Specialized agent for nonprofit
+    & social impact initiatives (agent 22)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_23_1376
+  name: 'Nonprofit & Social Impact Agent #23'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    23)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #23.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    23)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #23 - Specialized agent for nonprofit
+    & social impact initiatives (agent 23)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_24_1377
+  name: 'Nonprofit & Social Impact Agent #24'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    24)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #24.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    24)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #24 - Specialized agent for nonprofit
+    & social impact initiatives (agent 24)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_25_1378
+  name: 'Nonprofit & Social Impact Agent #25'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    25)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #25.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    25)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #25 - Specialized agent for nonprofit
+    & social impact initiatives (agent 25)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_26_1379
+  name: 'Nonprofit & Social Impact Agent #26'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    26)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #26.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    26)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #26 - Specialized agent for nonprofit
+    & social impact initiatives (agent 26)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_27_1380
+  name: 'Nonprofit & Social Impact Agent #27'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    27)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #27.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    27)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #27 - Specialized agent for nonprofit
+    & social impact initiatives (agent 27)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_28_1381
+  name: 'Nonprofit & Social Impact Agent #28'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    28)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #28.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    28)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #28 - Specialized agent for nonprofit
+    & social impact initiatives (agent 28)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_29_1382
+  name: 'Nonprofit & Social Impact Agent #29'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    29)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #29.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    29)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #29 - Specialized agent for nonprofit
+    & social impact initiatives (agent 29)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_30_1383
+  name: 'Nonprofit & Social Impact Agent #30'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    30)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #30.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    30)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #30 - Specialized agent for nonprofit
+    & social impact initiatives (agent 30)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_31_1384
+  name: 'Nonprofit & Social Impact Agent #31'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    31)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #31.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    31)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #31 - Specialized agent for nonprofit
+    & social impact initiatives (agent 31)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_32_1385
+  name: 'Nonprofit & Social Impact Agent #32'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    32)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #32.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    32)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #32 - Specialized agent for nonprofit
+    & social impact initiatives (agent 32)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_33_1386
+  name: 'Nonprofit & Social Impact Agent #33'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    33)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #33.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    33)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #33 - Specialized agent for nonprofit
+    & social impact initiatives (agent 33)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_34_1387
+  name: 'Nonprofit & Social Impact Agent #34'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    34)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #34.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    34)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #34 - Specialized agent for nonprofit
+    & social impact initiatives (agent 34)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_35_1388
+  name: 'Nonprofit & Social Impact Agent #35'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    35)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #35.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    35)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #35 - Specialized agent for nonprofit
+    & social impact initiatives (agent 35)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_36_1389
+  name: 'Nonprofit & Social Impact Agent #36'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    36)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #36.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    36)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #36 - Specialized agent for nonprofit
+    & social impact initiatives (agent 36)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_37_1390
+  name: 'Nonprofit & Social Impact Agent #37'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    37)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #37.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    37)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #37 - Specialized agent for nonprofit
+    & social impact initiatives (agent 37)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_38_1391
+  name: 'Nonprofit & Social Impact Agent #38'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    38)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #38.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    38)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #38 - Specialized agent for nonprofit
+    & social impact initiatives (agent 38)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_39_1392
+  name: 'Nonprofit & Social Impact Agent #39'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    39)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #39.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    39)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #39 - Specialized agent for nonprofit
+    & social impact initiatives (agent 39)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_40_1393
+  name: 'Nonprofit & Social Impact Agent #40'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    40)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #40.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    40)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #40 - Specialized agent for nonprofit
+    & social impact initiatives (agent 40)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_41_1394
+  name: 'Nonprofit & Social Impact Agent #41'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    41)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #41.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    41)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #41 - Specialized agent for nonprofit
+    & social impact initiatives (agent 41)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_42_1395
+  name: 'Nonprofit & Social Impact Agent #42'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    42)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #42.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    42)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #42 - Specialized agent for nonprofit
+    & social impact initiatives (agent 42)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_43_1396
+  name: 'Nonprofit & Social Impact Agent #43'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    43)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #43.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    43)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #43 - Specialized agent for nonprofit
+    & social impact initiatives (agent 43)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_44_1397
+  name: 'Nonprofit & Social Impact Agent #44'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    44)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #44.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    44)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #44 - Specialized agent for nonprofit
+    & social impact initiatives (agent 44)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_45_1398
+  name: 'Nonprofit & Social Impact Agent #45'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    45)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #45.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    45)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #45 - Specialized agent for nonprofit
+    & social impact initiatives (agent 45)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_46_1399
+  name: 'Nonprofit & Social Impact Agent #46'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    46)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #46.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    46)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #46 - Specialized agent for nonprofit
+    & social impact initiatives (agent 46)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_47_1400
+  name: 'Nonprofit & Social Impact Agent #47'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    47)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #47.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    47)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #47 - Specialized agent for nonprofit
+    & social impact initiatives (agent 47)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_48_1401
+  name: 'Nonprofit & Social Impact Agent #48'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    48)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #48.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    48)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #48 - Specialized agent for nonprofit
+    & social impact initiatives (agent 48)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_49_1402
+  name: 'Nonprofit & Social Impact Agent #49'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    49)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #49.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    49)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #49 - Specialized agent for nonprofit
+    & social impact initiatives (agent 49)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: nonprofit_social_impact_agent_50_1403
+  name: 'Nonprofit & Social Impact Agent #50'
+  description: Specialized agent for nonprofit & social impact initiatives (agent
+    50)
+  category: nonprofit_social_impact
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Nonprofit & Social Impact Agent #50.\n\nYour primary
+    function is to: Specialized agent for nonprofit & social impact initiatives (agent
+    50)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Nonprofit & Social Impact.\n\nYour
+    role is: Nonprofit & Social Impact Agent #50 - Specialized agent for nonprofit
+    & social impact initiatives (agent 50)\n\nAlways:\n- Be professional and helpful\n-
+    Follow best practices for Nonprofit & Social Impact\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
