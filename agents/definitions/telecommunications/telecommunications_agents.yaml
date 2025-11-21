@@ -1,0 +1,1701 @@
+agents:
+- agent_id: telecommunications_agent_1_1554
+  name: 'Telecommunications Agent #1'
+  description: Specialized agent for telecommunications services (agent 1)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #1.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 1)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #1 - Specialized agent for telecommunications
+    services (agent 1)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_2_1555
+  name: 'Telecommunications Agent #2'
+  description: Specialized agent for telecommunications services (agent 2)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #2.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 2)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #2 - Specialized agent for telecommunications
+    services (agent 2)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_3_1556
+  name: 'Telecommunications Agent #3'
+  description: Specialized agent for telecommunications services (agent 3)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #3.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 3)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #3 - Specialized agent for telecommunications
+    services (agent 3)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_4_1557
+  name: 'Telecommunications Agent #4'
+  description: Specialized agent for telecommunications services (agent 4)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #4.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 4)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #4 - Specialized agent for telecommunications
+    services (agent 4)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_5_1558
+  name: 'Telecommunications Agent #5'
+  description: Specialized agent for telecommunications services (agent 5)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #5.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 5)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #5 - Specialized agent for telecommunications
+    services (agent 5)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_6_1559
+  name: 'Telecommunications Agent #6'
+  description: Specialized agent for telecommunications services (agent 6)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #6.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 6)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #6 - Specialized agent for telecommunications
+    services (agent 6)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_7_1560
+  name: 'Telecommunications Agent #7'
+  description: Specialized agent for telecommunications services (agent 7)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #7.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 7)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #7 - Specialized agent for telecommunications
+    services (agent 7)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_8_1561
+  name: 'Telecommunications Agent #8'
+  description: Specialized agent for telecommunications services (agent 8)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #8.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 8)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #8 - Specialized agent for telecommunications
+    services (agent 8)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_9_1562
+  name: 'Telecommunications Agent #9'
+  description: Specialized agent for telecommunications services (agent 9)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #9.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 9)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #9 - Specialized agent for telecommunications
+    services (agent 9)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_10_1563
+  name: 'Telecommunications Agent #10'
+  description: Specialized agent for telecommunications services (agent 10)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #10.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 10)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #10 - Specialized agent for telecommunications
+    services (agent 10)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_11_1564
+  name: 'Telecommunications Agent #11'
+  description: Specialized agent for telecommunications services (agent 11)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #11.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 11)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #11 - Specialized agent for telecommunications
+    services (agent 11)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_12_1565
+  name: 'Telecommunications Agent #12'
+  description: Specialized agent for telecommunications services (agent 12)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #12.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 12)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #12 - Specialized agent for telecommunications
+    services (agent 12)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_13_1566
+  name: 'Telecommunications Agent #13'
+  description: Specialized agent for telecommunications services (agent 13)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #13.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 13)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #13 - Specialized agent for telecommunications
+    services (agent 13)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_14_1567
+  name: 'Telecommunications Agent #14'
+  description: Specialized agent for telecommunications services (agent 14)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #14.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 14)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #14 - Specialized agent for telecommunications
+    services (agent 14)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_15_1568
+  name: 'Telecommunications Agent #15'
+  description: Specialized agent for telecommunications services (agent 15)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #15.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 15)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #15 - Specialized agent for telecommunications
+    services (agent 15)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_16_1569
+  name: 'Telecommunications Agent #16'
+  description: Specialized agent for telecommunications services (agent 16)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #16.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 16)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #16 - Specialized agent for telecommunications
+    services (agent 16)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_17_1570
+  name: 'Telecommunications Agent #17'
+  description: Specialized agent for telecommunications services (agent 17)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #17.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 17)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #17 - Specialized agent for telecommunications
+    services (agent 17)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_18_1571
+  name: 'Telecommunications Agent #18'
+  description: Specialized agent for telecommunications services (agent 18)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #18.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 18)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #18 - Specialized agent for telecommunications
+    services (agent 18)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_19_1572
+  name: 'Telecommunications Agent #19'
+  description: Specialized agent for telecommunications services (agent 19)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #19.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 19)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #19 - Specialized agent for telecommunications
+    services (agent 19)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_20_1573
+  name: 'Telecommunications Agent #20'
+  description: Specialized agent for telecommunications services (agent 20)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #20.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 20)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #20 - Specialized agent for telecommunications
+    services (agent 20)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_21_1574
+  name: 'Telecommunications Agent #21'
+  description: Specialized agent for telecommunications services (agent 21)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #21.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 21)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #21 - Specialized agent for telecommunications
+    services (agent 21)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_22_1575
+  name: 'Telecommunications Agent #22'
+  description: Specialized agent for telecommunications services (agent 22)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #22.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 22)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #22 - Specialized agent for telecommunications
+    services (agent 22)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_23_1576
+  name: 'Telecommunications Agent #23'
+  description: Specialized agent for telecommunications services (agent 23)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #23.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 23)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #23 - Specialized agent for telecommunications
+    services (agent 23)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_24_1577
+  name: 'Telecommunications Agent #24'
+  description: Specialized agent for telecommunications services (agent 24)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #24.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 24)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #24 - Specialized agent for telecommunications
+    services (agent 24)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_25_1578
+  name: 'Telecommunications Agent #25'
+  description: Specialized agent for telecommunications services (agent 25)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #25.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 25)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #25 - Specialized agent for telecommunications
+    services (agent 25)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_26_1579
+  name: 'Telecommunications Agent #26'
+  description: Specialized agent for telecommunications services (agent 26)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #26.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 26)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #26 - Specialized agent for telecommunications
+    services (agent 26)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_27_1580
+  name: 'Telecommunications Agent #27'
+  description: Specialized agent for telecommunications services (agent 27)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #27.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 27)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #27 - Specialized agent for telecommunications
+    services (agent 27)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_28_1581
+  name: 'Telecommunications Agent #28'
+  description: Specialized agent for telecommunications services (agent 28)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #28.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 28)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #28 - Specialized agent for telecommunications
+    services (agent 28)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_29_1582
+  name: 'Telecommunications Agent #29'
+  description: Specialized agent for telecommunications services (agent 29)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #29.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 29)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #29 - Specialized agent for telecommunications
+    services (agent 29)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_30_1583
+  name: 'Telecommunications Agent #30'
+  description: Specialized agent for telecommunications services (agent 30)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #30.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 30)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #30 - Specialized agent for telecommunications
+    services (agent 30)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_31_1584
+  name: 'Telecommunications Agent #31'
+  description: Specialized agent for telecommunications services (agent 31)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #31.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 31)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #31 - Specialized agent for telecommunications
+    services (agent 31)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_32_1585
+  name: 'Telecommunications Agent #32'
+  description: Specialized agent for telecommunications services (agent 32)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #32.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 32)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #32 - Specialized agent for telecommunications
+    services (agent 32)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_33_1586
+  name: 'Telecommunications Agent #33'
+  description: Specialized agent for telecommunications services (agent 33)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #33.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 33)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #33 - Specialized agent for telecommunications
+    services (agent 33)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_34_1587
+  name: 'Telecommunications Agent #34'
+  description: Specialized agent for telecommunications services (agent 34)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #34.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 34)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #34 - Specialized agent for telecommunications
+    services (agent 34)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_35_1588
+  name: 'Telecommunications Agent #35'
+  description: Specialized agent for telecommunications services (agent 35)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #35.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 35)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #35 - Specialized agent for telecommunications
+    services (agent 35)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_36_1589
+  name: 'Telecommunications Agent #36'
+  description: Specialized agent for telecommunications services (agent 36)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #36.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 36)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #36 - Specialized agent for telecommunications
+    services (agent 36)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_37_1590
+  name: 'Telecommunications Agent #37'
+  description: Specialized agent for telecommunications services (agent 37)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #37.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 37)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #37 - Specialized agent for telecommunications
+    services (agent 37)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_38_1591
+  name: 'Telecommunications Agent #38'
+  description: Specialized agent for telecommunications services (agent 38)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #38.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 38)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #38 - Specialized agent for telecommunications
+    services (agent 38)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_39_1592
+  name: 'Telecommunications Agent #39'
+  description: Specialized agent for telecommunications services (agent 39)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #39.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 39)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #39 - Specialized agent for telecommunications
+    services (agent 39)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_40_1593
+  name: 'Telecommunications Agent #40'
+  description: Specialized agent for telecommunications services (agent 40)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #40.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 40)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #40 - Specialized agent for telecommunications
+    services (agent 40)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_41_1594
+  name: 'Telecommunications Agent #41'
+  description: Specialized agent for telecommunications services (agent 41)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #41.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 41)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #41 - Specialized agent for telecommunications
+    services (agent 41)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_42_1595
+  name: 'Telecommunications Agent #42'
+  description: Specialized agent for telecommunications services (agent 42)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #42.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 42)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #42 - Specialized agent for telecommunications
+    services (agent 42)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_43_1596
+  name: 'Telecommunications Agent #43'
+  description: Specialized agent for telecommunications services (agent 43)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #43.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 43)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #43 - Specialized agent for telecommunications
+    services (agent 43)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_44_1597
+  name: 'Telecommunications Agent #44'
+  description: Specialized agent for telecommunications services (agent 44)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #44.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 44)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #44 - Specialized agent for telecommunications
+    services (agent 44)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_45_1598
+  name: 'Telecommunications Agent #45'
+  description: Specialized agent for telecommunications services (agent 45)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #45.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 45)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #45 - Specialized agent for telecommunications
+    services (agent 45)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_46_1599
+  name: 'Telecommunications Agent #46'
+  description: Specialized agent for telecommunications services (agent 46)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #46.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 46)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #46 - Specialized agent for telecommunications
+    services (agent 46)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_47_1600
+  name: 'Telecommunications Agent #47'
+  description: Specialized agent for telecommunications services (agent 47)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #47.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 47)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #47 - Specialized agent for telecommunications
+    services (agent 47)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_48_1601
+  name: 'Telecommunications Agent #48'
+  description: Specialized agent for telecommunications services (agent 48)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #48.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 48)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #48 - Specialized agent for telecommunications
+    services (agent 48)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_49_1602
+  name: 'Telecommunications Agent #49'
+  description: Specialized agent for telecommunications services (agent 49)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #49.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 49)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #49 - Specialized agent for telecommunications
+    services (agent 49)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'
+- agent_id: telecommunications_agent_50_1603
+  name: 'Telecommunications Agent #50'
+  description: Specialized agent for telecommunications services (agent 50)
+  category: telecommunications
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Telecommunications Agent #50.\n\nYour primary function
+    is to: Specialized agent for telecommunications services (agent 50)\n\nTask Input:\n{task_description}\n\nPlease
+    complete the task according to your function.'
+  system_prompt: 'You are an AI assistant specialized in Telecommunications.\n\nYour
+    role is: Telecommunications Agent #50 - Specialized agent for telecommunications
+    services (agent 50)\n\nAlways:\n- Be professional and helpful\n- Follow best practices
+    for Telecommunications\n- Provide accurate and actionable responses\n- Maintain
+    context across interactions'

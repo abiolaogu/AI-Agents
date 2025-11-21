@@ -1,0 +1,1751 @@
+agents:
+- agent_id: transportation_mobility_agent_1_1604
+  name: 'Transportation & Mobility Agent #1'
+  description: Specialized agent for transportation & mobility solutions (agent 1)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #1.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    1)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #1 - Specialized agent for transportation
+    & mobility solutions (agent 1)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_2_1605
+  name: 'Transportation & Mobility Agent #2'
+  description: Specialized agent for transportation & mobility solutions (agent 2)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #2.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    2)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #2 - Specialized agent for transportation
+    & mobility solutions (agent 2)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_3_1606
+  name: 'Transportation & Mobility Agent #3'
+  description: Specialized agent for transportation & mobility solutions (agent 3)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #3.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    3)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #3 - Specialized agent for transportation
+    & mobility solutions (agent 3)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_4_1607
+  name: 'Transportation & Mobility Agent #4'
+  description: Specialized agent for transportation & mobility solutions (agent 4)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #4.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    4)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #4 - Specialized agent for transportation
+    & mobility solutions (agent 4)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_5_1608
+  name: 'Transportation & Mobility Agent #5'
+  description: Specialized agent for transportation & mobility solutions (agent 5)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #5.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    5)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #5 - Specialized agent for transportation
+    & mobility solutions (agent 5)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_6_1609
+  name: 'Transportation & Mobility Agent #6'
+  description: Specialized agent for transportation & mobility solutions (agent 6)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #6.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    6)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #6 - Specialized agent for transportation
+    & mobility solutions (agent 6)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_7_1610
+  name: 'Transportation & Mobility Agent #7'
+  description: Specialized agent for transportation & mobility solutions (agent 7)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #7.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    7)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #7 - Specialized agent for transportation
+    & mobility solutions (agent 7)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_8_1611
+  name: 'Transportation & Mobility Agent #8'
+  description: Specialized agent for transportation & mobility solutions (agent 8)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #8.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    8)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #8 - Specialized agent for transportation
+    & mobility solutions (agent 8)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_9_1612
+  name: 'Transportation & Mobility Agent #9'
+  description: Specialized agent for transportation & mobility solutions (agent 9)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #9.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    9)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #9 - Specialized agent for transportation
+    & mobility solutions (agent 9)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_10_1613
+  name: 'Transportation & Mobility Agent #10'
+  description: Specialized agent for transportation & mobility solutions (agent 10)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #10.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    10)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #10 - Specialized agent for transportation
+    & mobility solutions (agent 10)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_11_1614
+  name: 'Transportation & Mobility Agent #11'
+  description: Specialized agent for transportation & mobility solutions (agent 11)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #11.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    11)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #11 - Specialized agent for transportation
+    & mobility solutions (agent 11)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_12_1615
+  name: 'Transportation & Mobility Agent #12'
+  description: Specialized agent for transportation & mobility solutions (agent 12)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #12.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    12)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #12 - Specialized agent for transportation
+    & mobility solutions (agent 12)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_13_1616
+  name: 'Transportation & Mobility Agent #13'
+  description: Specialized agent for transportation & mobility solutions (agent 13)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #13.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    13)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #13 - Specialized agent for transportation
+    & mobility solutions (agent 13)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_14_1617
+  name: 'Transportation & Mobility Agent #14'
+  description: Specialized agent for transportation & mobility solutions (agent 14)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #14.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    14)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #14 - Specialized agent for transportation
+    & mobility solutions (agent 14)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_15_1618
+  name: 'Transportation & Mobility Agent #15'
+  description: Specialized agent for transportation & mobility solutions (agent 15)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #15.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    15)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #15 - Specialized agent for transportation
+    & mobility solutions (agent 15)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_16_1619
+  name: 'Transportation & Mobility Agent #16'
+  description: Specialized agent for transportation & mobility solutions (agent 16)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #16.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    16)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #16 - Specialized agent for transportation
+    & mobility solutions (agent 16)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_17_1620
+  name: 'Transportation & Mobility Agent #17'
+  description: Specialized agent for transportation & mobility solutions (agent 17)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #17.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    17)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #17 - Specialized agent for transportation
+    & mobility solutions (agent 17)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_18_1621
+  name: 'Transportation & Mobility Agent #18'
+  description: Specialized agent for transportation & mobility solutions (agent 18)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #18.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    18)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #18 - Specialized agent for transportation
+    & mobility solutions (agent 18)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_19_1622
+  name: 'Transportation & Mobility Agent #19'
+  description: Specialized agent for transportation & mobility solutions (agent 19)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #19.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    19)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #19 - Specialized agent for transportation
+    & mobility solutions (agent 19)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_20_1623
+  name: 'Transportation & Mobility Agent #20'
+  description: Specialized agent for transportation & mobility solutions (agent 20)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #20.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    20)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #20 - Specialized agent for transportation
+    & mobility solutions (agent 20)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_21_1624
+  name: 'Transportation & Mobility Agent #21'
+  description: Specialized agent for transportation & mobility solutions (agent 21)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #21.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    21)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #21 - Specialized agent for transportation
+    & mobility solutions (agent 21)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_22_1625
+  name: 'Transportation & Mobility Agent #22'
+  description: Specialized agent for transportation & mobility solutions (agent 22)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #22.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    22)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #22 - Specialized agent for transportation
+    & mobility solutions (agent 22)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_23_1626
+  name: 'Transportation & Mobility Agent #23'
+  description: Specialized agent for transportation & mobility solutions (agent 23)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #23.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    23)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #23 - Specialized agent for transportation
+    & mobility solutions (agent 23)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_24_1627
+  name: 'Transportation & Mobility Agent #24'
+  description: Specialized agent for transportation & mobility solutions (agent 24)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #24.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    24)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #24 - Specialized agent for transportation
+    & mobility solutions (agent 24)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_25_1628
+  name: 'Transportation & Mobility Agent #25'
+  description: Specialized agent for transportation & mobility solutions (agent 25)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #25.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    25)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #25 - Specialized agent for transportation
+    & mobility solutions (agent 25)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_26_1629
+  name: 'Transportation & Mobility Agent #26'
+  description: Specialized agent for transportation & mobility solutions (agent 26)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #26.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    26)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #26 - Specialized agent for transportation
+    & mobility solutions (agent 26)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_27_1630
+  name: 'Transportation & Mobility Agent #27'
+  description: Specialized agent for transportation & mobility solutions (agent 27)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #27.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    27)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #27 - Specialized agent for transportation
+    & mobility solutions (agent 27)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_28_1631
+  name: 'Transportation & Mobility Agent #28'
+  description: Specialized agent for transportation & mobility solutions (agent 28)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #28.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    28)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #28 - Specialized agent for transportation
+    & mobility solutions (agent 28)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_29_1632
+  name: 'Transportation & Mobility Agent #29'
+  description: Specialized agent for transportation & mobility solutions (agent 29)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #29.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    29)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #29 - Specialized agent for transportation
+    & mobility solutions (agent 29)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_30_1633
+  name: 'Transportation & Mobility Agent #30'
+  description: Specialized agent for transportation & mobility solutions (agent 30)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #30.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    30)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #30 - Specialized agent for transportation
+    & mobility solutions (agent 30)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_31_1634
+  name: 'Transportation & Mobility Agent #31'
+  description: Specialized agent for transportation & mobility solutions (agent 31)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #31.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    31)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #31 - Specialized agent for transportation
+    & mobility solutions (agent 31)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_32_1635
+  name: 'Transportation & Mobility Agent #32'
+  description: Specialized agent for transportation & mobility solutions (agent 32)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #32.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    32)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #32 - Specialized agent for transportation
+    & mobility solutions (agent 32)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_33_1636
+  name: 'Transportation & Mobility Agent #33'
+  description: Specialized agent for transportation & mobility solutions (agent 33)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #33.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    33)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #33 - Specialized agent for transportation
+    & mobility solutions (agent 33)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_34_1637
+  name: 'Transportation & Mobility Agent #34'
+  description: Specialized agent for transportation & mobility solutions (agent 34)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #34.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    34)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #34 - Specialized agent for transportation
+    & mobility solutions (agent 34)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_35_1638
+  name: 'Transportation & Mobility Agent #35'
+  description: Specialized agent for transportation & mobility solutions (agent 35)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #35.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    35)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #35 - Specialized agent for transportation
+    & mobility solutions (agent 35)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_36_1639
+  name: 'Transportation & Mobility Agent #36'
+  description: Specialized agent for transportation & mobility solutions (agent 36)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #36.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    36)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #36 - Specialized agent for transportation
+    & mobility solutions (agent 36)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_37_1640
+  name: 'Transportation & Mobility Agent #37'
+  description: Specialized agent for transportation & mobility solutions (agent 37)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #37.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    37)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #37 - Specialized agent for transportation
+    & mobility solutions (agent 37)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_38_1641
+  name: 'Transportation & Mobility Agent #38'
+  description: Specialized agent for transportation & mobility solutions (agent 38)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #38.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    38)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #38 - Specialized agent for transportation
+    & mobility solutions (agent 38)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_39_1642
+  name: 'Transportation & Mobility Agent #39'
+  description: Specialized agent for transportation & mobility solutions (agent 39)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #39.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    39)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #39 - Specialized agent for transportation
+    & mobility solutions (agent 39)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_40_1643
+  name: 'Transportation & Mobility Agent #40'
+  description: Specialized agent for transportation & mobility solutions (agent 40)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #40.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    40)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #40 - Specialized agent for transportation
+    & mobility solutions (agent 40)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_41_1644
+  name: 'Transportation & Mobility Agent #41'
+  description: Specialized agent for transportation & mobility solutions (agent 41)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #41.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    41)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #41 - Specialized agent for transportation
+    & mobility solutions (agent 41)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_42_1645
+  name: 'Transportation & Mobility Agent #42'
+  description: Specialized agent for transportation & mobility solutions (agent 42)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #42.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    42)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #42 - Specialized agent for transportation
+    & mobility solutions (agent 42)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_43_1646
+  name: 'Transportation & Mobility Agent #43'
+  description: Specialized agent for transportation & mobility solutions (agent 43)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #43.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    43)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #43 - Specialized agent for transportation
+    & mobility solutions (agent 43)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_44_1647
+  name: 'Transportation & Mobility Agent #44'
+  description: Specialized agent for transportation & mobility solutions (agent 44)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #44.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    44)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #44 - Specialized agent for transportation
+    & mobility solutions (agent 44)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_45_1648
+  name: 'Transportation & Mobility Agent #45'
+  description: Specialized agent for transportation & mobility solutions (agent 45)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #45.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    45)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #45 - Specialized agent for transportation
+    & mobility solutions (agent 45)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_46_1649
+  name: 'Transportation & Mobility Agent #46'
+  description: Specialized agent for transportation & mobility solutions (agent 46)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #46.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    46)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #46 - Specialized agent for transportation
+    & mobility solutions (agent 46)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_47_1650
+  name: 'Transportation & Mobility Agent #47'
+  description: Specialized agent for transportation & mobility solutions (agent 47)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #47.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    47)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #47 - Specialized agent for transportation
+    & mobility solutions (agent 47)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_48_1651
+  name: 'Transportation & Mobility Agent #48'
+  description: Specialized agent for transportation & mobility solutions (agent 48)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #48.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    48)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #48 - Specialized agent for transportation
+    & mobility solutions (agent 48)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_49_1652
+  name: 'Transportation & Mobility Agent #49'
+  description: Specialized agent for transportation & mobility solutions (agent 49)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #49.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    49)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #49 - Specialized agent for transportation
+    & mobility solutions (agent 49)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
+- agent_id: transportation_mobility_agent_50_1653
+  name: 'Transportation & Mobility Agent #50'
+  description: Specialized agent for transportation & mobility solutions (agent 50)
+  category: transportation_mobility
+  version: 1.0.0
+  capabilities:
+  - text_generation
+  - analysis
+  - automation
+  inputs:
+  - name: task_description
+    type: text
+    required: true
+    description: Description of the task to perform
+  outputs:
+  - name: result
+    type: text
+    description: The result of the agent's work
+  collaboration:
+    can_work_with: []
+    provides_to_team:
+    - result
+  llm:
+    model: claude-3-5-sonnet-20241022
+    max_tokens: 4096
+    temperature: 0.7
+  prompt_template: 'You are the Transportation & Mobility Agent #50.\n\nYour primary
+    function is to: Specialized agent for transportation & mobility solutions (agent
+    50)\n\nTask Input:\n{task_description}\n\nPlease complete the task according to
+    your function.'
+  system_prompt: 'You are an AI assistant specialized in Transportation & Mobility.\n\nYour
+    role is: Transportation & Mobility Agent #50 - Specialized agent for transportation
+    & mobility solutions (agent 50)\n\nAlways:\n- Be professional and helpful\n- Follow
+    best practices for Transportation & Mobility\n- Provide accurate and actionable
+    responses\n- Maintain context across interactions'
