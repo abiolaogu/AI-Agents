@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-orchestrator
+  namespace: ai-agents
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops-orchestrator
+  template:
+    metadata:
+      labels:
+        app: devops-orchestrator
+    spec:
+      containers:
+      - name: devops-orchestrator
+        image: ai-agents/devops-orchestrator:1.0.0
+        ports:
+        - containerPort: 8087
+        env:
+        - name: CLAUDE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: devops-secrets
+              key: claude-api-key
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "1Gi"
+            cpu: "1000m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-orchestrator
+  namespace: ai-agents
+spec:
+  selector:
+    app: devops-orchestrator
+  ports:
+  - port: 8087
+    targetPort: 8087
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: devops-orchestrator-hpa
+  namespace: ai-agents
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: devops-orchestrator
+  minReplicas: 3
+  maxReplicas: 15
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70

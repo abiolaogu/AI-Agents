@@ -1,0 +1,145 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cybersecurity-analyst
+  namespace: ai-agents
+  labels:
+    app: cybersecurity-analyst
+    tier: security
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: cybersecurity-analyst
+  template:
+    metadata:
+      labels:
+        app: cybersecurity-analyst
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8086"
+        prometheus.io/path: "/metrics"
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+      - name: cybersecurity-analyst
+        image: ai-agents/cybersecurity-analyst:1.0.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8086
+          name: http
+        env:
+        - name: PORT
+          value: "8086"
+        - name: REDIS_URL
+          valueFrom:
+            secretKeyRef:
+              name: cybersecurity-analyst-secrets
+              key: redis-url
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: cybersecurity-analyst-secrets
+              key: database-url
+        - name: CLAUDE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: cybersecurity-analyst-secrets
+              key: claude-api-key
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "2000m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8086
+          initialDelaySeconds: 10
+          periodSeconds: 30
+          timeoutSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8086
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 3
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+            - ALL
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cybersecurity-analyst
+  namespace: ai-agents
+  labels:
+    app: cybersecurity-analyst
+spec:
+  type: ClusterIP
+  selector:
+    app: cybersecurity-analyst
+  ports:
+  - port: 8086
+    targetPort: 8086
+    protocol: TCP
+    name: http
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: cybersecurity-analyst-hpa
+  namespace: ai-agents
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: cybersecurity-analyst
+  minReplicas: 3
+  maxReplicas: 20
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 60
+      policies:
+      - type: Percent
+        value: 50
+        periodSeconds: 60
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies:
+      - type: Pods
+        value: 1
+        periodSeconds: 60
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: cybersecurity-analyst-pdb
+  namespace: ai-agents
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: cybersecurity-analyst

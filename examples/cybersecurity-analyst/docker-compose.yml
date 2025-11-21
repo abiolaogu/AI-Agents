@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  cybersecurity-analyst:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cybersecurity-analyst
+    ports:
+      - "8086:8086"
+    environment:
+      - PORT=8086
+      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=postgres://postgres:password@timescaledb:5432/cybersecurity
+      - CLAUDE_API_KEY=${CLAUDE_API_KEY}
+    depends_on:
+      - redis
+      - timescaledb
+    networks:
+      - ai-agents-network
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: cybersecurity-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes
+    volumes:
+      - redis-data:/data
+    networks:
+      - ai-agents-network
+    restart: unless-stopped
+
+  timescaledb:
+    image: timescale/timescaledb:latest-pg15
+    container_name: cybersecurity-timescaledb
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=cybersecurity
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - timescale-data:/var/lib/postgresql/data
+    networks:
+      - ai-agents-network
+    restart: unless-stopped
+
+networks:
+  ai-agents-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+  timescale-data:
