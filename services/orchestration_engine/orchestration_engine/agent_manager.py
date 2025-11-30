@@ -1,14 +1,36 @@
 # services/orchestration_engine/orchestration_engine/agent_manager.py
 
 import logging
+import os
+import json
 
 class AgentManager:
     """Manages the registration and metadata of agent services."""
 
-    def __init__(self, logger: logging.Logger):
+    def __init__(self, logger: logging.Logger, definitions_dir: str = "/app/agents/definitions"):
         """Initializes the AgentManager."""
         self.agents = {}  # Stores agent_id -> agent_metadata mapping
         self.logger = logger
+        self.definitions_dir = definitions_dir
+        self.load_agents_from_directory()
+
+    def load_agents_from_directory(self):
+        """Loads agent definitions from JSON files in the specified directory."""
+        if not os.path.exists(self.definitions_dir):
+            self.logger.warning(f"Definitions directory {self.definitions_dir} does not exist.")
+            return
+
+        for filename in os.listdir(self.definitions_dir):
+            if filename.endswith(".json"):
+                filepath = os.path.join(self.definitions_dir, filename)
+                try:
+                    with open(filepath, 'r') as f:
+                        agent_def = json.load(f)
+                        agent_id = agent_def.get("id")
+                        if agent_id:
+                            self.register_agent(agent_id, agent_def)
+                except Exception as e:
+                    self.logger.error(f"Failed to load agent definition from {filename}: {e}")
 
     def register_agent(self, agent_id: str, agent_metadata: dict):
         """
@@ -26,7 +48,9 @@ class AgentManager:
     def get_agent_url(self, agent_id: str) -> str:
         """Retrieves the URL for a registered agent."""
         agent_info = self.agents.get(agent_id)
-        return agent_info.get("url") if agent_info else None
+        # Default to a generic agent runner if no specific URL is provided
+        # In a real K8s/Docker setup, this might route to a specific service
+        return agent_info.get("url") or os.getenv("GENERIC_AGENT_URL", "http://generic-agent:5000")
 
     def list_agents_details(self) -> list:
         """Returns a list of all registered agents with their full metadata."""

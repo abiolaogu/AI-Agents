@@ -1,0 +1,13 @@
+{
+  "id": "legal_litigation_agent_001",
+  "name": "Legal Litigation Agent",
+  "description": "AI Agent specialized in Litigation tasks for the Legal department.",
+  "category": "Legal",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "litigation",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

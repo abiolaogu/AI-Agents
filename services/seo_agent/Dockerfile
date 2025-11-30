@@ -1,26 +1,44 @@
 # Dockerfile for the SEO Agent
 
-FROM python:3.9-slim
+# Stage 1: Builder
+FROM python:3.9-slim as builder
 
 WORKDIR /app
 
-# Set the PYTHONPATH to include the root directory
-ENV PYTHONPATH="/app"
+# Install build dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends gcc python3-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create virtual environment
+RUN python -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 
 # Install dependencies
 COPY services/seo_agent/requirements.txt /app/services/seo_agent/requirements.txt
 RUN pip install --no-cache-dir -r /app/services/seo_agent/requirements.txt
 
-# Install the shared agent_framework package
+# Install shared packages
 COPY packages/agent_framework /tmp/packages/agent_framework
 RUN pip install --no-cache-dir /tmp/packages/agent_framework
 
-# Copy all service and package code
-COPY services /app/services
+# Stage 2: Final
+FROM python:3.9-slim
+
+WORKDIR /app
+ENV PYTHONPATH="/app"
+ENV PATH="/opt/venv/bin:$PATH"
+
+# Copy virtual environment from builder
+COPY --from=builder /opt/venv /opt/venv
+
+# Copy application code
+COPY services/seo_agent /app/services/seo_agent
 COPY packages /app/packages
 
-# Expose the port the app runs on
+# Create non-root user
+RUN useradd -m appuser && chown -R appuser /app
+USER appuser
+
 EXPOSE 5001
 
-# Run the application
 CMD ["python", "-m", "services.seo_agent.seo_agent.main"]

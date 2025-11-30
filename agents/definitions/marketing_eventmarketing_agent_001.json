@@ -1,0 +1,13 @@
+{
+  "id": "marketing_eventmarketing_agent_001",
+  "name": "Marketing EventMarketing Agent",
+  "description": "AI Agent specialized in EventMarketing tasks for the Marketing department.",
+  "category": "Marketing",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "eventmarketing",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

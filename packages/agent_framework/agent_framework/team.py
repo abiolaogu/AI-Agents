@@ -120,7 +120,7 @@ class Team:
                 if member.required:
                     raise
 
-    def execute(
+    async def execute(
         self,
         task: Dict[str, Any],
         user_id: Optional[str] = None,
@@ -163,15 +163,15 @@ class Team:
         # Execute based on strategy
         try:
             if self.config.strategy == TeamStrategy.SEQUENTIAL:
-                result = self._execute_sequential(task)
+                result = await self._execute_sequential(task)
             elif self.config.strategy == TeamStrategy.PARALLEL:
-                result = self._execute_parallel(task)
+                result = await self._execute_parallel(task)
             elif self.config.strategy == TeamStrategy.CONSENSUS:
-                result = self._execute_consensus(task)
+                result = await self._execute_consensus(task)
             elif self.config.strategy == TeamStrategy.LEADER_FOLLOWER:
-                result = self._execute_leader_follower(task)
+                result = await self._execute_leader_follower(task)
             elif self.config.strategy == TeamStrategy.PIPELINE:
-                result = self._execute_pipeline(task)
+                result = await self._execute_pipeline(task)
             else:
                 raise ValueError(f"Unknown strategy: {self.config.strategy}")
 
@@ -202,7 +202,7 @@ class Team:
 
         return result
 
-    def _execute_sequential(self, task: Dict[str, Any]) -> TeamResult:
+    async def _execute_sequential(self, task: Dict[str, Any]) -> TeamResult:
         """Execute agents sequentially in priority order"""
         agent_results = {}
         outputs = {}
@@ -221,7 +221,7 @@ class Team:
                 self.logger.info(f"Executing agent: {member.agent_id}")
 
                 # Execute agent
-                result = agent.execute(task, self.context)
+                result = await agent.execute(task, self.context)
                 agent_results[member.agent_id] = result
 
                 # Add agent outputs to shared context
@@ -257,7 +257,7 @@ class Team:
             metadata={"shared_context": self.context.shared_data}
         )
 
-    def _execute_parallel(self, task: Dict[str, Any]) -> TeamResult:
+    async def _execute_parallel(self, task: Dict[str, Any]) -> TeamResult:
         """Execute all agents in parallel"""
         # For now, simulate parallel with sequential (can use asyncio later)
         agent_results = {}
@@ -267,7 +267,7 @@ class Team:
             agent = self.members[member.agent_id]
 
             try:
-                result = agent.execute(task, self.context)
+                result = await agent.execute(task, self.context)
                 agent_results[member.agent_id] = result
 
                 if result.status == "success":
@@ -291,10 +291,10 @@ class Team:
             agent_results=agent_results
         )
 
-    def _execute_consensus(self, task: Dict[str, Any]) -> TeamResult:
+    async def _execute_consensus(self, task: Dict[str, Any]) -> TeamResult:
         """Execute all agents and aggregate via consensus"""
         # Execute all agents
-        parallel_result = self._execute_parallel(task)
+        parallel_result = await self._execute_parallel(task)
 
         # Aggregate outputs (simple majority voting)
         # In practice, this would use more sophisticated consensus
@@ -305,7 +305,7 @@ class Team:
         parallel_result.outputs["consensus"] = consensus_output
         return parallel_result
 
-    def _execute_leader_follower(self, task: Dict[str, Any]) -> TeamResult:
+    async def _execute_leader_follower(self, task: Dict[str, Any]) -> TeamResult:
         """Leader agent executes first, followers support"""
         # Find leader (highest priority)
         leader = max(self.config.members, key=lambda m: m.priority)
@@ -315,7 +315,7 @@ class Team:
 
         # Execute leader
         leader_agent = self.members[leader.agent_id]
-        leader_result = leader_agent.execute(task, self.context)
+        leader_result = await leader_agent.execute(task, self.context)
         agent_results[leader.agent_id] = leader_result
 
         if leader_result.status != "success":
@@ -333,7 +333,7 @@ class Team:
         # Execute followers
         for follower in followers:
             agent = self.members[follower.agent_id]
-            result = agent.execute(task, self.context)
+            result = await agent.execute(task, self.context)
             agent_results[follower.agent_id] = result
 
         return TeamResult(
@@ -343,7 +343,7 @@ class Team:
             agent_results=agent_results
         )
 
-    def _execute_pipeline(self, task: Dict[str, Any]) -> TeamResult:
+    async def _execute_pipeline(self, task: Dict[str, Any]) -> TeamResult:
         """Execute agents in pipeline: output of N feeds into N+1"""
         agent_results = {}
         current_input = task
@@ -358,7 +358,7 @@ class Team:
             agent = self.members[member.agent_id]
 
             # Execute with current input
-            result = agent.execute(current_input, self.context)
+            result = await agent.execute(current_input, self.context)
             agent_results[member.agent_id] = result
 
             if result.status != "success":

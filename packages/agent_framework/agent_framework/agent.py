@@ -17,7 +17,7 @@ class BaseAgent(ABC):
         self.status = "idle"
 
     @abstractmethod
-    def execute(self, task: dict) -> dict:
+    async def execute(self, task: dict) -> dict:
         """
         Execute a task. This method must be implemented by subclasses.
 

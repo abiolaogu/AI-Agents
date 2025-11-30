@@ -1,0 +1,13 @@
+{
+  "id": "hr_talentacquisition_agent_001",
+  "name": "HR TalentAcquisition Agent",
+  "description": "AI Agent specialized in TalentAcquisition tasks for the HR department.",
+  "category": "HR",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "talentacquisition",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

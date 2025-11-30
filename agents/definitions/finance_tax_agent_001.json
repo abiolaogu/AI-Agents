@@ -1,0 +1,13 @@
+{
+  "id": "finance_tax_agent_001",
+  "name": "Finance Tax Agent",
+  "description": "AI Agent specialized in Tax tasks for the Finance department.",
+  "category": "Finance",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "tax",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "finance_payrollprocessing_agent_001",
+  "name": "Finance PayrollProcessing Agent",
+  "description": "AI Agent specialized in PayrollProcessing tasks for the Finance department.",
+  "category": "Finance",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "payrollprocessing",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

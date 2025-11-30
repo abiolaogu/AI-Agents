@@ -10,7 +10,7 @@ class SeoAgent(BaseAgent):
         """Initializes the SeoAgent."""
         super().__init__(agent_id, logger)
 
-    def execute(self, task: dict) -> dict:
+    async def execute(self, task: dict) -> dict:
         """
         Executes an SEO-related task.
 

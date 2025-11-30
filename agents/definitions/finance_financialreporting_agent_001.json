@@ -1,0 +1,13 @@
+{
+  "id": "finance_financialreporting_agent_001",
+  "name": "Finance FinancialReporting Agent",
+  "description": "AI Agent specialized in FinancialReporting tasks for the Finance department.",
+  "category": "Finance",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "financialreporting",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "marketing_pr_agent_001",
+  "name": "Marketing PR Agent",
+  "description": "AI Agent specialized in PR tasks for the Marketing department.",
+  "category": "Marketing",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "pr",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

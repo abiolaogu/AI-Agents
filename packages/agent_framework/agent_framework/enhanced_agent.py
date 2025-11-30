@@ -153,7 +153,7 @@ class EnhancedBaseAgent(ABC):
         self.logger.info(f"Agent {agent_id} ({metadata.name}) initialized")
 
     @abstractmethod
-    def execute(self, task: Dict[str, Any], context: Optional[TaskContext] = None) -> AgentResult:
+    async def execute(self, task: Dict[str, Any], context: Optional[TaskContext] = None) -> AgentResult:
         """
         Execute a task with optional shared context.
 

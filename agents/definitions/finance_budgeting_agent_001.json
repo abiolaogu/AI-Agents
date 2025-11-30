@@ -1,0 +1,13 @@
+{
+  "id": "finance_budgeting_agent_001",
+  "name": "Finance Budgeting Agent",
+  "description": "AI Agent specialized in Budgeting tasks for the Finance department.",
+  "category": "Finance",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "budgeting",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

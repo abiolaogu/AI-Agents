@@ -1,0 +1,13 @@
+{
+  "id": "marketing_analytics_agent_001",
+  "name": "Marketing Analytics Agent",
+  "description": "AI Agent specialized in Analytics tasks for the Marketing department.",
+  "category": "Marketing",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "analytics",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

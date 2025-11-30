@@ -1,0 +1,13 @@
+{
+  "id": "sales_contractnegotiation_agent_001",
+  "name": "Sales ContractNegotiation Agent",
+  "description": "AI Agent specialized in ContractNegotiation tasks for the Sales department.",
+  "category": "Sales",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "contractnegotiation",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

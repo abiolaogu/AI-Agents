@@ -1,0 +1,13 @@
+{
+  "id": "it_softwaredevelopment_agent_001",
+  "name": "IT SoftwareDevelopment Agent",
+  "description": "AI Agent specialized in SoftwareDevelopment tasks for the IT department.",
+  "category": "IT",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "softwaredevelopment",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

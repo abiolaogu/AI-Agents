@@ -1,0 +1,13 @@
+{
+  "id": "sales_accountmanagement_agent_001",
+  "name": "Sales AccountManagement Agent",
+  "description": "AI Agent specialized in AccountManagement tasks for the Sales department.",
+  "category": "Sales",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "accountmanagement",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

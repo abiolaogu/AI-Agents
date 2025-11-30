@@ -1,76 +1,49 @@
-# services/orchestration_engine/orchestration_engine/database.py
+from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
+from sqlalchemy.orm import sessionmaker, declarative_base
+from sqlalchemy import Column, Integer, String, Text, DateTime, ForeignKey, Float
+from sqlalchemy.sql import func
+import os
 
-import sqlite3
-import logging
-from werkzeug.security import generate_password_hash, check_password_hash
+# Use postgresql+asyncpg for async support
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+asyncpg://postgres:postgres@postgres:5432/ai_agents")
 
-DB_FILE = "workflows.db"
-logger = logging.getLogger(__name__)
+engine = create_async_engine(DATABASE_URL, echo=False)
+AsyncSessionLocal = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
+Base = declarative_base()
 
-def get_db_connection():
-    """Establishes a connection to the SQLite database."""
-    conn = sqlite3.connect(DB_FILE)
-    conn.row_factory = sqlite3.Row
-    return conn
+class User(Base):
+    __tablename__ = "users"
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True)
+    password_hash = Column(String)
 
-def init_db():
-    """Initializes the database and creates tables if they don't exist."""
-    try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
+class Workflow(Base):
+    __tablename__ = "workflows"
+    id = Column(String, primary_key=True)
+    name = Column(String)
+    tasks = Column(Text) # JSON string
+    status = Column(String)
+    results = Column(Text) # JSON string
+    user_id = Column(Integer, ForeignKey("users.id"))
 
-        # Create users table
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS users (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT UNIQUE NOT NULL,
-                password_hash TEXT NOT NULL
-            );
-        """)
+class AnalyticsEvent(Base):
+    __tablename__ = "analytics_events"
+    id = Column(Integer, primary_key=True, index=True)
+    event_type = Column(String)
+    timestamp = Column(DateTime(timezone=True), server_default=func.now())
+    workflow_id = Column(String, nullable=True)
+    agent_id = Column(String, nullable=True)
+    duration = Column(Float, nullable=True)
+    status = Column(String, nullable=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
 
-        # Create workflows table with a foreign key to users
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS workflows (
-                id TEXT PRIMARY KEY,
-                name TEXT NOT NULL,
-                tasks TEXT NOT NULL,
-                status TEXT NOT NULL,
-                results TEXT,
-                user_id INTEGER,
-                FOREIGN KEY (user_id) REFERENCES users (id)
-            );
-        """)
+async def init_db():
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
 
-        # Create analytics events table
-        cursor.execute("""
-            CREATE TABLE IF NOT EXISTS analytics_events (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                event_type TEXT NOT NULL,
-                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-                workflow_id TEXT,
-                agent_id TEXT,
-                duration REAL,
-                status TEXT,
-                user_id INTEGER,
-                FOREIGN KEY (user_id) REFERENCES users (id)
-            );
-        """)
-
-        conn.commit()
-        conn.close()
-        logger.info("Database initialized successfully.")
-    except sqlite3.Error as e:
-        logger.error(f"Database initialization failed: {e}")
-
-def hash_password(password: str) -> str:
-    """Hashes a password for storing."""
-    return generate_password_hash(password)
-
-def check_password(password_hash: str, password: str) -> bool:
-    """Checks a password against a hash."""
-    return check_password_hash(password_hash, password)
-
-if __name__ == '__main__':
-    # This allows us to initialize the database from the command line
-    logging.basicConfig(level=logging.INFO)
-    init_db()
+async def get_db():
+    async with AsyncSessionLocal() as session:
+        try:
+            yield session
+        finally:
+            await session.close()

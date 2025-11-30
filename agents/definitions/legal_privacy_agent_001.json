@@ -1,0 +1,13 @@
+{
+  "id": "legal_privacy_agent_001",
+  "name": "Legal Privacy Agent",
+  "description": "AI Agent specialized in Privacy tasks for the Legal department.",
+  "category": "Legal",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "privacy",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

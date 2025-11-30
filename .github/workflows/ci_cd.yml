@@ -1,0 +1,86 @@
+name: AI Agents CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:13
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: ai_agents_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      redis:
+        image: redis:6
+        ports:
+          - 6379:6379
+      redpanda:
+        image: docker.redpanda.com/redpandadata/redpanda:latest
+        ports:
+          - 9092:9092
+        command:
+          - redpanda
+          - start
+          - --mode dev-container
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r services/orchestration_engine/requirements.txt
+        pip install pytest httpx bandit safety
+
+    - name: Run Security Scans
+      run: |
+        bandit -r services/orchestration_engine -ll
+        safety check
+
+    - name: Run Tests
+      env:
+        DATABASE_URL: postgresql+asyncpg://postgres:password@localhost:5432/ai_agents_test
+        REDPANDA_BROKERS: localhost:9092
+      run: |
+        pytest tests/e2e
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Login to DockerHub
+      uses: docker/login-action@v2
+      if: github.event_name != 'pull_request'
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Build and push Orchestration Engine
+      uses: docker/build-push-action@v4
+      with:
+        context: ./services/orchestration_engine
+        push: ${{ github.event_name != 'pull_request' }}
+        tags: user/orchestration-engine:latest

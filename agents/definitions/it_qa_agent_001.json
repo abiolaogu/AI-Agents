@@ -1,0 +1,13 @@
+{
+  "id": "it_qa_agent_001",
+  "name": "IT QA Agent",
+  "description": "AI Agent specialized in QA tasks for the IT department.",
+  "category": "IT",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "qa",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

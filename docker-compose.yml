@@ -29,7 +29,7 @@ services:
       - postgres
       - opa
     healthcheck:
-      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      test: [ "CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')" ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -97,6 +97,44 @@ services:
       - FLASK_ENV=development
 
   # ==========================================================================
+  # Event Streaming (Redpanda)
+  # ==========================================================================
+  redpanda:
+    image: docker.redpanda.com/redpandadata/redpanda:latest
+    command:
+      - redpanda
+      - start
+      - --smp 1
+      - --memory 1G
+      - --reserve-memory 0M
+      - --overprovisioned
+      - --node-id 0
+      - --check=false
+      - --kafka-addr=PLAINTEXT://0.0.0.0:29092,OUTSIDE://0.0.0.0:9092
+      - --advertise-kafka-addr=PLAINTEXT://redpanda:29092,OUTSIDE://localhost:9092
+      - --pandaproxy-addr=0.0.0.0:8082
+      - --advertise-pandaproxy-addr=localhost:8082
+    ports:
+      - "9092:9092"
+      - "8081:8081"
+      - "8082:8082"
+    volumes:
+      - redpanda-data:/var/lib/redpanda/data
+    healthcheck:
+      test: [ "CMD-SHELL", "rpk cluster health | grep -q 'Healthy: true'" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+
+  # ==========================================================================
+  # Shared Services
+  # ==========================================================================
+  # ==========================================================================
   # Shared Services
   # ==========================================================================
   redis:
@@ -106,10 +144,15 @@ services:
     volumes:
       - redis-data:/data
     healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
+      test: [ "CMD", "redis-cli", "ping" ]
       interval: 10s
       timeout: 3s
       retries: 3
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
 
   postgres:
     image: "postgres:15-alpine"
@@ -122,10 +165,15 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 10s
       timeout: 5s
       retries: 5
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
 
   # ==========================================================================
   # Governance & Policy
@@ -143,7 +191,7 @@ services:
     volumes:
       - ./policies:/policies
     healthcheck:
-      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8181/health"]
+      test: [ "CMD", "wget", "--spider", "-q", "http://localhost:8181/health" ]
       interval: 15s
       timeout: 5s
       retries: 3
@@ -162,7 +210,7 @@ services:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
     healthcheck:
-      test: ["CMD", "wget", "--spider", "-q", "http://localhost:9090/-/healthy"]
+      test: [ "CMD", "wget", "--spider", "-q", "http://localhost:9090/-/healthy" ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -187,7 +235,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.runpod
-    command: ["celery", "-A", "orchestration_engine.celery_worker.celery", "worker", "--loglevel=info", "--concurrency=4"]
+    command: [ "celery", "-A", "orchestration_engine.celery_worker.celery", "worker", "--loglevel=info", "--concurrency=4" ]
     volumes:
       - ./agents:/app/agents
       - ./policies:/app/policies

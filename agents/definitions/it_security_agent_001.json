@@ -1,0 +1,13 @@
+{
+  "id": "it_security_agent_001",
+  "name": "IT Security Agent",
+  "description": "AI Agent specialized in Security tasks for the IT department.",
+  "category": "IT",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "security",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}

@@ -14,8 +14,12 @@ def execute_workflow_task(workflow_id: str):
     from .workflow_manager import WorkflowManager
     from .agent_manager import AgentManager
 
+    import asyncio
+    from .analytics_manager import AnalyticsManager
+
     logger = logging.getLogger(__name__)
     agent_manager = AgentManager(logger=logger)
+    analytics_manager = AnalyticsManager(logger=logger)
 
     # Re-register agents for the worker context
     agent_manager.register_agent("seo_agent_001", {
@@ -47,8 +51,8 @@ def execute_workflow_task(workflow_id: str):
         "description": "Generates proposals for clients.", "category": "Sales"
     })
 
-    workflow_manager = WorkflowManager(agent_manager=agent_manager, logger=logger)
+    workflow_manager = WorkflowManager(agent_manager=agent_manager, analytics_manager=analytics_manager, logger=logger)
 
     logger.info(f"Celery task started for workflow {workflow_id}")
-    workflow_manager.execute_workflow(workflow_id)
+    asyncio.run(workflow_manager.execute_workflow(workflow_id))
     logger.info(f"Celery task finished for workflow {workflow_id}")

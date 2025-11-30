@@ -1,11 +1,10 @@
-# services/orchestration_engine/orchestration_engine/workflow_manager.py
-
 import logging
-import requests
+import httpx
 import json
 import time
 from uuid import uuid4
-from .database import get_db_connection
+from sqlalchemy import select, update
+from .database import get_db, Workflow
 from .tasks import execute_workflow_task
 from .analytics_manager import AnalyticsManager
 
@@ -13,137 +12,143 @@ class WorkflowManager:
     """Manages the creation, execution, and state of agent workflows using a database."""
 
     def __init__(self, agent_manager, analytics_manager, logger: logging.Logger):
-        """
-        Initializes the WorkflowManager.
-
-        Args:
-            agent_manager: An instance of AgentManager.
-            analytics_manager: An instance of AnalyticsManager.
-            logger: A logger instance.
-        """
         self.agent_manager = agent_manager
         self.analytics_manager = analytics_manager
         self.logger = logger
 
-    def create_and_dispatch_workflow(self, name: str, tasks: list, user_id: int) -> str:
+    async def create_and_dispatch_workflow(self, name: str, tasks: list, user_id: int) -> str:
         """
         Creates a new workflow, persists it, and dispatches it to the task queue.
         """
         workflow_id = str(uuid4())
-        conn = get_db_connection()
-        conn.execute(
-            "INSERT INTO workflows (id, name, tasks, status, results, user_id) VALUES (?, ?, ?, ?, ?, ?)",
-            (workflow_id, name, json.dumps(tasks), "pending", json.dumps([]), user_id),
-        )
-        conn.commit()
-        conn.close()
+        async for session in get_db():
+            workflow = Workflow(
+                id=workflow_id,
+                name=name,
+                tasks=json.dumps(tasks),
+                status="pending",
+                results=json.dumps([]),
+                user_id=user_id
+            )
+            session.add(workflow)
+            await session.commit()
+            break
+
         self.logger.info(f"Workflow '{name}' ({workflow_id}) for user {user_id} created.")
-        self.analytics_manager.log_event("workflow_created", workflow_id=workflow_id, user_id=user_id)
+        await self.analytics_manager.log_event("workflow_created", workflow_id=workflow_id, user_id=user_id)
 
         execute_workflow_task.delay(workflow_id)
         self.logger.info(f"Dispatched workflow {workflow_id} to Celery.")
 
         return workflow_id
 
-    def execute_workflow(self, workflow_id: str):
+    async def execute_workflow(self, workflow_id: str):
         """
-        Executes a given workflow. This is now called by the Celery worker.
+        Executes a given workflow.
         """
-        workflow = self._get_workflow_from_db(workflow_id)
+        workflow = await self._get_workflow_from_db(workflow_id)
         if not workflow:
             self.logger.error(f"Workflow {workflow_id} not found.")
             return
 
-        user_id = workflow["user_id"]
-        self.logger.info(f"Executing workflow '{workflow['name']}' ({workflow_id})...")
-        self._update_workflow_status(workflow_id, "running")
+        user_id = workflow.user_id
+        self.logger.info(f"Executing workflow '{workflow.name}' ({workflow_id})...")
+        await self._update_workflow_status(workflow_id, "running")
         start_time = time.time()
-        self.analytics_manager.log_event("workflow_started", workflow_id=workflow_id, user_id=user_id)
+        await self.analytics_manager.log_event("workflow_started", workflow_id=workflow_id, user_id=user_id)
 
-        tasks = json.loads(workflow['tasks'])
+        tasks = json.loads(workflow.tasks)
         results = []
         final_status = "completed"
 
-        for i, task in enumerate(tasks):
-            agent_id = task.get("agent_id")
-            task_details = task.get("task_details")
+        async with httpx.AsyncClient() as client:
+            for i, task in enumerate(tasks):
+                agent_id = task.get("agent_id")
+                task_details = task.get("task_details")
 
-            agent_url = self.agent_manager.get_agent_url(agent_id)
-            if not agent_url:
-                self.logger.error(f"Task {i+1}: Agent {agent_id} not found. Aborting.")
-                final_status = "failed"
-                break
+                agent_url = self.agent_manager.get_agent_url(agent_id)
+                if not agent_url:
+                    self.logger.error(f"Task {i+1}: Agent {agent_id} not found. Aborting.")
+                    final_status = "failed"
+                    break
 
-            try:
-                task_start_time = time.time()
-                response = requests.post(f"{agent_url}/execute", json=task_details, timeout=60)
-                response.raise_for_status()
+                try:
+                    task_start_time = time.time()
+                    response = await client.post(f"{agent_url}/execute", json=task_details, timeout=60)
+                    response.raise_for_status()
 
-                result = response.json()
-                results.append(result)
-                task_duration = time.time() - task_start_time
-                self.analytics_manager.log_event(
-                    "agent_task_completed", workflow_id=workflow_id, agent_id=agent_id,
-                    duration=task_duration, status="success", user_id=user_id
-                )
-                self.logger.info(f"Task {i+1} completed by agent {agent_id}.")
-            except requests.RequestException as e:
-                self.logger.error(f"Task {i+1} failed: Request to {agent_id} failed: {e}. Aborting.")
-                final_status = "failed"
-                task_duration = time.time() - task_start_time
-                self.analytics_manager.log_event(
-                    "agent_task_failed", workflow_id=workflow_id, agent_id=agent_id,
-                    duration=task_duration, status="failed", user_id=user_id
-                )
-                break
+                    result = response.json()
+                    results.append(result)
+                    task_duration = time.time() - task_start_time
+                    await self.analytics_manager.log_event(
+                        "agent_task_completed", workflow_id=workflow_id, agent_id=agent_id,
+                        duration=task_duration, status="success", user_id=user_id
+                    )
+                    self.logger.info(f"Task {i+1} completed by agent {agent_id}.")
+                except httpx.RequestError as e:
+                    self.logger.error(f"Task {i+1} failed: Request to {agent_id} failed: {e}. Aborting.")
+                    final_status = "failed"
+                    task_duration = time.time() - task_start_time
+                    await self.analytics_manager.log_event(
+                        "agent_task_failed", workflow_id=workflow_id, agent_id=agent_id,
+                        duration=task_duration, status="failed", user_id=user_id
+                    )
+                    break
 
-        self._update_workflow_results(workflow_id, results)
-        self._update_workflow_status(workflow_id, final_status)
+        await self._update_workflow_results(workflow_id, results)
+        await self._update_workflow_status(workflow_id, final_status)
         workflow_duration = time.time() - start_time
-        self.analytics_manager.log_event(
+        await self.analytics_manager.log_event(
             "workflow_finished", workflow_id=workflow_id, duration=workflow_duration,
             status=final_status, user_id=user_id
         )
-        self.logger.info(f"Workflow '{workflow['name']}' ({workflow_id}) finished with status '{final_status}'.")
+        self.logger.info(f"Workflow '{workflow.name}' ({workflow_id}) finished with status '{final_status}'.")
 
-    def get_workflow_status(self, workflow_id: str, user_id: int) -> dict:
+    async def get_workflow_status(self, workflow_id: str, user_id: int) -> dict:
         """
         Gets the status and results of a workflow, ensuring it belongs to the user.
         """
-        workflow = self._get_workflow_from_db(workflow_id, user_id)
+        workflow = await self._get_workflow_from_db(workflow_id, user_id)
         if not workflow:
             return None
         return {
-            "id": workflow["id"],
-            "name": workflow["name"],
-            "status": workflow["status"],
-            "results": json.loads(workflow["results"]) if workflow["results"] else []
+            "id": workflow.id,
+            "name": workflow.name,
+            "status": workflow.status,
+            "results": json.loads(workflow.results) if workflow.results else []
         }
 
-    def get_workflows_for_user(self, user_id: int) -> list:
+    async def get_workflows_for_user(self, user_id: int) -> list:
         """Retrieves all workflows for a given user."""
-        conn = get_db_connection()
-        workflows_cursor = conn.execute("SELECT id, name, status FROM workflows WHERE user_id = ?", (user_id,)).fetchall()
-        conn.close()
-        return [dict(row) for row in workflows_cursor]
+        async for session in get_db():
+            result = await session.execute(select(Workflow).where(Workflow.user_id == user_id))
+            workflows = result.scalars().all()
+            return [
+                {"id": w.id, "name": w.name, "status": w.status}
+                for w in workflows
+            ]
+        return []
 
-    def _get_workflow_from_db(self, workflow_id: str, user_id: int = None):
-        conn = get_db_connection()
-        if user_id:
-            workflow = conn.execute("SELECT * FROM workflows WHERE id = ? AND user_id = ?", (workflow_id, user_id)).fetchone()
-        else:
-            workflow = conn.execute("SELECT * FROM workflows WHERE id = ?", (workflow_id,)).fetchone()
-        conn.close()
-        return workflow
+    async def _get_workflow_from_db(self, workflow_id: str, user_id: int = None):
+        async for session in get_db():
+            query = select(Workflow).where(Workflow.id == workflow_id)
+            if user_id:
+                query = query.where(Workflow.user_id == user_id)
+            result = await session.execute(query)
+            return result.scalars().first()
 
-    def _update_workflow_status(self, workflow_id: str, status: str):
-        conn = get_db_connection()
-        conn.execute("UPDATE workflows SET status = ? WHERE id = ?", (status, workflow_id))
-        conn.commit()
-        conn.close()
+    async def _update_workflow_status(self, workflow_id: str, status: str):
+        async for session in get_db():
+            await session.execute(
+                update(Workflow).where(Workflow.id == workflow_id).values(status=status)
+            )
+            await session.commit()
+            break
 
-    def _update_workflow_results(self, workflow_id: str, results: list):
-        conn = get_db_connection()
-        conn.execute("UPDATE workflows SET results = ? WHERE id = ?", (json.dumps(results), workflow_id))
-        conn.commit()
-        conn.close()
+    async def _update_workflow_results(self, workflow_id: str, results: list):
+        async for session in get_db():
+            await session.execute(
+                update(Workflow).where(Workflow.id == workflow_id).values(results=json.dumps(results))
+            )
+            await session.commit()
+            break

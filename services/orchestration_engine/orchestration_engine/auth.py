@@ -1,67 +1,64 @@
-# services/orchestration_engine/orchestration_engine/auth.py
-
 import jwt
 import datetime
-from functools import wraps
-from flask import request, jsonify, g
-from .database import get_db_connection, hash_password, check_password
+import os
+from fastapi import Depends, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer
+from sqlalchemy import select
+from .database import get_db, User, hash_password, check_password
+from sqlalchemy.ext.asyncio import AsyncSession
 
-# This should be a strong, secret key stored securely (e.g., in an env var)
-SECRET_KEY = "your-super-secret-key"
+SECRET_KEY = os.getenv("SECRET_KEY", "your-super-secret-key")
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 1440 # 24 hours
 
-def register_user(username, password):
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
+
+async def register_user(username, password, db: AsyncSession):
     """Registers a new user."""
-    db = get_db_connection()
     try:
-        db.execute(
-            "INSERT INTO users (username, password_hash) VALUES (?, ?)",
-            (username, hash_password(password)),
-        )
-        db.commit()
+        # Check if user exists
+        result = await db.execute(select(User).where(User.username == username))
+        if result.scalars().first():
+            return False
+        
+        new_user = User(username=username, password_hash=hash_password(password))
+        db.add(new_user)
+        await db.commit()
         return True
-    except db.IntegrityError:  # This will trigger if the username is already taken
+    except Exception:
         return False
-    finally:
-        db.close()
 
-def authenticate_user(username, password):
+async def authenticate_user(username, password, db: AsyncSession):
     """Authenticates a user and returns a JWT if successful."""
-    db = get_db_connection()
-    user = db.execute("SELECT * FROM users WHERE username = ?", (username,)).fetchone()
-    db.close()
+    result = await db.execute(select(User).where(User.username == username))
+    user = result.scalars().first()
 
-    if user and check_password(user['password_hash'], password):
+    if user and check_password(user.password_hash, password):
+        expiration = datetime.datetime.utcnow() + datetime.timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
         token = jwt.encode({
-            'user_id': user['id'],
-            'exp': datetime.datetime.utcnow() + datetime.timedelta(hours=24)
-        }, SECRET_KEY, algorithm="HS256")
+            'user_id': user.id,
+            'exp': expiration
+        }, SECRET_KEY, algorithm=ALGORITHM)
         return token
     return None
 
-def token_required(f):
-    """Decorator to protect routes that require authentication."""
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        token = None
-        if 'x-access-token' in request.headers:
-            token = request.headers['x-access-token']
-
-        if not token:
-            return jsonify({'message': 'Token is missing!'}), 401
-
-        try:
-            data = jwt.decode(token, SECRET_KEY, algorithms=["HS256"])
-            db = get_db_connection()
-            g.current_user = db.execute("SELECT * FROM users WHERE id = ?", (data['user_id'],)).fetchone()
-            db.close()
-        except jwt.ExpiredSignatureError:
-            return jsonify({'message': 'Token has expired!'}), 401
-        except jwt.InvalidTokenError:
-            return jsonify({'message': 'Token is invalid!'}), 401
-
-        if g.current_user is None:
-            return jsonify({'message': 'User not found!'}), 401
-
-        return f(*args, **kwargs)
-
-    return decorated
+async def get_current_user(token: str = Depends(oauth2_scheme), db: AsyncSession = Depends(get_db)):
+    """Dependency to get the current authenticated user."""
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        user_id: int = payload.get("user_id")
+        if user_id is None:
+            raise credentials_exception
+    except jwt.PyJWTError:
+        raise credentials_exception
+    
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalars().first()
+    if user is None:
+        raise credentials_exception
+    return user

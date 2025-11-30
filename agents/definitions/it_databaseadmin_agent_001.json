@@ -1,0 +1,13 @@
+{
+  "id": "it_databaseadmin_agent_001",
+  "name": "IT DatabaseAdmin Agent",
+  "description": "AI Agent specialized in DatabaseAdmin tasks for the IT department.",
+  "category": "IT",
+  "url": "http://generic-agent:5000",
+  "capabilities": [
+    "databaseadmin",
+    "text_generation",
+    "data_analysis"
+  ],
+  "version": "1.0.0"
+}
