@@ -1,15 +1,31 @@
-Fflask
-flask-cors
-celery
-redis
-requests
-fastapi
-uvicorn
-sqlalchemy[asyncio]
-asyncpg
-httpx
-python-multipart
-aiokafka
-Flask-Cors
-PyJWT
-Werkzeug
+# Web Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Database
+sqlalchemy[asyncio]>=2.0.0
+asyncpg>=0.29.0
+alembic>=1.13.0
+
+# Caching & Rate Limiting
+redis>=5.0.0
+
+# HTTP Client
+httpx>=0.26.0
+
+# Message Queue
+aiokafka>=0.10.0
+
+# Authentication
+PyJWT>=2.8.0
+
+# Task Queue (optional - for Celery workers)
+celery>=5.3.0
+
+# YAML support for agent definitions
+pyyaml>=6.0.0
+
+# LLM Clients (optional - install as needed)
+# anthropic>=0.18.0
+# openai>=1.10.0

@@ -5,8 +5,9 @@ Specialized agent for creators, media & entertainment tasks (agent 42)
 Auto-generated from catalog definition: creators_media_agent_42_592
 """
 
+import os
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -17,17 +18,21 @@ from starlette.responses import Response
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Configuration
+# Configuration - Use environment variables for sensitive values
 class Config:
     APP_NAME = "creators-media-agent-42-592"
     VERSION = "1.0.0"
-    PORT = 8792
-    CLAUDE_API_KEY = "your-api-key-here"
-    CLAUDE_MODEL = "claude-3-5-sonnet-20241022"
-    MAX_TOKENS = 4096
-    TEMPERATURE = 0.7
+    PORT = int(os.getenv("AGENT_PORT", 8792))
+    CLAUDE_API_KEY = os.getenv("ANTHROPIC_API_KEY", os.getenv("CLAUDE_API_KEY", ""))
+    CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-3-5-sonnet-20241022")
+    MAX_TOKENS = int(os.getenv("MAX_TOKENS", 4096))
+    TEMPERATURE = float(os.getenv("TEMPERATURE", 0.7))
 
 config = Config()
+
+# Validate API key at startup
+if not config.CLAUDE_API_KEY:
+    logger.warning("ANTHROPIC_API_KEY not set. API calls will fail until configured.")
 
 # Metrics
 requests_counter = Counter('agent_requests_total', 'Total requests', ['agent_id'])
@@ -55,10 +60,13 @@ class MediaAndEntertainmentAgent42Service:
 
     async def execute_task(self, request: AgentRequest) -> AgentResponse:
         """Execute agent task"""
-        start_time = datetime.utcnow()
+        start_time = datetime.now(timezone.utc)
         requests_counter.labels(agent_id=config.APP_NAME).inc()
 
         try:
+            if not config.CLAUDE_API_KEY:
+                raise HTTPException(status_code=503, detail="ANTHROPIC_API_KEY not configured")
+
             # Format prompt
             prompt = self.prompt_template.format(task_description=request.task_description)
 
@@ -75,7 +83,7 @@ class MediaAndEntertainmentAgent42Service:
             )
 
             result_text = response.content[0].text if response.content else "No response"
-            processing_time = (datetime.utcnow() - start_time).total_seconds() * 1000
+            processing_time = (datetime.now(timezone.utc) - start_time).total_seconds() * 1000
 
             return AgentResponse(
                 result=result_text,
@@ -87,6 +95,8 @@ class MediaAndEntertainmentAgent42Service:
                 processing_time_ms=processing_time
             )
 
+        except HTTPException:
+            raise
         except Exception as e:
             logger.error(f"Task execution failed: {e}")
             raise HTTPException(status_code=500, detail=str(e))
@@ -106,7 +116,7 @@ async def health_check():
         "status": "healthy",
         "agent_id": config.APP_NAME,
         "version": config.VERSION,
-        "timestamp": datetime.utcnow().isoformat()
+        "timestamp": datetime.now(timezone.utc).isoformat()
     }
 
 @app.post("/api/v1/execute", response_model=AgentResponse)
