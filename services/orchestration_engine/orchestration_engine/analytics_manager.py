@@ -1,7 +1,7 @@
 import logging
-import datetime
+from datetime import datetime, timezone
 from sqlalchemy import select
-from .database import get_db, AnalyticsEvent
+from .database import get_db_session, AnalyticsEvent
 
 class AnalyticsManager:
     """Manages the logging of analytics events to the database."""
@@ -25,12 +25,13 @@ class AnalyticsManager:
                     "duration": duration,
                     "status": status,
                     "user_id": user_id,
-                    "timestamp": datetime.datetime.utcnow().isoformat()
+                    "timestamp": datetime.now(timezone.utc).isoformat()
                 }
                 await self.redpanda_manager.publish_event("analytics_events", event_data)
 
             # Log to Database
-            async for session in get_db():
+            session = await get_db_session()
+            try:
                 event = AnalyticsEvent(
                     event_type=event_type,
                     workflow_id=workflow_id,
@@ -41,14 +42,16 @@ class AnalyticsManager:
                 )
                 session.add(event)
                 await session.commit()
-                break # Only need one session
+            finally:
+                await session.close()
         except Exception as e:
             self.logger.error(f"Failed to log analytics event: {e}")
 
     async def get_events_for_user(self, user_id: int) -> list:
         """Retrieves all analytics events for a given user."""
         try:
-            async for session in get_db():
+            session = await get_db_session()
+            try:
                 result = await session.execute(
                     select(AnalyticsEvent)
                     .where(AnalyticsEvent.user_id == user_id)
@@ -68,6 +71,8 @@ class AnalyticsManager:
                     }
                     for e in events
                 ]
+            finally:
+                await session.close()
         except Exception as e:
             self.logger.error(f"Failed to fetch analytics events for user {user_id}: {e}")
             return []

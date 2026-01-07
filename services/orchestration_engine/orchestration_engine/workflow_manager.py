@@ -4,7 +4,7 @@ import json
 import time
 from uuid import uuid4
 from sqlalchemy import select, update
-from .database import get_db, Workflow
+from .database import get_db_session, Workflow
 from .tasks import execute_workflow_task
 from .analytics_manager import AnalyticsManager
 
@@ -21,7 +21,8 @@ class WorkflowManager:
         Creates a new workflow, persists it, and dispatches it to the task queue.
         """
         workflow_id = str(uuid4())
-        async for session in get_db():
+        session = await get_db_session()
+        try:
             workflow = Workflow(
                 id=workflow_id,
                 name=name,
@@ -32,7 +33,8 @@ class WorkflowManager:
             )
             session.add(workflow)
             await session.commit()
-            break
+        finally:
+            await session.close()
 
         self.logger.info(f"Workflow '{name}' ({workflow_id}) for user {user_id} created.")
         await self.analytics_manager.log_event("workflow_created", workflow_id=workflow_id, user_id=user_id)
@@ -120,35 +122,44 @@ class WorkflowManager:
 
     async def get_workflows_for_user(self, user_id: int) -> list:
         """Retrieves all workflows for a given user."""
-        async for session in get_db():
+        session = await get_db_session()
+        try:
             result = await session.execute(select(Workflow).where(Workflow.user_id == user_id))
             workflows = result.scalars().all()
             return [
                 {"id": w.id, "name": w.name, "status": w.status}
                 for w in workflows
             ]
-        return []
+        finally:
+            await session.close()
 
     async def _get_workflow_from_db(self, workflow_id: str, user_id: int = None):
-        async for session in get_db():
+        session = await get_db_session()
+        try:
             query = select(Workflow).where(Workflow.id == workflow_id)
             if user_id:
                 query = query.where(Workflow.user_id == user_id)
             result = await session.execute(query)
             return result.scalars().first()
+        finally:
+            await session.close()
 
     async def _update_workflow_status(self, workflow_id: str, status: str):
-        async for session in get_db():
+        session = await get_db_session()
+        try:
             await session.execute(
                 update(Workflow).where(Workflow.id == workflow_id).values(status=status)
             )
             await session.commit()
-            break
+        finally:
+            await session.close()
 
     async def _update_workflow_results(self, workflow_id: str, results: list):
-        async for session in get_db():
+        session = await get_db_session()
+        try:
             await session.execute(
                 update(Workflow).where(Workflow.id == workflow_id).values(results=json.dumps(results))
             )
             await session.commit()
-            break
+        finally:
+            await session.close()

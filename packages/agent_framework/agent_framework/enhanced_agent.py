@@ -362,6 +362,199 @@ class EnhancedBaseAgent(ABC):
         }
 
 
+class LLMClient:
+    """
+    Universal LLM client supporting multiple providers.
+
+    Supports Anthropic Claude and OpenAI GPT models with automatic fallback.
+    """
+
+    def __init__(
+        self,
+        model: str = "claude-3-5-sonnet-20241022",
+        max_tokens: int = 4096,
+        temperature: float = 0.7,
+        logger: Optional[logging.Logger] = None
+    ):
+        """
+        Initialize LLM client.
+
+        Args:
+            model: Model identifier (e.g., "claude-3-5-sonnet-20241022" or "gpt-4-turbo")
+            max_tokens: Maximum tokens for generation
+            temperature: Temperature for generation
+            logger: Logger instance
+        """
+        import os
+
+        self.model = model
+        self.max_tokens = max_tokens
+        self.temperature = temperature
+        self.logger = logger or logging.getLogger(__name__)
+
+        # Determine provider based on model name
+        self.provider = self._detect_provider(model)
+
+        # Initialize clients
+        self._anthropic_client = None
+        self._openai_client = None
+
+        # Get API keys from environment
+        self.anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+
+        self._initialize_clients()
+
+    def _detect_provider(self, model: str) -> str:
+        """Detect LLM provider from model name."""
+        model_lower = model.lower()
+        if "claude" in model_lower or "anthropic" in model_lower:
+            return "anthropic"
+        elif "gpt" in model_lower or "openai" in model_lower:
+            return "openai"
+        else:
+            # Default to Anthropic
+            return "anthropic"
+
+    def _initialize_clients(self):
+        """Initialize LLM client libraries."""
+        if self.provider == "anthropic" and self.anthropic_api_key:
+            try:
+                import anthropic
+                self._anthropic_client = anthropic.Anthropic(api_key=self.anthropic_api_key)
+                self.logger.info("Anthropic client initialized")
+            except ImportError:
+                self.logger.warning("anthropic library not installed")
+            except Exception as e:
+                self.logger.error(f"Failed to initialize Anthropic client: {e}")
+
+        if self.openai_api_key:
+            try:
+                import openai
+                self._openai_client = openai.OpenAI(api_key=self.openai_api_key)
+                self.logger.info("OpenAI client initialized")
+            except ImportError:
+                self.logger.warning("openai library not installed")
+            except Exception as e:
+                self.logger.error(f"Failed to initialize OpenAI client: {e}")
+
+    def call(
+        self,
+        prompt: str,
+        system_prompt: Optional[str] = None,
+        **kwargs
+    ) -> Dict[str, Any]:
+        """
+        Call LLM with prompt.
+
+        Args:
+            prompt: User prompt
+            system_prompt: System prompt
+            **kwargs: Additional parameters (max_tokens, temperature, etc.)
+
+        Returns:
+            Dict with text, tokens_used, execution_time_ms, model, provider
+        """
+        start_time = time.time()
+
+        # Override defaults with kwargs
+        max_tokens = kwargs.get("max_tokens", self.max_tokens)
+        temperature = kwargs.get("temperature", self.temperature)
+        model = kwargs.get("model", self.model)
+
+        try:
+            if self.provider == "anthropic" and self._anthropic_client:
+                result = self._call_anthropic(prompt, system_prompt, model, max_tokens, temperature)
+            elif self._openai_client:
+                result = self._call_openai(prompt, system_prompt, model, max_tokens, temperature)
+            else:
+                # Fallback to the other provider if available
+                if self._anthropic_client:
+                    result = self._call_anthropic(prompt, system_prompt, model, max_tokens, temperature)
+                elif self._openai_client:
+                    result = self._call_openai(prompt, system_prompt, model, max_tokens, temperature)
+                else:
+                    raise RuntimeError("No LLM client available. Set ANTHROPIC_API_KEY or OPENAI_API_KEY.")
+
+            result["execution_time_ms"] = (time.time() - start_time) * 1000
+            return result
+
+        except Exception as e:
+            self.logger.error(f"LLM call failed: {e}")
+            raise
+
+    def _call_anthropic(
+        self,
+        prompt: str,
+        system_prompt: Optional[str],
+        model: str,
+        max_tokens: int,
+        temperature: float
+    ) -> Dict[str, Any]:
+        """Call Anthropic Claude API."""
+        messages = [{"role": "user", "content": prompt}]
+
+        kwargs = {
+            "model": model,
+            "max_tokens": max_tokens,
+            "temperature": temperature,
+            "messages": messages
+        }
+
+        if system_prompt:
+            kwargs["system"] = system_prompt
+
+        response = self._anthropic_client.messages.create(**kwargs)
+
+        text = response.content[0].text if response.content else ""
+        tokens_used = (
+            response.usage.input_tokens + response.usage.output_tokens
+            if hasattr(response, 'usage') else 0
+        )
+
+        return {
+            "text": text,
+            "tokens_used": tokens_used,
+            "model": model,
+            "provider": "anthropic"
+        }
+
+    def _call_openai(
+        self,
+        prompt: str,
+        system_prompt: Optional[str],
+        model: str,
+        max_tokens: int,
+        temperature: float
+    ) -> Dict[str, Any]:
+        """Call OpenAI API."""
+        messages = []
+        if system_prompt:
+            messages.append({"role": "system", "content": system_prompt})
+        messages.append({"role": "user", "content": prompt})
+
+        # Map Claude model to OpenAI if needed
+        if "claude" in model.lower():
+            model = "gpt-4-turbo"
+
+        response = self._openai_client.chat.completions.create(
+            model=model,
+            messages=messages,
+            max_tokens=max_tokens,
+            temperature=temperature
+        )
+
+        text = response.choices[0].message.content if response.choices else ""
+        tokens_used = response.usage.total_tokens if response.usage else 0
+
+        return {
+            "text": text,
+            "tokens_used": tokens_used,
+            "model": model,
+            "provider": "openai"
+        }
+
+
 class AgentWithLLM(EnhancedBaseAgent):
     """
     Base class for agents that use LLMs (Claude, GPT, etc.)
@@ -394,6 +587,14 @@ class AgentWithLLM(EnhancedBaseAgent):
         self.max_tokens = max_tokens
         self.temperature = temperature
 
+        # Initialize LLM client
+        self.llm_client = LLMClient(
+            model=model,
+            max_tokens=max_tokens,
+            temperature=temperature,
+            logger=self.logger
+        )
+
     def call_llm(
         self,
         prompt: str,
@@ -409,25 +610,25 @@ class AgentWithLLM(EnhancedBaseAgent):
             **kwargs: Additional LLM parameters
 
         Returns:
-            LLM response with text and usage info
+            LLM response with text, tokens_used, execution_time_ms, model, provider
         """
-        # This is a placeholder - implement with actual LLM client
-        # (Anthropic, OpenAI, etc.)
+        return self.llm_client.call(prompt, system_prompt, **kwargs)
 
-        start_time = time.time()
+    async def call_llm_async(
+        self,
+        prompt: str,
+        system_prompt: Optional[str] = None,
+        **kwargs
+    ) -> Dict[str, Any]:
+        """
+        Async version of call_llm.
 
-        # Placeholder response
-        response_text = f"[LLM Response for agent {self.agent_id}]"
-        tokens_used = len(prompt.split()) * 2  # Rough estimate
-
-        execution_time = (time.time() - start_time) * 1000
-
-        return {
-            "text": response_text,
-            "tokens_used": tokens_used,
-            "execution_time_ms": execution_time,
-            "model": self.model
-        }
+        For now, wraps the sync call. Can be extended with async client support.
+        """
+        import asyncio
+        return await asyncio.get_event_loop().run_in_executor(
+            None, lambda: self.call_llm(prompt, system_prompt, **kwargs)
+        )
 
 
 # Convenience function for creating agent metadata

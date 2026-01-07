@@ -1,15 +1,28 @@
 import jwt
 import datetime
 import os
+import secrets
+from datetime import timezone
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy import select
 from .database import get_db, User, hash_password, check_password
 from sqlalchemy.ext.asyncio import AsyncSession
 
-SECRET_KEY = os.getenv("SECRET_KEY", "your-super-secret-key")
+# Security: SECRET_KEY must be set via environment variable in production
+# If not set, generate a random one (suitable for development only)
+_default_secret = secrets.token_urlsafe(32)
+SECRET_KEY = os.getenv("SECRET_KEY")
+if not SECRET_KEY:
+    import logging
+    logging.warning(
+        "SECRET_KEY not set in environment! Using randomly generated key. "
+        "This is only suitable for development. Set SECRET_KEY for production."
+    )
+    SECRET_KEY = _default_secret
+
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 1440 # 24 hours
+ACCESS_TOKEN_EXPIRE_MINUTES = 1440  # 24 hours
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
 
@@ -34,7 +47,7 @@ async def authenticate_user(username, password, db: AsyncSession):
     user = result.scalars().first()
 
     if user and check_password(user.password_hash, password):
-        expiration = datetime.datetime.utcnow() + datetime.timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        expiration = datetime.datetime.now(timezone.utc) + datetime.timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
         token = jwt.encode({
             'user_id': user.id,
             'exp': expiration
